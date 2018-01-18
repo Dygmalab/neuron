@@ -1,0 +1,859 @@
+EESchema Schematic File Version 3
+LIBS:usb-hub-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:usb-2412
+LIBS:huble-rescue
+LIBS:rgbled
+LIBS:usb-hub-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB_C_Receptacle usbC-up1
+U 1 1 5A5F4969
+P 9950 3000
+F 0 "usbC-up1" H 10055 4567 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 10055 4476 50  0000 C CNN
+F 2 "Connectors_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 10100 3000 50  0001 C CNN
+F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 10100 3000 50  0001 C CNN
+	1    9950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L usb-2412 U1
+U 1 1 5A5F4A49
+P 2950 3900
+F 0 "U1" H 2900 5637 60  0000 C CNN
+F 1 "usb-2412" H 2900 5531 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-28-1EP_5x5mm_Pitch0.5mm" H 2600 4400 60  0001 C CNN
+F 3 "" H 2600 4400 60  0001 C CNN
+	1    2950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_A J5
+U 1 1 5A5F4B7B
+P 2550 1300
+F 0 "J5" H 2605 1767 50  0000 C CNN
+F 1 "USB_A" H 2605 1676 50  0000 C CNN
+F 2 "fp:usb-a-smt" H 2700 1250 50  0001 C CNN
+F 3 "" H 2700 1250 50  0001 C CNN
+	1    2550 1300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3550 4000
+Wire Wire Line
+	2250 5400 2250 5500
+$Comp
+L Earth #PWR05
+U 1 1 5A5F4D14
+P 2100 5500
+F 0 "#PWR05" H 2100 5250 50  0001 C CNN
+F 1 "Earth" H 2100 5350 50  0001 C CNN
+F 2 "" H 2100 5500 50  0001 C CNN
+F 3 "~" H 2100 5500 50  0001 C CNN
+	1    2100 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5500 2100 5500
+$Comp
+L Crystal_GND24 Y1
+U 1 1 5A5F4E5A
+P 1450 5000
+F 0 "Y1" V 1404 5241 50  0000 L CNN
+F 1 "Crystal_GND24" V 1495 5241 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1450 5000 50  0001 C CNN
+F 3 "" H 1450 5000 50  0001 C CNN
+	1    1450 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 4850 2250 4850
+Wire Wire Line
+	2250 5100 1800 5100
+Wire Wire Line
+	1800 5100 1800 5150
+Wire Wire Line
+	1800 5150 1450 5150
+NoConn ~ 1650 5000
+NoConn ~ 1250 5000
+$Comp
+L C C3
+U 1 1 5A5F4F59
+P 1450 5300
+F 0 "C3" H 1565 5346 50  0000 L CNN
+F 1 "20pf" H 1565 5255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1488 5150 50  0001 C CNN
+F 3 "" H 1450 5300 50  0001 C CNN
+	1    1450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5A5F4FCE
+P 1450 4700
+F 0 "C2" H 1565 4746 50  0000 L CNN
+F 1 "20pf" H 1565 4655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1488 4550 50  0001 C CNN
+F 3 "" H 1450 4700 50  0001 C CNN
+	1    1450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR03
+U 1 1 5A5F5008
+P 1450 5450
+F 0 "#PWR03" H 1450 5200 50  0001 C CNN
+F 1 "Earth" H 1450 5300 50  0001 C CNN
+F 2 "" H 1450 5450 50  0001 C CNN
+F 3 "~" H 1450 5450 50  0001 C CNN
+	1    1450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 5A5F501F
+P 1450 4550
+F 0 "#PWR02" H 1450 4300 50  0001 C CNN
+F 1 "Earth" H 1450 4400 50  0001 C CNN
+F 2 "" H 1450 4550 50  0001 C CNN
+F 3 "~" H 1450 4550 50  0001 C CNN
+	1    1450 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 5A5F5042
+P 2250 4500
+F 0 "#PWR06" H 2250 4250 50  0001 C CNN
+F 1 "Earth" H 2250 4350 50  0001 C CNN
+F 2 "" H 2250 4500 50  0001 C CNN
+F 3 "~" H 2250 4500 50  0001 C CNN
+	1    2250 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP3
+U 1 1 5A5F50FA
+P 2250 4400
+F 0 "TP3" V 2465 4494 50  0000 C CNN
+F 1 "TEST" V 2374 4494 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2250 4400 50  0001 C CNN
+F 3 "" H 2250 4400 50  0001 C CNN
+	1    2250 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A5F521A
+P 3850 4100
+F 0 "R3" V 3643 4100 50  0000 C CNN
+F 1 "10k" V 3734 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3780 4100 50  0001 C CNN
+F 3 "" H 3850 4100 50  0001 C CNN
+	1    3850 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A5F52A9
+P 3850 4200
+F 0 "R4" V 3643 4200 50  0000 C CNN
+F 1 "10k" V 3734 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3780 4200 50  0001 C CNN
+F 3 "" H 3850 4200 50  0001 C CNN
+	1    3850 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4100 3700 4100
+Wire Wire Line
+	3550 4200 3700 4200
+$Comp
+L Earth #PWR010
+U 1 1 5A5F52EE
+P 4000 4100
+F 0 "#PWR010" H 4000 3850 50  0001 C CNN
+F 1 "Earth" H 4000 3950 50  0001 C CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "~" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR011
+U 1 1 5A5F53D8
+P 4000 4200
+F 0 "#PWR011" H 4000 4050 50  0001 C CNN
+F 1 "+3.3V" V 4015 4328 50  0000 L CNN
+F 2 "" H 4000 4200 50  0001 C CNN
+F 3 "" H 4000 4200 50  0001 C CNN
+	1    4000 4200
+	0    1    1    0   
+$EndComp
+Text Notes 4250 4050 0    60   ~ 0
+set port 1 to non-removabable
+Text Notes 3700 2800 0    60   ~ 0
+non removable - connect to atmega32u4\n
+$Comp
+L R R5
+U 1 1 5A5F5473
+P 3850 4400
+F 0 "R5" V 3643 4400 50  0000 C CNN
+F 1 "12k" V 3734 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3780 4400 50  0001 C CNN
+F 3 "" H 3850 4400 50  0001 C CNN
+	1    3850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR012
+U 1 1 5A5F54AB
+P 4000 4400
+F 0 "#PWR012" H 4000 4150 50  0001 C CNN
+F 1 "Earth" H 4000 4250 50  0001 C CNN
+F 2 "" H 4000 4400 50  0001 C CNN
+F 3 "~" H 4000 4400 50  0001 C CNN
+	1    4000 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 4400 3700 4400
+$Comp
+L TEST TP2
+U 1 1 5A5F55F6
+P 2250 3600
+F 0 "TP2" V 2465 3694 50  0000 C CNN
+F 1 "TEST" V 2374 3694 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2250 3600 50  0001 C CNN
+F 3 "" H 2250 3600 50  0001 C CNN
+	1    2250 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST TP1
+U 1 1 5A5F563C
+P 2250 3050
+F 0 "TP1" V 2465 3144 50  0000 C CNN
+F 1 "TEST" V 2374 3144 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2250 3050 50  0001 C CNN
+F 3 "" H 2250 3050 50  0001 C CNN
+	1    2250 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST TP5
+U 1 1 5A5F5676
+P 3550 3100
+F 0 "TP5" V 3504 3328 50  0000 L CNN
+F 1 "TEST" V 3595 3328 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3550 3100 50  0001 C CNN
+F 3 "" H 3550 3100 50  0001 C CNN
+	1    3550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP6
+U 1 1 5A5F56F2
+P 3550 3700
+F 0 "TP6" V 3504 3928 50  0000 L CNN
+F 1 "TEST" V 3595 3928 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3550 3700 50  0001 C CNN
+F 3 "" H 3550 3700 50  0001 C CNN
+	1    3550 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP4
+U 1 1 5A5F573A
+P 2250 5300
+F 0 "TP4" V 2465 5394 50  0000 C CNN
+F 1 "TEST" V 2374 5394 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2250 5300 50  0001 C CNN
+F 3 "" H 2250 5300 50  0001 C CNN
+	1    2250 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 4750 3550 5350
+Connection ~ 3550 4850
+Connection ~ 3550 5150
+Connection ~ 3550 5250
+$Comp
+L TEST TP7
+U 1 1 5A5F57FF
+P 3550 5500
+F 0 "TP7" V 3504 5728 50  0000 L CNN
+F 1 "TEST" V 3595 5728 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3550 5500 50  0001 C CNN
+F 3 "" H 3550 5500 50  0001 C CNN
+	1    3550 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP8
+U 1 1 5A5F588B
+P 3550 5600
+F 0 "TP8" V 3504 5828 50  0000 L CNN
+F 1 "TEST" V 3595 5828 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3550 5600 50  0001 C CNN
+F 3 "" H 3550 5600 50  0001 C CNN
+	1    3550 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR015
+U 1 1 5A5F58BD
+P 4950 4750
+F 0 "#PWR015" H 4950 4600 50  0001 C CNN
+F 1 "+3.3V" V 4965 4878 50  0000 L CNN
+F 2 "" H 4950 4750 50  0001 C CNN
+F 3 "" H 4950 4750 50  0001 C CNN
+	1    4950 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4750 4950 4750
+$Comp
+L C C4
+U 1 1 5A5F590A
+P 3800 4900
+F 0 "C4" H 3915 4946 50  0000 L CNN
+F 1 "0.1u" H 3915 4855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3838 4750 50  0001 C CNN
+F 3 "" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5A5F59B1
+P 4050 4900
+F 0 "C5" H 4165 4946 50  0000 L CNN
+F 1 "4.7u" H 4165 4855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4088 4750 50  0001 C CNN
+F 3 "" H 4050 4900 50  0001 C CNN
+	1    4050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 5A5F59ED
+P 4300 4900
+F 0 "C6" H 4415 4946 50  0000 L CNN
+F 1 "0.1u" H 4415 4855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4338 4750 50  0001 C CNN
+F 3 "" H 4300 4900 50  0001 C CNN
+	1    4300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR09
+U 1 1 5A5F5A2F
+P 3800 5050
+F 0 "#PWR09" H 3800 4800 50  0001 C CNN
+F 1 "Earth" H 3800 4900 50  0001 C CNN
+F 2 "" H 3800 5050 50  0001 C CNN
+F 3 "~" H 3800 5050 50  0001 C CNN
+	1    3800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR013
+U 1 1 5A5F5A76
+P 4050 5050
+F 0 "#PWR013" H 4050 4800 50  0001 C CNN
+F 1 "Earth" H 4050 4900 50  0001 C CNN
+F 2 "" H 4050 5050 50  0001 C CNN
+F 3 "~" H 4050 5050 50  0001 C CNN
+	1    4050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR014
+U 1 1 5A5F5AA9
+P 4300 5050
+F 0 "#PWR014" H 4300 4800 50  0001 C CNN
+F 1 "Earth" H 4300 4900 50  0001 C CNN
+F 2 "" H 4300 5050 50  0001 C CNN
+F 3 "~" H 4300 5050 50  0001 C CNN
+	1    4300 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 4750
+Connection ~ 4050 4750
+Connection ~ 4300 4750
+Text Label 3550 3500 0    60   ~ 0
+ext-usb-p
+Text Label 3550 3600 0    60   ~ 0
+ext-usb-n
+Text Label 3550 2500 0    60   ~ 0
+usb-up-p
+Text Label 3550 2600 0    60   ~ 0
+usb-up-n
+$Comp
+L R R2
+U 1 1 5A5F6089
+P 1800 2650
+F 0 "R2" H 1730 2604 50  0000 R CNN
+F 1 "10k" H 1730 2695 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805" V 1730 2650 50  0001 C CNN
+F 3 "" H 1800 2650 50  0001 C CNN
+	1    1800 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A5F6133
+P 1800 2350
+F 0 "R1" H 1730 2304 50  0000 R CNN
+F 1 "10k" H 1730 2395 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805" V 1730 2350 50  0001 C CNN
+F 3 "" H 1800 2350 50  0001 C CNN
+	1    1800 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 2500 2250 2500
+$Comp
+L Earth #PWR04
+U 1 1 5A5F61AB
+P 1800 2800
+F 0 "#PWR04" H 1800 2550 50  0001 C CNN
+F 1 "Earth" H 1800 2650 50  0001 C CNN
+F 2 "" H 1800 2800 50  0001 C CNN
+F 3 "~" H 1800 2800 50  0001 C CNN
+	1    1800 2800
+	1    0    0    -1  
+$EndComp
+Text Label 1800 2200 0    60   ~ 0
+vbus-up
+$Comp
+L C C1
+U 1 1 5A5F623B
+P 1450 2650
+F 0 "C1" H 1565 2696 50  0000 L CNN
+F 1 "1u" H 1565 2605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1488 2500 50  0001 C CNN
+F 3 "" H 1450 2650 50  0001 C CNN
+	1    1450 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 2500
+$Comp
+L Earth #PWR01
+U 1 1 5A5F6319
+P 1450 2800
+F 0 "#PWR01" H 1450 2550 50  0001 C CNN
+F 1 "Earth" H 1450 2650 50  0001 C CNN
+F 2 "" H 1450 2800 50  0001 C CNN
+F 3 "~" H 1450 2800 50  0001 C CNN
+	1    1450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR07
+U 1 1 5A5F63C8
+P 2450 1700
+F 0 "#PWR07" H 2450 1450 50  0001 C CNN
+F 1 "Earth" H 2450 1550 50  0001 C CNN
+F 2 "" H 2450 1700 50  0001 C CNN
+F 3 "~" H 2450 1700 50  0001 C CNN
+	1    2450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR08
+U 1 1 5A5F6401
+P 2550 1700
+F 0 "#PWR08" H 2550 1450 50  0001 C CNN
+F 1 "Earth" H 2550 1550 50  0001 C CNN
+F 2 "" H 2550 1700 50  0001 C CNN
+F 3 "~" H 2550 1700 50  0001 C CNN
+	1    2550 1700
+	1    0    0    -1  
+$EndComp
+Text Label 2850 1100 0    60   ~ 0
+vbus-up
+Text Label 2850 1300 0    60   ~ 0
+ext-usb-p
+Text Label 2850 1400 0    60   ~ 0
+ext-usb-n
+Text Label 4050 1450 0    60   ~ 0
+usb-up-p
+Text Label 4050 1550 0    60   ~ 0
+usb-up-n
+$Comp
+L TEST TP9
+U 1 1 5A5F6677
+P 4050 1450
+F 0 "TP9" V 4265 1544 50  0000 C CNN
+F 1 "TEST" V 4174 1544 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4050 1450 50  0001 C CNN
+F 3 "" H 4050 1450 50  0001 C CNN
+	1    4050 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST TP10
+U 1 1 5A5F6707
+P 4050 1550
+F 0 "TP10" V 4265 1644 50  0000 C CNN
+F 1 "TEST" V 4174 1644 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4050 1550 50  0001 C CNN
+F 3 "" H 4050 1550 50  0001 C CNN
+	1    4050 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR020
+U 1 1 5A5F67F8
+P 9650 4600
+F 0 "#PWR020" H 9650 4350 50  0001 C CNN
+F 1 "Earth" H 9650 4450 50  0001 C CNN
+F 2 "" H 9650 4600 50  0001 C CNN
+F 3 "~" H 9650 4600 50  0001 C CNN
+	1    9650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR021
+U 1 1 5A5F6899
+P 9750 4600
+F 0 "#PWR021" H 9750 4350 50  0001 C CNN
+F 1 "Earth" H 9750 4450 50  0001 C CNN
+F 2 "" H 9750 4600 50  0001 C CNN
+F 3 "~" H 9750 4600 50  0001 C CNN
+	1    9750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR022
+U 1 1 5A5F68D6
+P 9850 4600
+F 0 "#PWR022" H 9850 4350 50  0001 C CNN
+F 1 "Earth" H 9850 4450 50  0001 C CNN
+F 2 "" H 9850 4600 50  0001 C CNN
+F 3 "~" H 9850 4600 50  0001 C CNN
+	1    9850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR023
+U 1 1 5A5F6913
+P 9950 4600
+F 0 "#PWR023" H 9950 4350 50  0001 C CNN
+F 1 "Earth" H 9950 4450 50  0001 C CNN
+F 2 "" H 9950 4600 50  0001 C CNN
+F 3 "~" H 9950 4600 50  0001 C CNN
+	1    9950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR024
+U 1 1 5A5F6950
+P 10050 4600
+F 0 "#PWR024" H 10050 4350 50  0001 C CNN
+F 1 "Earth" H 10050 4450 50  0001 C CNN
+F 2 "" H 10050 4600 50  0001 C CNN
+F 3 "~" H 10050 4600 50  0001 C CNN
+	1    10050 4600
+	1    0    0    -1  
+$EndComp
+Text Label 10650 1700 0    60   ~ 0
+vbus-up
+Wire Wire Line
+	10550 1700 10550 2000
+Connection ~ 10550 1900
+Connection ~ 10550 1800
+Wire Wire Line
+	10550 1700 10650 1700
+Text Label 10550 2700 0    60   ~ 0
+usb-up-p
+Text Label 10550 2500 0    60   ~ 0
+usb-up-n
+$Comp
+L R R6
+U 1 1 5A5F6E91
+P 10700 2200
+F 0 "R6" V 10493 2200 50  0000 C CNN
+F 1 "56k" V 10584 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10630 2200 50  0001 C CNN
+F 3 "" H 10700 2200 50  0001 C CNN
+	1    10700 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 1900 10850 1900
+Wire Wire Line
+	10850 1900 10850 2200
+NoConn ~ 10550 3000
+NoConn ~ 10550 3100
+NoConn ~ 10550 3300
+NoConn ~ 10550 3400
+NoConn ~ 10550 3600
+NoConn ~ 10550 3700
+NoConn ~ 10550 3900
+NoConn ~ 10550 4000
+NoConn ~ 10550 4200
+NoConn ~ 10550 4300
+$Comp
+L TEST TP11
+U 1 1 5A5F72DA
+P 10550 2300
+F 0 "TP11" V 10504 2528 50  0000 L CNN
+F 1 "TEST" V 10595 2528 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 10550 2300 50  0001 C CNN
+F 3 "" H 10550 2300 50  0001 C CNN
+	1    10550 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP12
+U 1 1 5A5F758C
+P 10550 2600
+F 0 "TP12" V 10504 2828 50  0000 L CNN
+F 1 "TEST" V 10595 2828 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 10550 2600 50  0001 C CNN
+F 3 "" H 10550 2600 50  0001 C CNN
+	1    10550 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP13
+U 1 1 5A5F75E0
+P 10550 2800
+F 0 "TP13" V 10504 3028 50  0000 L CNN
+F 1 "TEST" V 10595 3028 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 10550 2800 50  0001 C CNN
+F 3 "" H 10550 2800 50  0001 C CNN
+	1    10550 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L LD1117S12TR_SOT223 U2
+U 1 1 5A5F78E7
+P 6200 1250
+F 0 "U2" H 6200 1492 50  0000 C CNN
+F 1 "LD1117S12TR_SOT223" H 6200 1401 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 6200 1450 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6300 1000 50  0001 C CNN
+	1    6200 1250
+	1    0    0    -1  
+$EndComp
+Text Label 5650 1250 2    60   ~ 0
+vbus-up
+$Comp
+L Earth #PWR017
+U 1 1 5A5F7A3F
+P 6200 1550
+F 0 "#PWR017" H 6200 1300 50  0001 C CNN
+F 1 "Earth" H 6200 1400 50  0001 C CNN
+F 2 "" H 6200 1550 50  0001 C CNN
+F 3 "~" H 6200 1550 50  0001 C CNN
+	1    6200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR019
+U 1 1 5A5F7AC2
+P 6900 1250
+F 0 "#PWR019" H 6900 1100 50  0001 C CNN
+F 1 "+3.3V" V 6915 1378 50  0000 L CNN
+F 2 "" H 6900 1250 50  0001 C CNN
+F 3 "" H 6900 1250 50  0001 C CNN
+	1    6900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C8
+U 1 1 5A5F7BEC
+P 6700 1400
+F 0 "C8" H 6815 1446 50  0000 L CNN
+F 1 "CP1" H 6815 1355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6700 1400 50  0001 C CNN
+F 3 "" H 6700 1400 50  0001 C CNN
+	1    6700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C7
+U 1 1 5A5F7C56
+P 5750 1400
+F 0 "C7" H 5865 1446 50  0000 L CNN
+F 1 "CP1" H 5865 1355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 5750 1400 50  0001 C CNN
+F 3 "" H 5750 1400 50  0001 C CNN
+	1    5750 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1250 5900 1250
+Connection ~ 5750 1250
+Wire Wire Line
+	6500 1250 6900 1250
+Connection ~ 6700 1250
+$Comp
+L Earth #PWR016
+U 1 1 5A5F7E45
+P 5750 1550
+F 0 "#PWR016" H 5750 1300 50  0001 C CNN
+F 1 "Earth" H 5750 1400 50  0001 C CNN
+F 2 "" H 5750 1550 50  0001 C CNN
+F 3 "~" H 5750 1550 50  0001 C CNN
+	1    5750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR018
+U 1 1 5A5F7E90
+P 6700 1550
+F 0 "#PWR018" H 6700 1300 50  0001 C CNN
+F 1 "Earth" H 6700 1400 50  0001 C CNN
+F 2 "" H 6700 1550 50  0001 C CNN
+F 3 "~" H 6700 1550 50  0001 C CNN
+	1    6700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5A5F8059
+P 6700 1250
+F 0 "#FLG02" H 6700 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6700 1424 50  0000 C CNN
+F 2 "" H 6700 1250 50  0001 C CNN
+F 3 "" H 6700 1250 50  0001 C CNN
+	1    6700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5A5F812B
+P 5750 1250
+F 0 "#FLG01" H 5750 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 1424 50  0000 C CNN
+F 2 "" H 5750 1250 50  0001 C CNN
+F 3 "" H 5750 1250 50  0001 C CNN
+	1    5750 1250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6850 4750 1400 800 
+U 5A5F9C94
+F0 "huble" 60
+F1 "huble.sch" 60
+$EndSheet
+$Comp
+L Conn_01x01 J1
+U 1 1 5A5FAAEF
+P 1750 6600
+F 0 "J1" H 1830 6642 50  0000 L CNN
+F 1 "Conn_01x01" H 1830 6551 50  0000 L CNN
+F 2 "fp:0.9mm_mp" H 1750 6600 50  0001 C CNN
+F 3 "~" H 1750 6600 50  0001 C CNN
+F 4 "dnp" H 1750 6600 60  0001 C CNN "farnell #"
+	1    1750 6600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 6600
+$Comp
+L Conn_01x01 J2
+U 1 1 5A5FAAF8
+P 1750 6800
+F 0 "J2" H 1830 6842 50  0000 L CNN
+F 1 "Conn_01x01" H 1830 6751 50  0000 L CNN
+F 2 "fp:0.9mm_mp" H 1750 6800 50  0001 C CNN
+F 3 "~" H 1750 6800 50  0001 C CNN
+F 4 "dnp" H 1750 6800 60  0001 C CNN "farnell #"
+	1    1750 6800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 6800
+$Comp
+L Conn_01x01 J3
+U 1 1 5A5FAB01
+P 1750 6950
+F 0 "J3" H 1830 6992 50  0000 L CNN
+F 1 "Conn_01x01" H 1830 6901 50  0000 L CNN
+F 2 "fp:0.9mm_mp" H 1750 6950 50  0001 C CNN
+F 3 "~" H 1750 6950 50  0001 C CNN
+F 4 "dnp" H 1750 6950 60  0001 C CNN "farnell #"
+	1    1750 6950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 6950
+$Comp
+L Conn_01x01 J4
+U 1 1 5A5FAB0A
+P 1750 7100
+F 0 "J4" H 1830 7142 50  0000 L CNN
+F 1 "Conn_01x01" H 1830 7051 50  0000 L CNN
+F 2 "fp:2.3mm_mp" H 1750 7100 50  0001 C CNN
+F 3 "~" H 1750 7100 50  0001 C CNN
+F 4 "dnp" H 1750 7100 60  0001 C CNN "farnell #"
+	1    1750 7100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 7100
+Text GLabel 3550 2900 2    60   Input ~ 0
+atmega-usb-p
+Text GLabel 3550 3000 2    60   Input ~ 0
+atmega-usb-n
+Text Notes 2250 750  0    60   ~ 0
+expansion port
+Text Notes 5750 900  0    60   ~ 0
+3.3v reg for usb hub
+$Comp
+L +5V #PWR025
+U 1 1 5A5FE2CC
+P 10600 1700
+F 0 "#PWR025" H 10600 1550 50  0001 C CNN
+F 1 "+5V" H 10615 1873 50  0000 C CNN
+F 2 "" H 10600 1700 50  0001 C CNN
+F 3 "" H 10600 1700 50  0001 C CNN
+	1    10600 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 10600 1700
+Connection ~ 2250 3600
+$EndSCHEMATC
