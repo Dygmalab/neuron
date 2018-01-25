@@ -37,7 +37,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "Huble"
 Date "2017-08-16"
 Rev "1"
@@ -324,8 +324,6 @@ sda
 NoConn ~ 10300 2150
 NoConn ~ 10300 2650
 NoConn ~ 10300 2750
-NoConn ~ 10300 3150
-NoConn ~ 10300 3250
 NoConn ~ 10300 3350
 NoConn ~ 10300 3450
 NoConn ~ 10300 3650
@@ -398,51 +396,51 @@ $EndComp
 $Comp
 L R R9
 U 1 1 59957A5D
-P 2600 3500
-F 0 "R9" V 2680 3500 50  0000 C CNN
-F 1 "4.7k" V 2600 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2530 3500 30  0001 C CNN
-F 3 "" H 2600 3500 30  0000 C CNN
-F 4 "2073784" H 2600 3500 60  0001 C CNN "farnell #"
-	1    2600 3500
+P 4500 3200
+F 0 "R9" V 4580 3200 50  0000 C CNN
+F 1 "4.7k" V 4500 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4430 3200 30  0001 C CNN
+F 3 "" H 4500 3200 30  0000 C CNN
+F 4 "2073784" H 4500 3200 60  0001 C CNN "farnell #"
+	1    4500 3200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R10
 U 1 1 59957B3F
-P 2600 3800
-F 0 "R10" V 2680 3800 50  0000 C CNN
-F 1 "4.7k" V 2600 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2530 3800 30  0001 C CNN
-F 3 "" H 2600 3800 30  0000 C CNN
-F 4 "2073784" H 2600 3800 60  0001 C CNN "farnell #"
-	1    2600 3800
+P 4500 3500
+F 0 "R10" V 4580 3500 50  0000 C CNN
+F 1 "4.7k" V 4500 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4430 3500 30  0001 C CNN
+F 3 "" H 4500 3500 30  0000 C CNN
+F 4 "2073784" H 4500 3500 60  0001 C CNN "farnell #"
+	1    4500 3500
 	0    -1   -1   0   
 $EndComp
-Text Label 2450 3500 2    60   ~ 0
+Text Label 4350 3200 2    60   ~ 0
 sda
-Text Label 2450 3800 2    60   ~ 0
+Text Label 4350 3500 2    60   ~ 0
 scl
 $Comp
 L +5V #PWR032
 U 1 1 59957E8D
-P 2750 3500
-F 0 "#PWR032" H 2750 3350 50  0001 C CNN
-F 1 "+5V" H 2750 3640 50  0000 C CNN
-F 2 "" H 2750 3500 60  0000 C CNN
-F 3 "" H 2750 3500 60  0000 C CNN
-	1    2750 3500
+P 4650 3200
+F 0 "#PWR032" H 4650 3050 50  0001 C CNN
+F 1 "+5V" H 4650 3340 50  0000 C CNN
+F 2 "" H 4650 3200 60  0000 C CNN
+F 3 "" H 4650 3200 60  0000 C CNN
+	1    4650 3200
 	0    1    1    0   
 $EndComp
 $Comp
 L +5V #PWR033
 U 1 1 59957EEC
-P 2750 3800
-F 0 "#PWR033" H 2750 3650 50  0001 C CNN
-F 1 "+5V" H 2750 3940 50  0000 C CNN
-F 2 "" H 2750 3800 60  0000 C CNN
-F 3 "" H 2750 3800 60  0000 C CNN
-	1    2750 3800
+P 4650 3500
+F 0 "#PWR033" H 4650 3350 50  0001 C CNN
+F 1 "+5V" H 4650 3640 50  0000 C CNN
+F 2 "" H 4650 3500 60  0000 C CNN
+F 3 "" H 4650 3500 60  0000 C CNN
+	1    4650 3500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -587,7 +585,7 @@ U 1 1 5A5FB6F8
 P 1200 2350
 F 0 "J7" H 1305 3917 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 1305 3826 50  0000 C CNN
-F 2 "Connectors_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 1350 2350 50  0001 C CNN
+F 2 "fp:usb-c-24smt" H 1350 2350 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1350 2350 50  0001 C CNN
 F 4 "2564554" H 1200 2350 60  0001 C CNN "farnell #"
 	1    1200 2350
@@ -636,7 +634,7 @@ Wire Wire Line
 Connection ~ 1000 3950
 Connection ~ 1100 3950
 Wire Wire Line
-	1800 1050 1800 1350
+	1800 750  1800 1350
 Connection ~ 1800 1150
 Connection ~ 1800 1250
 Connection ~ 1200 3950
@@ -654,13 +652,13 @@ $EndComp
 $Comp
 L +5V #PWR028
 U 1 1 5A5FCC59
-P 1800 1050
-F 0 "#PWR028" H 1800 900 50  0001 C CNN
-F 1 "+5V" H 1800 1190 50  0000 C CNN
-F 2 "" H 1800 1050 60  0000 C CNN
-F 3 "" H 1800 1050 60  0000 C CNN
-	1    1800 1050
-	1    0    0    -1  
+P 2900 750
+F 0 "#PWR028" H 2900 600 50  0001 C CNN
+F 1 "+5V" H 2900 890 50  0000 C CNN
+F 2 "" H 2900 750 60  0000 C CNN
+F 3 "" H 2900 750 60  0000 C CNN
+	1    2900 750 
+	-1   0    0    -1  
 $EndComp
 Connection ~ 1800 1050
 Wire Wire Line
@@ -671,18 +669,6 @@ Text Label 1800 1850 0    60   ~ 0
 usbc-dn
 Text Label 1800 2050 0    60   ~ 0
 usbc-dp
-$Comp
-L USB_C_Receptacle J8
-U 1 1 5A5FD575
-P 1250 5750
-F 0 "J8" H 1355 7317 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 1355 7226 50  0000 C CNN
-F 2 "Connectors_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 1400 5750 50  0001 C CNN
-F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1400 5750 50  0001 C CNN
-F 4 "2564554" H 1250 5750 60  0001 C CNN "farnell #"
-	1    1250 5750
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1850 5050
 NoConn ~ 1850 4950
 NoConn ~ 1850 5750
@@ -700,7 +686,7 @@ Wire Wire Line
 Connection ~ 1050 7350
 Connection ~ 1150 7350
 Wire Wire Line
-	1850 4450 1850 4750
+	1850 4200 1850 4750
 Connection ~ 1850 4550
 Connection ~ 1850 4650
 Connection ~ 1250 7350
@@ -713,17 +699,6 @@ F 1 "Earth" H 1150 7200 50  0001 C CNN
 F 2 "" H 1150 7350 60  0000 C CNN
 F 3 "" H 1150 7350 60  0000 C CNN
 	1    1150 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR029
-U 1 1 5A5FD5AE
-P 1850 4450
-F 0 "#PWR029" H 1850 4300 50  0001 C CNN
-F 1 "+5V" H 1850 4590 50  0000 C CNN
-F 2 "" H 1850 4450 60  0000 C CNN
-F 3 "" H 1850 4450 60  0000 C CNN
-	1    1850 4450
 	1    0    0    -1  
 $EndComp
 Connection ~ 1850 4450
@@ -743,7 +718,7 @@ F 0 "U5" H 4350 6478 50  0000 C CNN
 F 1 "24LC16" H 4350 6387 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4400 5750 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf" H 4350 5900 50  0001 C CNN
-F 4 "1579573" H 4350 6000 60  0001 C CNN "farnell #"
+F 4 "dnp" H 4350 6000 60  0001 C CNN "farnell #"
 	1    4350 6000
 	1    0    0    -1  
 $EndComp
@@ -850,7 +825,7 @@ U 1 1 5A61F551
 P 1800 1650
 F 0 "TP11" V 1754 1878 50  0000 L CNN
 F 1 "TEST" V 1845 1878 50  0000 L CNN
-F 2 "" H 1800 1650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1800 1650 50  0001 C CNN
 F 3 "" H 1800 1650 50  0001 C CNN
 	1    1800 1650
 	0    1    1    0   
@@ -866,4 +841,183 @@ F 3 "" H 9050 4850 60  0000 C CNN
 	1    9050 4850
 	1    0    0    -1  
 $EndComp
+Text Notes 4150 5450 0    60   ~ 0
+1579573
+$Comp
+L R R18
+U 1 1 5A6A2036
+P 2900 1000
+F 0 "R18" H 2970 1046 50  0000 L CNN
+F 1 "10k" H 2970 955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 2830 1000 50  0001 C CNN
+F 3 "" H 2900 1000 50  0000 C CNN
+F 4 "2073784" H 2900 1000 60  0001 C CNN "farnell #"
+	1    2900 1000
+	1    0    0    1   
+$EndComp
+$Comp
+L TEST_1P W1
+U 1 1 5A6A2064
+P 2600 1150
+F 0 "W1" V 2554 1338 50  0000 L CNN
+F 1 "TEST_1P" V 2645 1338 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2800 1150 50  0001 C CNN
+F 3 "" H 2800 1150 50  0000 C CNN
+F 4 "dnp" H 2600 1150 60  0001 C CNN "farnell #"
+	1    2600 1150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2900 750  2800 750 
+Wire Wire Line
+	1800 750  2400 750 
+Wire Wire Line
+	2600 1050 2600 1300
+Wire Wire Line
+	2600 850  2600 700 
+Wire Wire Line
+	2900 750  2900 850 
+Connection ~ 2900 750 
+Connection ~ 2600 1150
+Wire Wire Line
+	2600 1150 2900 1150
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 5A6A2080
+P 2600 850
+F 0 "Q1" V 2943 850 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 2852 850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2800 950 50  0001 C CNN
+F 3 "" H 2600 850 50  0001 C CNN
+F 4 "2061419" H 2600 850 60  0001 C CNN "farnell #"
+	1    2600 850 
+	0    -1   -1   0   
+$EndComp
+Text Label 2600 1300 2    60   ~ 0
+left-switch
+$Comp
+L +5V #PWR029
+U 1 1 5A6A34FA
+P 2950 4200
+F 0 "#PWR029" H 2950 4050 50  0001 C CNN
+F 1 "+5V" H 2950 4340 50  0000 C CNN
+F 2 "" H 2950 4200 60  0000 C CNN
+F 3 "" H 2950 4200 60  0000 C CNN
+	1    2950 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 5A6A3501
+P 2950 4450
+F 0 "R19" H 3020 4496 50  0000 L CNN
+F 1 "10k" H 3020 4405 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 2880 4450 50  0001 C CNN
+F 3 "" H 2950 4450 50  0000 C CNN
+F 4 "2073784" H 2950 4450 60  0001 C CNN "farnell #"
+	1    2950 4450
+	1    0    0    1   
+$EndComp
+$Comp
+L TEST_1P W2
+U 1 1 5A6A3508
+P 2650 4600
+F 0 "W2" V 2604 4788 50  0000 L CNN
+F 1 "TEST_1P" V 2695 4788 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2850 4600 50  0001 C CNN
+F 3 "" H 2850 4600 50  0000 C CNN
+F 4 "dnp" H 2650 4600 60  0001 C CNN "farnell #"
+	1    2650 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2950 4200 2850 4200
+Wire Wire Line
+	1850 4200 2450 4200
+Wire Wire Line
+	2650 4500 2650 4750
+Wire Wire Line
+	2650 4300 2650 4150
+Wire Wire Line
+	2950 4200 2950 4300
+Connection ~ 2950 4200
+Connection ~ 2650 4600
+Wire Wire Line
+	2650 4600 2950 4600
+$Comp
+L Q_PMOS_GSD Q2
+U 1 1 5A6A3517
+P 2650 4300
+F 0 "Q2" V 2993 4300 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 2902 4300 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2850 4400 50  0001 C CNN
+F 3 "" H 2650 4300 50  0001 C CNN
+F 4 "2061419" H 2650 4300 60  0001 C CNN "farnell #"
+	1    2650 4300
+	0    -1   -1   0   
+$EndComp
+Text Label 2650 4750 2    60   ~ 0
+right-switch
+$Comp
+L USB_C_Receptacle J8
+U 1 1 5A5FD575
+P 1250 5750
+F 0 "J8" H 1355 7317 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1355 7226 50  0000 C CNN
+F 2 "fp:usb-c-24smt" H 1400 5750 50  0001 C CNN
+F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1400 5750 50  0001 C CNN
+F 4 "2564554" H 1250 5750 60  0001 C CNN "farnell #"
+	1    1250 5750
+	1    0    0    -1  
+$EndComp
+Text Label 10300 3150 0    60   ~ 0
+left-switch
+Text Label 10300 3250 0    60   ~ 0
+right-switch
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5A6A444A
+P 1800 750
+F 0 "#FLG05" H 1800 845 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 974 50  0000 C CNN
+F 2 "" H 1800 750 50  0000 C CNN
+F 3 "" H 1800 750 50  0000 C CNN
+	1    1800 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5A6A4595
+P 1850 4200
+F 0 "#FLG06" H 1850 4295 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 4424 50  0000 C CNN
+F 2 "" H 1850 4200 50  0000 C CNN
+F 3 "" H 1850 4200 50  0000 C CNN
+	1    1850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5C #PWR?
+U 1 1 5A6A530B
+P 2050 750
+F 0 "#PWR?" H 2050 600 50  0001 C CNN
+F 1 "+5C" H 2065 923 50  0000 C CNN
+F 2 "" H 2050 750 50  0001 C CNN
+F 3 "" H 2050 750 50  0001 C CNN
+	1    2050 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5C #PWR?
+U 1 1 5A6A53AB
+P 2150 4200
+F 0 "#PWR?" H 2150 4050 50  0001 C CNN
+F 1 "+5C" H 2165 4373 50  0000 C CNN
+F 2 "" H 2150 4200 50  0001 C CNN
+F 3 "" H 2150 4200 50  0001 C CNN
+	1    2150 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 4200
+Connection ~ 2050 750 
 $EndSCHEMATC

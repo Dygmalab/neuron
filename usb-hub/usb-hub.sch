@@ -37,7 +37,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -53,7 +53,7 @@ U 1 1 5A5F4969
 P 9950 3000
 F 0 "usbC-up1" H 10055 4567 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 10055 4476 50  0000 C CNN
-F 2 "Connectors_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 10100 3000 50  0001 C CNN
+F 2 "fp:usb-c-24smt" H 10100 3000 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 10100 3000 50  0001 C CNN
 F 4 "2564554" H 9950 3000 60  0001 C CNN "farnell #"
 	1    9950 3000
@@ -65,7 +65,7 @@ U 1 1 5A5F4A49
 P 2950 3900
 F 0 "U1" H 2900 5637 60  0000 C CNN
 F 1 "usb-2412" H 2900 5531 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-28-1EP_5x5mm_Pitch0.5mm" H 2600 4400 60  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2600 4400 60  0001 C CNN
 F 3 "" H 2600 4400 60  0001 C CNN
 F 4 "2292600" H 2950 3900 60  0001 C CNN "farnell #"
 	1    2950 3900
@@ -889,4 +889,6 @@ F 3 "" H 1850 4250 50  0001 C CNN
 	1    1850 4250
 	-1   0    0    1   
 $EndComp
+Text Notes 8950 5200 0    60   ~ 0
+look at 2524075 if hole problems persist with pcbway\n
 $EndSCHEMATC
