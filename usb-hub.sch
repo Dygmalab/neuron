@@ -37,7 +37,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -65,7 +65,7 @@ U 1 1 5A5F4A49
 P 2950 3900
 F 0 "U1" H 2900 5637 60  0000 C CNN
 F 1 "usb-2412" H 2900 5531 60  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2600 4400 60  0001 C CNN
+F 2 "Housings_DFN_QFN:QFN-28-1EP_5x5mm_Pitch0.5mm" H 2600 4400 60  0001 C CNN
 F 3 "" H 2600 4400 60  0001 C CNN
 F 4 "2292600" H 2950 3900 60  0001 C CNN "farnell #"
 	1    2950 3900
@@ -723,58 +723,6 @@ U 5A5F9C94
 F0 "huble" 60
 F1 "huble.sch" 60
 $EndSheet
-$Comp
-L Conn_01x01 J1
-U 1 1 5A5FAAEF
-P 1750 6600
-F 0 "J1" H 1830 6642 50  0000 L CNN
-F 1 "Conn_01x01" H 1830 6551 50  0000 L CNN
-F 2 "fp:0.9mm_mp" H 1750 6600 50  0001 C CNN
-F 3 "~" H 1750 6600 50  0001 C CNN
-F 4 "dnp" H 1750 6600 60  0001 C CNN "farnell #"
-	1    1750 6600
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1550 6600
-$Comp
-L Conn_01x01 J2
-U 1 1 5A5FAAF8
-P 1750 6800
-F 0 "J2" H 1830 6842 50  0000 L CNN
-F 1 "Conn_01x01" H 1830 6751 50  0000 L CNN
-F 2 "fp:0.9mm_mp" H 1750 6800 50  0001 C CNN
-F 3 "~" H 1750 6800 50  0001 C CNN
-F 4 "dnp" H 1750 6800 60  0001 C CNN "farnell #"
-	1    1750 6800
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1550 6800
-$Comp
-L Conn_01x01 J3
-U 1 1 5A5FAB01
-P 1750 6950
-F 0 "J3" H 1830 6992 50  0000 L CNN
-F 1 "Conn_01x01" H 1830 6901 50  0000 L CNN
-F 2 "fp:0.9mm_mp" H 1750 6950 50  0001 C CNN
-F 3 "~" H 1750 6950 50  0001 C CNN
-F 4 "dnp" H 1750 6950 60  0001 C CNN "farnell #"
-	1    1750 6950
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1550 6950
-$Comp
-L Conn_01x01 J4
-U 1 1 5A5FAB0A
-P 1750 7100
-F 0 "J4" H 1830 7142 50  0000 L CNN
-F 1 "Conn_01x01" H 1830 7051 50  0000 L CNN
-F 2 "fp:2.3mm_mp" H 1750 7100 50  0001 C CNN
-F 3 "~" H 1750 7100 50  0001 C CNN
-F 4 "dnp" H 1750 7100 60  0001 C CNN "farnell #"
-	1    1750 7100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1550 7100
 Text GLabel 3550 2900 2    60   Input ~ 0
 atmega-usb-p
 Text GLabel 3550 3000 2    60   Input ~ 0
