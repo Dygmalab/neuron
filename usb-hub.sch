@@ -55,7 +55,7 @@ F 0 "usbC-up1" H 10055 4567 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 10055 4476 50  0000 C CNN
 F 2 "fp:usb-c-24smt" H 10100 3000 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 10100 3000 50  0001 C CNN
-F 4 "2564554" H 9950 3000 60  0001 C CNN "farnell #"
+F 4 "2524075" H 9950 3000 60  0001 C CNN "farnell #"
 	1    9950 3000
 	1    0    0    -1  
 $EndComp
@@ -104,7 +104,7 @@ L Crystal_GND24 Y1
 U 1 1 5A5F4E5A
 P 1450 5000
 F 0 "Y1" V 1404 5241 50  0000 L CNN
-F 1 "Crystal_GND24" V 1495 5241 50  0000 L CNN
+F 1 "24mhz" V 1495 5241 50  0000 L CNN
 F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1450 5000 50  0001 C CNN
 F 3 "" H 1450 5000 50  0001 C CNN
 F 4 "1712842" H 1450 5000 60  0001 C CNN "farnell #"
@@ -129,7 +129,7 @@ F 0 "C3" H 1565 5346 50  0000 L CNN
 F 1 "20pf" H 1565 5255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1488 5150 50  0001 C CNN
 F 3 "" H 1450 5300 50  0001 C CNN
-F 4 "1758948" H 1450 5300 60  0001 C CNN "farnell #"
+F 4 "2581087" H 1450 5300 60  0001 C CNN "farnell #"
 	1    1450 5300
 	1    0    0    -1  
 $EndComp
@@ -141,7 +141,7 @@ F 0 "C2" H 1565 4746 50  0000 L CNN
 F 1 "20pf" H 1565 4655 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1488 4550 50  0001 C CNN
 F 3 "" H 1450 4700 50  0001 C CNN
-F 4 "1758948" H 1450 4700 60  0001 C CNN "farnell #"
+F 4 "2581087" H 1450 4700 60  0001 C CNN "farnell #"
 	1    1450 4700
 	1    0    0    -1  
 $EndComp
@@ -238,7 +238,7 @@ F 0 "R5" V 3643 4400 50  0000 C CNN
 F 1 "12k" V 3734 4400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3780 4400 50  0001 C CNN
 F 3 "" H 3850 4400 50  0001 C CNN
-F 4 "9331760" H 3850 4400 60  0001 C CNN "farnell #"
+F 4 "1100321" H 3850 4400 60  0001 C CNN "farnell #"
 	1    3850 4400
 	0    1    1    0   
 $EndComp
@@ -655,18 +655,6 @@ F 3 "" H 6900 1250 50  0001 C CNN
 	1    6900 1250
 	0    1    1    0   
 $EndComp
-$Comp
-L CP1 C8
-U 1 1 5A5F7BEC
-P 6700 1400
-F 0 "C8" H 6815 1446 50  0000 L CNN
-F 1 "47u" H 6815 1355 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6700 1400 50  0001 C CNN
-F 3 "" H 6700 1400 50  0001 C CNN
-F 4 "1432351" H 6700 1400 60  0001 C CNN "farnell #"
-	1    6700 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 1250 5900 1250
 Connection ~ 5750 1250
@@ -793,7 +781,6 @@ F 0 "R6" H 10630 2254 50  0000 R CNN
 F 1 "5.1k" H 10630 2345 50  0000 R CNN
 F 2 "Resistors_SMD:R_0805" V 10630 2300 50  0001 C CNN
 F 3 "" H 10700 2300 50  0001 C CNN
-F 4 "2447680" H 10700 2300 60  0001 C CNN "farnell #"
 	1    10700 2300
 	0    -1   -1   0   
 $EndComp
@@ -839,4 +826,16 @@ F 3 "" H 1850 4250 50  0001 C CNN
 $EndComp
 Text Notes 8950 5200 0    60   ~ 0
 look at 2524075 if hole problems persist with pcbway\n
+$Comp
+L CP C?
+U 1 1 5A7D7C8F
+P 6700 1400
+F 0 "C?" H 6818 1446 50  0000 L CNN
+F 1 "47u 6.3v" H 6818 1355 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 6738 1250 50  0001 C CNN
+F 3 "" H 6700 1400 50  0000 C CNN
+F 4 "1432351" H 6700 1400 60  0001 C CNN "farnell #"
+	1    6700 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

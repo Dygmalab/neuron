@@ -496,7 +496,6 @@ F 0 "R14" V 8630 5400 50  0000 C CNN
 F 1 "100R" V 8550 5400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 5400 30  0001 C CNN
 F 3 "" H 8550 5400 30  0000 C CNN
-F 4 "2447609" H 8550 5400 60  0001 C CNN "farnell #"
 	1    8550 5400
 	0    1    1    0   
 $EndComp
@@ -508,7 +507,6 @@ F 0 "R15" V 8630 5700 50  0000 C CNN
 F 1 "60R" V 8550 5700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 5700 30  0001 C CNN
 F 3 "" H 8550 5700 30  0000 C CNN
-F 4 "2447609" H 8550 5700 60  0001 C CNN "farnell #"
 	1    8550 5700
 	0    1    1    0   
 $EndComp
@@ -520,7 +518,6 @@ F 0 "R16" V 8630 6000 50  0000 C CNN
 F 1 "60R" V 8550 6000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 6000 30  0001 C CNN
 F 3 "" H 8550 6000 30  0000 C CNN
-F 4 "2447609" H 8550 6000 60  0001 C CNN "farnell #"
 	1    8550 6000
 	0    1    1    0   
 $EndComp
@@ -587,7 +584,7 @@ F 0 "J7" H 1305 3917 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 1305 3826 50  0000 C CNN
 F 2 "fp:usb-c-24smt" H 1350 2350 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1350 2350 50  0001 C CNN
-F 4 "2564554" H 1200 2350 60  0001 C CNN "farnell #"
+F 4 "2524075" H 1200 2350 60  0001 C CNN "farnell #"
 	1    1200 2350
 	1    0    0    -1  
 $EndComp
@@ -785,7 +782,7 @@ L Crystal_GND24 Y2
 U 1 1 5A60ACAE
 P 7300 3800
 F 0 "Y2" V 7254 4041 50  0000 L CNN
-F 1 "Crystal_GND24" V 7345 4041 50  0000 L CNN
+F 1 "16mhz" V 7345 4041 50  0000 L CNN
 F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 7300 3800 50  0001 C CNN
 F 3 "" H 7300 3800 50  0001 C CNN
 F 4 "2471827" H 7300 3800 60  0001 C CNN "farnell #"
@@ -966,7 +963,7 @@ F 0 "J8" H 1355 7317 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 1355 7226 50  0000 C CNN
 F 2 "fp:usb-c-24smt" H 1400 5750 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1400 5750 50  0001 C CNN
-F 4 "2564554" H 1250 5750 60  0001 C CNN "farnell #"
+F 4 "2524075" H 1250 5750 60  0001 C CNN "farnell #"
 	1    1250 5750
 	1    0    0    -1  
 $EndComp
