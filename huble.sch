@@ -48,26 +48,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R R13
-U 1 1 599454A2
-P 6800 2650
-F 0 "R13" V 6880 2650 50  0000 C CNN
-F 1 "22r" V 6800 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6730 2650 30  0001 C CNN
-F 3 "" H 6800 2650 30  0000 C CNN
-F 4 "2447609" H 6800 2650 60  0001 C CNN "farnell #"
-	1    6800 2650
-	0    1    1    0   
-$EndComp
-$Comp
 L C C10
 U 1 1 599454AA
 P 6000 1300
 F 0 "C10" H 6025 1400 50  0000 L CNN
-F 1 "4.7u" H 6025 1200 50  0000 L CNN
+F 1 "4.7uF, ceramic, 6v, 10%, x5r" H 6025 1200 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 6038 1150 30  0001 C CNN
 F 3 "" H 6000 1300 60  0000 C CNN
 F 4 "1709210" H 6000 1300 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    6000 1300
 	1    0    0    -1  
 $EndComp
@@ -76,10 +65,11 @@ L C C11
 U 1 1 599454B2
 P 6350 1300
 F 0 "C11" H 6375 1400 50  0000 L CNN
-F 1 "0.1u" H 6375 1200 50  0000 L CNN
+F 1 "0.1uF, ceramic, 6v, 10%, x5r" H 6375 1200 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 6388 1150 30  0001 C CNN
 F 3 "" H 6350 1300 60  0000 C CNN
 F 4 "1759167" H 6350 1300 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    6350 1300
 	1    0    0    -1  
 $EndComp
@@ -146,18 +136,6 @@ F 3 "" H 7850 2850 60  0000 C CNN
 	1    7850 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R12
-U 1 1 599454ED
-P 6800 2550
-F 0 "R12" V 6880 2550 50  0000 C CNN
-F 1 "22r" V 6800 2550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6730 2550 30  0001 C CNN
-F 3 "" H 6800 2550 30  0000 C CNN
-F 4 "2447609" H 6800 2550 60  0001 C CNN "farnell #"
-	1    6800 2550
-	0    1    1    0   
-$EndComp
 Text Label 7850 3150 2    60   ~ 0
 reset
 $Comp
@@ -172,25 +150,15 @@ F 3 "" H 6250 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR036
-U 1 1 59945503
-P 6550 4000
-F 0 "#PWR036" H 6550 3750 50  0001 C CNN
-F 1 "Earth" H 6550 3850 50  0001 C CNN
-F 2 "" H 6550 4000 60  0000 C CNN
-F 3 "" H 6550 4000 60  0000 C CNN
-	1    6550 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R11
 U 1 1 5994550A
 P 6550 5750
 F 0 "R11" V 6630 5750 50  0000 C CNN
-F 1 "10k" V 6550 5750 50  0000 C CNN
+F 1 "10k, 125mW, 5%" V 6550 5750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6480 5750 30  0001 C CNN
 F 3 "" H 6550 5750 30  0000 C CNN
-F 4 "2447553" H 6550 5750 60  0001 C CNN "farnell #"
+F 4 "" H 6550 5750 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    6550 5750
 	-1   0    0    1   
 $EndComp
@@ -212,10 +180,11 @@ L C C14
 U 1 1 59945527
 P 7450 3000
 F 0 "C14" H 7475 3100 50  0000 L CNN
-F 1 "1u" H 7475 2900 50  0000 L CNN
+F 1 "1uF, ceramic, 6v, 10%, x5r" H 7475 2900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 7488 2850 30  0001 C CNN
 F 3 "" H 7450 3000 60  0000 C CNN
 F 4 "1759422" H 7450 3000 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    7450 3000
 	1    0    0    -1  
 $EndComp
@@ -255,11 +224,7 @@ Wire Wire Line
 	7850 2250 7350 2250
 Connection ~ 7350 2250
 Wire Wire Line
-	7050 3600 7850 3600
-Wire Wire Line
 	7850 3600 7850 3750
-Wire Wire Line
-	7050 4000 7850 4000
 Wire Wire Line
 	7850 4000 7850 3850
 Connection ~ 7350 1950
@@ -308,6 +273,7 @@ F 1 "CONN_02X03" H 7650 800 50  0000 C CNN
 F 2 "Tag-Connect:TC2030-MCP-NL" H 7650 -200 60  0001 C CNN
 F 3 "" H 7650 -200 60  0000 C CNN
 F 4 "dnp" H 7650 1000 60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    7650 1000
 	1    0    0    -1  
 $EndComp
@@ -340,6 +306,7 @@ F 1 "CONN_01X04" H 2678 2600 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2600 2650 50  0001 C CNN
 F 3 "" H 2600 2650 50  0000 C CNN
 F 4 "dnp" H 2600 2650 60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    2600 2650
 	1    0    0    -1  
 $EndComp
@@ -398,10 +365,11 @@ L R R9
 U 1 1 59957A5D
 P 4500 3200
 F 0 "R9" V 4580 3200 50  0000 C CNN
-F 1 "4.7k" V 4500 3200 50  0000 C CNN
+F 1 "4.7k, 125mW, 5%" V 4500 3200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4430 3200 30  0001 C CNN
 F 3 "" H 4500 3200 30  0000 C CNN
 F 4 "2073784" H 4500 3200 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    4500 3200
 	0    -1   -1   0   
 $EndComp
@@ -410,10 +378,11 @@ L R R10
 U 1 1 59957B3F
 P 4500 3500
 F 0 "R10" V 4580 3500 50  0000 C CNN
-F 1 "4.7k" V 4500 3500 50  0000 C CNN
+F 1 "4.7k, 125mW, 5%" V 4500 3500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4430 3500 30  0001 C CNN
 F 3 "" H 4500 3500 30  0000 C CNN
 F 4 "2073784" H 4500 3500 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    4500 3500
 	0    -1   -1   0   
 $EndComp
@@ -448,10 +417,12 @@ L CP C9
 U 1 1 59DF3911
 P 5650 1300
 F 0 "C9" H 5768 1346 50  0000 L CNN
-F 1 "47u 6.3v" H 5768 1255 50  0000 L CNN
+F 1 "47uF, 6.3v, 10%, tantalum" H 5768 1255 50  0000 L CNN
 F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 5688 1150 50  0001 C CNN
 F 3 "" H 5650 1300 50  0000 C CNN
 F 4 "1432351" H 5650 1300 60  0001 C CNN "farnell #"
+F 5 "AVX" H 0   0   60  0001 C CNN "supplier"
+F 6 "TAJC476K006RNJ " H 0   0   60  0001 C CNN "supplier PN"
 	1    5650 1300
 	1    0    0    -1  
 $EndComp
@@ -460,9 +431,10 @@ L rgbled U3
 U 1 1 5A33AC9D
 P 8700 5900
 F 0 "U3" H 8532 6039 60  0000 R CNN
-F 1 "rgbled" H 8532 5933 60  0000 R CNN
+F 1 "4 pin RGB led, com anode, red: 500mcd 620nm. Green: 1000mcd 520nm. Blue: 500mcd 460nm." H 8532 5933 60  0000 R CNN
 F 2 "fp:3528-4p" V 8700 5950 60  0001 C CNN
 F 3 "" V 8700 5950 60  0001 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    8700 5900
 	1    0    0    -1  
 $EndComp
@@ -493,9 +465,10 @@ L R R14
 U 1 1 5A33B200
 P 8550 5400
 F 0 "R14" V 8630 5400 50  0000 C CNN
-F 1 "100R" V 8550 5400 50  0000 C CNN
+F 1 "100R, 125mW, 5%" V 8550 5400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 5400 30  0001 C CNN
 F 3 "" H 8550 5400 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    8550 5400
 	0    1    1    0   
 $EndComp
@@ -504,9 +477,10 @@ L R R15
 U 1 1 5A33B2F6
 P 8550 5700
 F 0 "R15" V 8630 5700 50  0000 C CNN
-F 1 "60R" V 8550 5700 50  0000 C CNN
+F 1 "60R, 125mW, 5%" V 8550 5700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 5700 30  0001 C CNN
 F 3 "" H 8550 5700 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    8550 5700
 	0    1    1    0   
 $EndComp
@@ -515,9 +489,10 @@ L R R16
 U 1 1 5A33B33C
 P 8550 6000
 F 0 "R16" V 8630 6000 50  0000 C CNN
-F 1 "60R" V 8550 6000 50  0000 C CNN
+F 1 "60R, 125mW, 5%" V 8550 6000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 6000 30  0001 C CNN
 F 3 "" H 8550 6000 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    8550 6000
 	0    1    1    0   
 $EndComp
@@ -526,10 +501,12 @@ L ATmega32U4-RESCUE-huble U4
 U 1 1 5994549A
 P 9100 3300
 F 0 "U4" H 8200 5000 60  0000 C CNN
-F 1 "ATmega32U4" H 8450 1750 60  0000 C CNN
+F 1 "atmel samd21g" H 8450 1750 60  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-44-1EP_7x7mm_Pitch0.5mm" H 10300 4400 60  0001 C CNN
 F 3 "" H 10300 4400 60  0000 C CNN
-F 4 "2425127" H 9100 3300 60  0001 C CNN "farnell #"
+F 4 "" H 9100 3300 60  0001 C CNN "farnell #"
+F 5 "microchip" H 0   0   60  0001 C CNN "supplier"
+F 6 "ATSAMD21G18A-MU" H 0   0   60  0001 C CNN "supplier PN"
 	1    9100 3300
 	1    0    0    -1  
 $EndComp
@@ -540,51 +517,23 @@ pwm_g
 Text Label 10300 2450 0    60   ~ 0
 pwm_b
 NoConn ~ 10300 3550
-$Comp
-L C C12
-U 1 1 5A4CBF41
-P 6900 3600
-F 0 "C12" H 6925 3700 50  0000 L CNN
-F 1 "20pf" H 6925 3500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6938 3450 30  0001 C CNN
-F 3 "" H 6900 3600 60  0000 C CNN
-F 4 "1758948" H 6900 3600 60  0001 C CNN "farnell #"
-	1    6900 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L C C13
-U 1 1 5A4CBFDC
-P 6900 4000
-F 0 "C13" H 6925 4100 50  0000 L CNN
-F 1 "20pf" H 6925 3900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6938 3850 30  0001 C CNN
-F 3 "" H 6900 4000 60  0000 C CNN
-F 4 "1758948" H 6900 4000 60  0001 C CNN "farnell #"
-	1    6900 4000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6750 3600 6750 4000
-Wire Wire Line
-	6750 4000 6550 4000
-Text Notes 5300 4250 0    60   ~ 0
-load cap is 20pf. assume stray cap is 5pf, so use 30pf caps
 Wire Wire Line
 	7950 1100 8000 1100
-Text GLabel 6650 2550 0    60   Input ~ 0
+Text GLabel 6950 2550 0    60   Input ~ 0
 atmega-usb-p
-Text GLabel 6650 2650 0    60   Input ~ 0
+Text GLabel 6950 2650 0    60   Input ~ 0
 atmega-usb-n
 $Comp
 L USB_C_Receptacle J7
 U 1 1 5A5FB6F8
 P 1200 2350
 F 0 "J7" H 1305 3917 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 1305 3826 50  0000 C CNN
+F 1 "USB C type 2.0 SMT 16pin" H 1305 3826 50  0000 C CNN
 F 2 "fp:usb-c-24smt" H 1350 2350 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1350 2350 50  0001 C CNN
-F 4 "2524075" H 1200 2350 60  0001 C CNN "farnell #"
+F 4 "" H 1200 2350 60  0001 C CNN "farnell #"
+F 5 "contact technology corp" H 0   0   60  0001 C CNN "supplier"
+F 6 "sbc-160s-202-s338" H 0   0   60  0001 C CNN "supplier PN"
 	1    1200 2350
 	1    0    0    -1  
 $EndComp
@@ -600,7 +549,8 @@ F 0 "R7" V 2193 1850 50  0000 C CNN
 F 1 "0R" V 2284 1850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2330 1850 50  0001 C CNN
 F 3 "" H 2400 1850 50  0001 C CNN
-F 4 "9333681" H 2400 1850 60  0001 C CNN "farnell #"
+F 4 "" H 2400 1850 60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    2400 1850
 	0    1    1    0   
 $EndComp
@@ -612,7 +562,8 @@ F 0 "R8" V 2193 2050 50  0000 C CNN
 F 1 "0R" V 2284 2050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2330 2050 50  0001 C CNN
 F 3 "" H 2400 2050 50  0001 C CNN
-F 4 "9333681" H 2400 2050 60  0001 C CNN "farnell #"
+F 4 "" H 2400 2050 60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    2400 2050
 	0    1    1    0   
 $EndComp
@@ -707,96 +658,7 @@ Text Label 1850 5250 0    60   ~ 0
 usbc-dn
 Text Label 1850 5450 0    60   ~ 0
 usbc-dp
-$Comp
-L 24LC16 U5
-U 1 1 5A5FF060
-P 4350 6000
-F 0 "U5" H 4350 6478 50  0000 C CNN
-F 1 "24LC16" H 4350 6387 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4400 5750 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf" H 4350 5900 50  0001 C CNN
-F 4 "dnp" H 4350 6000 60  0001 C CNN "farnell #"
-	1    4350 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR045
-U 1 1 5A5FF355
-P 4350 6300
-F 0 "#PWR045" H 4350 6050 50  0001 C CNN
-F 1 "Earth" H 4350 6150 50  0001 C CNN
-F 2 "" H 4350 6300 60  0000 C CNN
-F 3 "" H 4350 6300 60  0000 C CNN
-	1    4350 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR046
-U 1 1 5A5FF398
-P 4350 5700
-F 0 "#PWR046" H 4350 5550 50  0001 C CNN
-F 1 "+5V" H 4350 5840 50  0000 C CNN
-F 2 "" H 4350 5700 60  0000 C CNN
-F 3 "" H 4350 5700 60  0000 C CNN
-	1    4350 5700
-	1    0    0    -1  
-$EndComp
-Text Label 4750 6000 0    60   ~ 0
-scl
-Text Label 4750 5900 0    60   ~ 0
-sda
-$Comp
-L Earth #PWR047
-U 1 1 5A5FF44F
-P 4800 6250
-F 0 "#PWR047" H 4800 6000 50  0001 C CNN
-F 1 "Earth" H 4800 6100 50  0001 C CNN
-F 2 "" H 4800 6250 60  0000 C CNN
-F 3 "" H 4800 6250 60  0000 C CNN
-	1    4800 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 6100 4800 6100
-Wire Wire Line
-	4800 6100 4800 6250
-Text Notes 3750 5350 0    60   ~ 0
-256kbit eeprom for extra layers
-Wire Wire Line
-	3950 5900 3950 6200
-Connection ~ 3950 6000
-$Comp
-L Earth #PWR048
-U 1 1 5A5FFEC8
-P 3950 6200
-F 0 "#PWR048" H 3950 5950 50  0001 C CNN
-F 1 "Earth" H 3950 6050 50  0001 C CNN
-F 2 "" H 3950 6200 60  0000 C CNN
-F 3 "" H 3950 6200 60  0000 C CNN
-	1    3950 6200
-	1    0    0    -1  
-$EndComp
-Connection ~ 3950 6100
-$Comp
-L Crystal_GND24 Y2
-U 1 1 5A60ACAE
-P 7300 3800
-F 0 "Y2" V 7254 4041 50  0000 L CNN
-F 1 "16mhz" V 7345 4041 50  0000 L CNN
-F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 7300 3800 50  0001 C CNN
-F 3 "" H 7300 3800 50  0001 C CNN
-F 4 "2471827" H 7300 3800 60  0001 C CNN "farnell #"
-	1    7300 3800
-	0    1    1    0   
-$EndComp
-NoConn ~ 7100 3800
 NoConn ~ 7500 3800
-Wire Wire Line
-	7300 3650 7300 3600
-Connection ~ 7300 3600
-Wire Wire Line
-	7300 3950 7300 4000
-Connection ~ 7300 4000
 Wire Wire Line
 	1800 1850 1800 1950
 Wire Wire Line
@@ -809,10 +671,11 @@ $Comp
 L TEST TP3
 U 1 1 5A61F476
 P 1800 1550
-F 0 "TP3" V 1754 1778 50  0000 L CNN
-F 1 "TEST" V 1845 1778 50  0000 L CNN
+F 0 "TP3" V 1750 1950 50  0000 L CNN
+F 1 "TEST" V 1700 1650 50  0000 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1800 1550 50  0001 C CNN
 F 3 "" H 1800 1550 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    1800 1550
 	0    1    1    0   
 $EndComp
@@ -820,10 +683,11 @@ $Comp
 L TEST TP11
 U 1 1 5A61F551
 P 1800 1650
-F 0 "TP11" V 1754 1878 50  0000 L CNN
+F 0 "TP11" V 1750 1950 50  0000 L CNN
 F 1 "TEST" V 1845 1878 50  0000 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1800 1650 50  0001 C CNN
 F 3 "" H 1800 1650 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    1800 1650
 	0    1    1    0   
 $EndComp
@@ -838,17 +702,16 @@ F 3 "" H 9050 4850 60  0000 C CNN
 	1    9050 4850
 	1    0    0    -1  
 $EndComp
-Text Notes 4150 5450 0    60   ~ 0
-1579573
 $Comp
 L R R18
 U 1 1 5A6A2036
 P 2900 1000
 F 0 "R18" H 2970 1046 50  0000 L CNN
-F 1 "10k" H 2970 955 50  0000 L CNN
+F 1 "10k, 125mW, 5%" H 2970 955 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 2830 1000 50  0001 C CNN
 F 3 "" H 2900 1000 50  0000 C CNN
-F 4 "2073784" H 2900 1000 60  0001 C CNN "farnell #"
+F 4 "" H 2900 1000 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    2900 1000
 	1    0    0    1   
 $EndComp
@@ -861,6 +724,7 @@ F 1 "TEST_1P" V 2645 1338 50  0000 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2800 1150 50  0001 C CNN
 F 3 "" H 2800 1150 50  0000 C CNN
 F 4 "dnp" H 2600 1150 60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    2600 1150
 	0    -1   1    0   
 $EndComp
@@ -883,10 +747,12 @@ L Q_PMOS_GSD Q1
 U 1 1 5A6A2080
 P 2600 850
 F 0 "Q1" V 2943 850 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 2852 850 50  0000 C CNN
+F 1 "PMOS, -3.6A, 0.02R" V 2852 850 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 2800 950 50  0001 C CNN
 F 3 "" H 2600 850 50  0001 C CNN
 F 4 "2061419" H 2600 850 60  0001 C CNN "farnell #"
+F 5 "diodes inc" H 0   0   60  0001 C CNN "supplier"
+F 6 "DMP2035U" H 0   0   60  0001 C CNN "supplier PN"
 	1    2600 850 
 	0    -1   -1   0   
 $EndComp
@@ -908,10 +774,11 @@ L R R19
 U 1 1 5A6A3501
 P 2950 4450
 F 0 "R19" H 3020 4496 50  0000 L CNN
-F 1 "10k" H 3020 4405 50  0000 L CNN
+F 1 "10k, 125mW, 5%" H 3020 4405 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 2880 4450 50  0001 C CNN
 F 3 "" H 2950 4450 50  0000 C CNN
-F 4 "2073784" H 2950 4450 60  0001 C CNN "farnell #"
+F 4 "" H 2950 4450 60  0001 C CNN "farnell #"
+F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    2950 4450
 	1    0    0    1   
 $EndComp
@@ -924,6 +791,7 @@ F 1 "TEST_1P" V 2695 4788 50  0000 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2850 4600 50  0001 C CNN
 F 3 "" H 2850 4600 50  0000 C CNN
 F 4 "dnp" H 2650 4600 60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    2650 4600
 	0    -1   1    0   
 $EndComp
@@ -946,10 +814,12 @@ L Q_PMOS_GSD Q2
 U 1 1 5A6A3517
 P 2650 4300
 F 0 "Q2" V 2993 4300 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 2902 4300 50  0000 C CNN
+F 1 "PMOS, -3.6A, 0.02R" V 2902 4300 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 2850 4400 50  0001 C CNN
 F 3 "" H 2650 4300 50  0001 C CNN
 F 4 "2061419" H 2650 4300 60  0001 C CNN "farnell #"
+F 5 "diodes inc" H 0   0   60  0001 C CNN "supplier"
+F 6 "DMP2035U" H 0   0   60  0001 C CNN "supplier PN"
 	1    2650 4300
 	0    -1   -1   0   
 $EndComp
@@ -960,10 +830,12 @@ L USB_C_Receptacle J8
 U 1 1 5A5FD575
 P 1250 5750
 F 0 "J8" H 1355 7317 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 1355 7226 50  0000 C CNN
+F 1 "USB C type 2.0 SMT 16pin" H 1355 7226 50  0000 C CNN
 F 2 "fp:usb-c-24smt" H 1400 5750 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1400 5750 50  0001 C CNN
-F 4 "2524075" H 1250 5750 60  0001 C CNN "farnell #"
+F 4 "" H 1250 5750 60  0001 C CNN "farnell #"
+F 5 "contact technology corp" H 0   0   60  0001 C CNN "supplier"
+F 6 "sbc-160s-202-s338" H 0   0   60  0001 C CNN "supplier PN"
 	1    1250 5750
 	1    0    0    -1  
 $EndComp
@@ -1017,4 +889,148 @@ F 3 "" H 2150 4200 50  0001 C CNN
 $EndComp
 Connection ~ 2150 4200
 Connection ~ 2050 750 
+Text Notes 3050 800  0    60   ~ 0
+will need level conversion if switching to 3.3v arm
+Text Notes 2150 3800 0    60   ~ 0
+can't use the same power flag on both lines, or they get connected together!
+$Comp
+L rgbled U5
+U 1 1 5A8C8941
+P 9800 5950
+F 0 "U5" H 9632 6089 60  0000 R CNN
+F 1 "4 pin RGB led, com anode, red: 500mcd 620nm. Green: 1000mcd 520nm. Blue: 500mcd 460nm." H 9632 5983 60  0000 R CNN
+F 2 "fp:3528-4p" V 9800 6000 60  0001 C CNN
+F 3 "" V 9800 6000 60  0001 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    9800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR045
+U 1 1 5A8C8947
+P 10100 5650
+F 0 "#PWR045" H 10100 5500 50  0001 C CNN
+F 1 "+5V" H 10100 5790 50  0000 C CNN
+F 2 "" H 10100 5650 60  0000 C CNN
+F 3 "" H 10100 5650 60  0000 C CNN
+	1    10100 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5650 10000 5650
+Wire Wire Line
+	10000 5650 10000 6250
+Connection ~ 10000 5950
+Text Label 9500 5450 2    60   ~ 0
+pwm_r
+Text Label 9500 5750 2    60   ~ 0
+pwm_g
+Text Label 9500 6050 2    60   ~ 0
+pwm_b
+$Comp
+L R R12
+U 1 1 5A8C8953
+P 9650 5450
+F 0 "R12" V 9730 5450 50  0000 C CNN
+F 1 "100R, 125mW, 5%" V 9650 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9580 5450 30  0001 C CNN
+F 3 "" H 9650 5450 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    9650 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 5A8C8959
+P 9650 5750
+F 0 "R13" V 9730 5750 50  0000 C CNN
+F 1 "60R, 125mW, 5%" V 9650 5750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9580 5750 30  0001 C CNN
+F 3 "" H 9650 5750 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    9650 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R20
+U 1 1 5A8C895F
+P 9650 6050
+F 0 "R20" V 9730 6050 50  0000 C CNN
+F 1 "60R, 125mW, 5%" V 9650 6050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9580 6050 30  0001 C CNN
+F 3 "" H 9650 6050 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    9650 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L rgbled U6
+U 1 1 5A8C8A51
+P 10800 5900
+F 0 "U6" H 10632 6039 60  0000 R CNN
+F 1 "4 pin RGB led, com anode, red: 500mcd 620nm. Green: 1000mcd 520nm. Blue: 500mcd 460nm." H 10632 5933 60  0000 R CNN
+F 2 "fp:3528-4p" V 10800 5950 60  0001 C CNN
+F 3 "" V 10800 5950 60  0001 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    10800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR046
+U 1 1 5A8C8A57
+P 11100 5600
+F 0 "#PWR046" H 11100 5450 50  0001 C CNN
+F 1 "+5V" H 11100 5740 50  0000 C CNN
+F 2 "" H 11100 5600 60  0000 C CNN
+F 3 "" H 11100 5600 60  0000 C CNN
+	1    11100 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11100 5600 11000 5600
+Wire Wire Line
+	11000 5600 11000 6200
+Connection ~ 11000 5900
+Text Label 10500 5400 2    60   ~ 0
+pwm_r
+Text Label 10500 5700 2    60   ~ 0
+pwm_g
+Text Label 10500 6000 2    60   ~ 0
+pwm_b
+$Comp
+L R R21
+U 1 1 5A8C8A63
+P 10650 5400
+F 0 "R21" V 10730 5400 50  0000 C CNN
+F 1 "100R, 125mW, 5%" V 10650 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10580 5400 30  0001 C CNN
+F 3 "" H 10650 5400 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    10650 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R22
+U 1 1 5A8C8A69
+P 10650 5700
+F 0 "R22" V 10730 5700 50  0000 C CNN
+F 1 "60R, 125mW, 5%" V 10650 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10580 5700 30  0001 C CNN
+F 3 "" H 10650 5700 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    10650 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R23
+U 1 1 5A8C8A6F
+P 10650 6000
+F 0 "R23" V 10730 6000 50  0000 C CNN
+F 1 "60R, 125mW, 5%" V 10650 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10580 6000 30  0001 C CNN
+F 3 "" H 10650 6000 30  0000 C CNN
+F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+	1    10650 6000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
