@@ -1,0 +1,9 @@
+; pcb config
+[board]
+mask_color = white
+silk_color = black
+material = FR4
+thickness = 0.8
+
+[logo]
+logo = ../Dygma_logo_color.png
