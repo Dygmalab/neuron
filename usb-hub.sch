@@ -118,7 +118,7 @@ F 0 "C3" H 1565 5346 50  0000 L CNN
 F 1 "20pf, ceramic, 6v, 5%" H 1565 5255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1488 5150 50  0001 C CNN
 F 3 "" H 1450 5300 50  0001 C CNN
-F 4 "2581087" H 1450 5300 60  0001 C CNN "farnell #"
+F 4 "1865475" H 1450 5300 60  0001 C CNN "farnell #"
 F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    1450 5300
 	1    0    0    -1  
@@ -131,7 +131,7 @@ F 0 "C2" H 1565 4746 50  0000 L CNN
 F 1 "20pf, ceramic, 6v, 5%" H 1565 4655 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1488 4550 50  0001 C CNN
 F 3 "" H 1450 4700 50  0001 C CNN
-F 4 "2581087" H 1450 4700 60  0001 C CNN "farnell #"
+F 4 "1865475" H 1450 4700 60  0001 C CNN "farnell #"
 F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    1450 4700
 	1    0    0    -1  
@@ -178,6 +178,7 @@ F 1 "10k, 125mW, 5%" V 3734 4100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3780 4100 50  0001 C CNN
 F 3 "" H 3850 4100 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2447230" H 0   0   60  0001 C CNN "farnell #"
 	1    3850 4100
 	0    1    1    0   
 $EndComp
@@ -190,6 +191,7 @@ F 1 "10k, 125mW, 5%" V 3734 4200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3780 4200 50  0001 C CNN
 F 3 "" H 3850 4200 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2447230" H 0   0   60  0001 C CNN "farnell #"
 	1    3850 4200
 	0    1    1    0   
 $EndComp
@@ -227,8 +229,11 @@ F 0 "R5" V 3643 4400 50  0000 C CNN
 F 1 "12k, 125mW, 5%" V 3734 4400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3780 4400 50  0001 C CNN
 F 3 "" H 3850 4400 50  0001 C CNN
-F 4 "1100321" H 3850 4400 60  0001 C CNN "farnell #"
+F 4 "2447243" H 3850 4400 60  0001 C CNN "farnell #"
 F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 6 "Value" H 3850 4400 60  0001 C CNN "supplier PN"
+F 7 "Value" H 3850 4400 60  0001 C CNN "MOQ"
+F 8 "Value" H 3850 4400 60  0001 C CNN "leadtime"
 	1    3850 4400
 	0    1    1    0   
 $EndComp
@@ -263,6 +268,7 @@ F 1 "0.1uF, ceramic, 6v, 10%, x5r" H 3915 4855 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3838 4750 50  0001 C CNN
 F 3 "" H 3800 4900 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2522395" H 0   0   60  0001 C CNN "farnell #"
 	1    3800 4900
 	1    0    0    -1  
 $EndComp
@@ -274,7 +280,7 @@ F 0 "C5" H 4165 4946 50  0000 L CNN
 F 1 "10uF, ceramic, 6v, 10%, x5r" H 4165 4855 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4088 4750 50  0001 C CNN
 F 3 "" H 4050 4900 50  0001 C CNN
-F 4 "1709210" H 0   0   60  0001 C CNN "farnell #"
+F 4 "1288201" H 0   0   60  0001 C CNN "farnell #"
 F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 F 6 "Value" H 4050 4900 60  0001 C CNN "supplier PN"
 F 7 "Value" H 4050 4900 60  0001 C CNN "MOQ"
@@ -290,7 +296,7 @@ F 0 "C6" H 4415 4946 50  0000 L CNN
 F 1 "0.1uF, ceramic, 6v, 10%, x5r" H 4415 4855 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4338 4750 50  0001 C CNN
 F 3 "" H 4300 4900 50  0001 C CNN
-F 4 "" H 4300 4900 60  0001 C CNN "farnell #"
+F 4 "2522395" H 4300 4900 60  0001 C CNN "farnell #"
 F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
 	1    4300 4900
 	1    0    0    -1  
@@ -345,6 +351,7 @@ F 1 "10k, 125mW, 5%" H 1730 2695 50  0000 R CNN
 F 2 "Resistors_SMD:R_0603" V 1730 2650 50  0001 C CNN
 F 3 "" H 1800 2650 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2447230" H 0   0   60  0001 C CNN "farnell #"
 	1    1800 2650
 	-1   0    0    1   
 $EndComp
@@ -357,6 +364,7 @@ F 1 "10k, 125mW, 5%" H 1730 2395 50  0000 R CNN
 F 2 "Resistors_SMD:R_0603" V 1730 2350 50  0001 C CNN
 F 3 "" H 1800 2350 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2447230" H 0   0   60  0001 C CNN "farnell #"
 	1    1800 2350
 	-1   0    0    1   
 $EndComp
@@ -382,6 +390,7 @@ F 1 "1uF, ceramic, 6v, 10%, x5r" H 1565 2605 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1488 2500 50  0001 C CNN
 F 3 "" H 1450 2650 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "1865556" H 0   0   60  0001 C CNN "farnell #"
 	1    1450 2650
 	1    0    0    -1  
 $EndComp
@@ -532,6 +541,7 @@ F 1 "0.1uF, ceramic, 6v, 10%, x5r" H 1965 4505 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1888 4400 50  0001 C CNN
 F 3 "" H 1850 4550 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2522395" H 0   0   60  0001 C CNN "farnell #"
 	1    1850 4550
 	1    0    0    -1  
 $EndComp
@@ -566,6 +576,7 @@ F 1 "5.1k, 125mW, 5%" H 10630 2345 50  0000 R CNN
 F 2 "Resistors_SMD:R_0603" V 10630 2300 50  0001 C CNN
 F 3 "" H 10700 2300 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2447404" H 0   0   60  0001 C CNN "farnell #"
 	1    10700 2300
 	0    -1   -1   0   
 $EndComp
@@ -589,6 +600,7 @@ F 1 "10k, 125mW, 5%" V 1734 4250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1780 4250 50  0001 C CNN
 F 3 "" H 1850 4250 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
+F 5 "2447230" H 0   0   60  0001 C CNN "farnell #"
 	1    1850 4250
 	-1   0    0    1   
 $EndComp
@@ -679,7 +691,7 @@ F 0 "C8" H 6725 1500 50  0000 L CNN
 F 1 "10uF, ceramic, 6v, 10%, x5r" H 6725 1300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 6738 1250 30  0001 C CNN
 F 3 "" H 6700 1400 60  0000 C CNN
-F 4 "1709210" H 6700 1400 60  0001 C CNN "farnell #"
+F 4 "1288201" H 6700 1400 60  0001 C CNN "farnell #"
 F 5 "any/open" H 700 100 60  0001 C CNN "supplier"
 F 6 "Value" H 6700 1400 60  0001 C CNN "supplier PN"
 F 7 "Value" H 6700 1400 60  0001 C CNN "MOQ"
@@ -695,7 +707,7 @@ F 0 "C7" H 5775 1500 50  0000 L CNN
 F 1 "10uF, ceramic, 6v, 10%, x5r" H 5775 1300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 5788 1250 30  0001 C CNN
 F 3 "" H 5750 1400 60  0000 C CNN
-F 4 "1709210" H 5750 1400 60  0001 C CNN "farnell #"
+F 4 "1288201" H 5750 1400 60  0001 C CNN "farnell #"
 F 5 "any/open" H -250 100 60  0001 C CNN "supplier"
 F 6 "Value" H 5750 1400 60  0001 C CNN "supplier PN"
 F 7 "Value" H 5750 1400 60  0001 C CNN "MOQ"
@@ -740,6 +752,7 @@ F 4 "any/open" H -800 600 60  0001 C CNN "supplier"
 F 5 "Value" H 1050 4850 60  0001 C CNN "supplier PN"
 F 6 "Value" H 1050 4850 60  0001 C CNN "MOQ"
 F 7 "Value" H 1050 4850 60  0001 C CNN "leadtime"
+F 8 "dnp" H 0   0   60  0001 C CNN "farnell #"
 	1    1050 4850
 	0    -1   -1   0   
 $EndComp
