@@ -220,9 +220,9 @@ F 5 "2694864" H 0   0   60  0001 C CNN "farnell #"
 	0    1    1    0   
 $EndComp
 Text GLabel 10050 2850 2    60   Input ~ 0
-atmega-usb-p
+samd-usb-p
 Text GLabel 10050 2950 2    60   Input ~ 0
-atmega-usb-n
+samd-usb-n
 NoConn ~ 1800 3550
 NoConn ~ 1800 3650
 NoConn ~ 1850 6950
@@ -422,17 +422,6 @@ F 3 "" H 8500 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR047
-U 1 1 5A9D9CDD
-P 8600 2000
-F 0 "#PWR047" H 8600 1850 50  0001 C CNN
-F 1 "+3.3V" V 8615 2128 50  0000 L CNN
-F 2 "" H 8600 2000 50  0001 C CNN
-F 3 "" H 8600 2000 50  0001 C CNN
-	1    8600 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Earth #PWR048
 U 1 1 5A9D9E4B
 P 8700 1900
@@ -529,22 +518,6 @@ F 1 "+3.3V" V 8115 4928 50  0000 L CNN
 F 2 "" H 8100 4800 50  0001 C CNN
 F 3 "" H 8100 4800 50  0001 C CNN
 	1    8100 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C13
-U 1 1 5A9DAA08
-P 5650 1300
-F 0 "C13" H 5675 1400 50  0000 L CNN
-F 1 "0.1uF, ceramic, 6v, 10%, x5r" H 5675 1200 50  0001 L CNN
-F 2 "Capacitors_SMD:C_0603" H 5688 1150 30  0001 C CNN
-F 3 "" H 5650 1300 60  0000 C CNN
-F 4 "2522395" H 5650 1300 60  0001 C CNN "farnell #"
-F 5 "any/open" H -700 0   60  0001 C CNN "supplier"
-F 6 "Value" H 5650 1300 60  0001 C CNN "supplier PN"
-F 7 "Value" H 5650 1300 60  0001 C CNN "MOQ"
-F 8 "Value" H 5650 1300 60  0001 C CNN "leadtime"
-	1    5650 1300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -844,7 +817,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 2000 8500 2200
 Wire Wire Line
-	8600 2000 8600 2200
+	8600 1450 8600 2200
 Wire Wire Line
 	8700 1900 8700 2200
 Wire Wire Line
@@ -1231,4 +1204,28 @@ Text Label 2150 3800 0    60   ~ 0
 left-usb-gnd
 Text Notes 4250 7400 0    60   ~ 0
 42 ohm for G & B,  185 for R
+$Comp
+L Earth #PWR023
+U 1 1 5AB4F868
+P 8600 1150
+F 0 "#PWR023" H 8600 900 50  0001 C CNN
+F 1 "Earth" H 8600 1000 50  0001 C CNN
+F 2 "" H 8600 1150 60  0000 C CNN
+F 3 "" H 8600 1150 60  0000 C CNN
+	1    8600 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB50123
+P 8600 1300
+F 0 "C?" H 8715 1346 50  0000 L CNN
+F 1 "1uF, ceramic, 6v, 10%, x5r" H 8715 1255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8638 1150 50  0001 C CNN
+F 3 "" H 8600 1300 50  0001 C CNN
+F 4 "any/open" H 7150 -1350 60  0001 C CNN "supplier"
+F 5 "1865556" H 7150 -1350 60  0001 C CNN "farnell #"
+	1    8600 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

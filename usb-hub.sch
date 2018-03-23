@@ -516,9 +516,9 @@ F0 "huble" 60
 F1 "huble.sch" 60
 $EndSheet
 Text GLabel 3550 2900 2    60   Input ~ 0
-atmega-usb-p
+samd-usb-p
 Text GLabel 3550 3000 2    60   Input ~ 0
-atmega-usb-n
+samd-usb-n
 Text Notes 2250 750  0    60   ~ 0
 expansion port
 $Comp
