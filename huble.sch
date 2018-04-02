@@ -36,6 +36,7 @@ LIBS:samd21j
 LIBS:tlv760
 LIBS:mmbzx
 LIBS:usb_c_16pin
+LIBS:fe1-4port-hub
 LIBS:usb-hub-cache
 EELAYER 26 0
 EELAYER END
@@ -220,9 +221,9 @@ F 5 "2694864" H 0   0   60  0001 C CNN "farnell #"
 	0    1    1    0   
 $EndComp
 Text GLabel 10050 2850 2    60   Input ~ 0
-samd-usb-p
+samd-usb_P
 Text GLabel 10050 2950 2    60   Input ~ 0
-samd-usb-n
+samd-usb_N
 NoConn ~ 1800 3550
 NoConn ~ 1800 3650
 NoConn ~ 1850 6950
@@ -389,7 +390,7 @@ U 1 1 5A9D9208
 P 8400 3300
 F 0 "U4" H 8550 3450 60  0000 L CNN
 F 1 "samd21j" H 8450 3600 60  0000 L CNN
-F 2 "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm" H 8400 3300 60  0001 C CNN
+F 2 "fp:QFN-64-1EP_9x9mm_Pitch0.5mm" H 8400 3300 60  0001 C CNN
 F 3 "" H 8400 3300 60  0001 C CNN
 F 4 "2409254" H 8400 3300 60  0001 C CNN "farnell #"
 F 5 "Microchip" H 8400 3300 60  0001 C CNN "supplier"
@@ -1109,8 +1110,6 @@ F 8 "Value" H 5650 2500 60  0001 C CNN "leadtime"
 	1    5650 2500
 	0    1    1    0   
 $EndComp
-Text GLabel 8700 4550 3    60   Input ~ 0
-gclk_io_0
 $Comp
 L TEST TP1
 U 1 1 5AA0100B
@@ -1216,10 +1215,10 @@ F 3 "" H 8600 1150 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C?
+L C C2
 U 1 1 5AB50123
 P 8600 1300
-F 0 "C?" H 8715 1346 50  0000 L CNN
+F 0 "C2" H 8715 1346 50  0000 L CNN
 F 1 "1uF, ceramic, 6v, 10%, x5r" H 8715 1255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 8638 1150 50  0001 C CNN
 F 3 "" H 8600 1300 50  0001 C CNN
@@ -1228,4 +1227,5 @@ F 5 "1865556" H 7150 -1350 60  0001 C CNN "farnell #"
 	1    8600 1300
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8700 4550
 $EndSCHEMATC
