@@ -59,7 +59,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements FFF9FF7F)
+    (visible_elements FFFD7F7F)
     (pcbplotparams
       (layerselection 0x000c0_7ffffffe)
       (usegerberextensions false)
@@ -1937,7 +1937,7 @@
     (tags "resistor 0603")
     (path /5A5F9C94/5A33B200)
     (attr smd)
-    (fp_text reference R14 (at -2.84 0.03 180) (layer B.SilkS)
+    (fp_text reference R14 (at 3 -0.6 180) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value "180R, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab)
