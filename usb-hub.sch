@@ -80,6 +80,7 @@ F 4 "any/open" H 50  50  60  0001 C CNN "supplier"
 F 5 "Value" H 1500 5050 60  0001 C CNN "supplier PN"
 F 6 "Value" H 1500 5050 60  0001 C CNN "MOQ"
 F 7 "Value" H 1500 5050 60  0001 C CNN "leadtime"
+F 8 "2508794" H 0   0   60  0001 C CNN "farnell #"
 	1    1500 5050
 	0    1    1    0   
 $EndComp
@@ -96,6 +97,7 @@ F 4 "any/open" H -1400 900 60  0001 C CNN "supplier"
 F 5 "Value" H 2450 5300 60  0001 C CNN "supplier PN"
 F 6 "Value" H 2450 5300 60  0001 C CNN "MOQ"
 F 7 "Value" H 2450 5300 60  0001 C CNN "leadtime"
+F 8 "2447324" H 0   0   60  0001 C CNN "farnell #"
 	1    2450 5300
 	0    -1   -1   0   
 $EndComp
@@ -192,6 +194,7 @@ F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
 F 5 "Value" H 2000 6250 60  0001 C CNN "supplier PN"
 F 6 "Value" H 2000 6250 60  0001 C CNN "MOQ"
 F 7 "Value" H 2000 6250 60  0001 C CNN "leadtime"
+F 8 "2073350" H 0   0   60  0001 C CNN "farnell #"
 	1    2000 6250
 	-1   0    0    1   
 $EndComp
@@ -233,6 +236,7 @@ F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
 F 5 "Value" H 1650 6250 60  0001 C CNN "supplier PN"
 F 6 "Value" H 1650 6250 60  0001 C CNN "MOQ"
 F 7 "Value" H 1650 6250 60  0001 C CNN "leadtime"
+F 8 "2522395" H 0   0   60  0001 C CNN "farnell #"
 	1    1650 6250
 	1    0    0    -1  
 $EndComp
@@ -587,6 +591,7 @@ F 4 "any/open" H 0   2750 60  0001 C CNN "supplier"
 F 5 "Value" H 1800 5400 60  0001 C CNN "supplier PN"
 F 6 "Value" H 1800 5400 60  0001 C CNN "MOQ"
 F 7 "Value" H 1800 5400 60  0001 C CNN "leadtime"
+F 8 "2073350" H 0   0   60  0001 C CNN "farnell #"
 	1    1800 5400
 	0    -1   -1   0   
 $EndComp
@@ -624,6 +629,7 @@ F 0 "U2" H 6200 1492 50  0000 C CNN
 F 1 "LD1117S12TR_SOT223" H 6200 1401 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-223" H 6200 1450 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6300 1000 50  0001 C CNN
+F 4 "1202826" H 0   0   60  0001 C CNN "farnell #"
 	1    6200 1250
 	1    0    0    -1  
 $EndComp

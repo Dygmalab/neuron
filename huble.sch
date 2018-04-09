@@ -171,7 +171,7 @@ F 4 "any/open" H -4600 950 60  0001 C CNN "supplier"
 F 5 "Value" H 4100 6850 60  0001 C CNN "supplier PN"
 F 6 "Value" H 4100 6850 60  0001 C CNN "MOQ"
 F 7 "Value" H 4100 6850 60  0001 C CNN "leadtime"
-F 8 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 8 "" H 0   0   60  0001 C CNN "farnell #"
 	1    4100 6850
 	1    0    0    -1  
 $EndComp
@@ -248,7 +248,7 @@ F 4 "any/open" H -4600 950 60  0001 C CNN "supplier"
 F 5 "Value" H 5200 6900 60  0001 C CNN "supplier PN"
 F 6 "Value" H 5200 6900 60  0001 C CNN "MOQ"
 F 7 "Value" H 5200 6900 60  0001 C CNN "leadtime"
-F 8 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 8 "" H 0   0   60  0001 C CNN "farnell #"
 	1    5200 6900
 	1    0    0    -1  
 $EndComp
@@ -309,7 +309,7 @@ F 4 "any/open" H -4600 950 60  0001 C CNN "supplier"
 F 5 "Value" H 6200 6850 60  0001 C CNN "supplier PN"
 F 6 "Value" H 6200 6850 60  0001 C CNN "MOQ"
 F 7 "Value" H 6200 6850 60  0001 C CNN "leadtime"
-F 8 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 8 "" H 0   0   60  0001 C CNN "farnell #"
 	1    6200 6850
 	1    0    0    -1  
 $EndComp
