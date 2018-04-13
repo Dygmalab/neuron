@@ -62,7 +62,7 @@ F 2 "fp:usb-a-smt-bfriend" H 2700 1250 50  0001 C CNN
 F 3 "" H 2700 1250 50  0001 C CNN
 F 4 "2112370" H 2550 1300 60  0001 C CNN "farnell #"
 F 5 "any/open" H 0   0   60  0001 C CNN "supplier"
-F 6 "Value" H 2550 1300 60  0001 C CNN "supplier PN"
+F 6 "UB001-2F" H 2550 1300 60  0001 C CNN "supplier PN"
 F 7 "Value" H 2550 1300 60  0001 C CNN "MOQ"
 F 8 "Value" H 2550 1300 60  0001 C CNN "leadtime"
 	1    2550 1300
@@ -513,6 +513,8 @@ F 0 "U1" H 3275 6337 60  0000 C CNN
 F 1 "fe1-4port-hub" H 3275 6231 60  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm" H 3800 5050 60  0001 C CNN
 F 3 "" H 3800 5050 60  0001 C CNN
+F 4 "terminus" H 0   0   60  0001 C CNN "supplier"
+F 5 "FE1.1s-BQFN24B" H 0   0   60  0001 C CNN "supplier PN"
 	1    3300 5250
 	1    0    0    -1  
 $EndComp
@@ -630,6 +632,8 @@ F 1 "LD1117S12TR_SOT223" H 6200 1401 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-223" H 6200 1450 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6300 1000 50  0001 C CNN
 F 4 "1202826" H 0   0   60  0001 C CNN "farnell #"
+F 5 "低压差线性稳压器" H 0   0   60  0001 C CNN "supplier"
+F 6 "HK1117C" H 0   0   60  0001 C CNN "supplier PN"
 	1    6200 1250
 	1    0    0    -1  
 $EndComp
