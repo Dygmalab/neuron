@@ -37,6 +37,7 @@ LIBS:tlv760
 LIBS:mmbzx
 LIBS:usb_c_16pin
 LIBS:fe1-4port-hub
+LIBS:samd21g
 LIBS:usb-hub-cache
 EELAYER 26 0
 EELAYER END
@@ -228,9 +229,9 @@ NoConn ~ 1800 3550
 NoConn ~ 1800 3650
 NoConn ~ 1850 6950
 NoConn ~ 1850 7050
-Text Label 2450 4000 0    60   ~ 0
+Text Label 2900 1200 2    60   ~ 0
 left-switch
-Text Label 2400 7350 0    60   ~ 0
+Text Label 2300 4550 0    60   ~ 0
 right-switch
 Text Label 7900 4550 3    60   ~ 0
 left-switch
@@ -385,22 +386,6 @@ pwm3_g
 Text Label 9600 3650 0    60   ~ 0
 pwm3_b
 $Comp
-L samd21j U4
-U 1 1 5A9D9208
-P 8400 3300
-F 0 "U4" H 8550 3450 60  0000 L CNN
-F 1 "samd21j" H 8450 3600 60  0000 L CNN
-F 2 "fp:QFN-64-1EP_9x9mm_Pitch0.5mm" H 8400 3300 60  0001 C CNN
-F 3 "" H 8400 3300 60  0001 C CNN
-F 4 "2409254" H 8400 3300 60  0001 C CNN "farnell #"
-F 5 "Microchip" H 8400 3300 60  0001 C CNN "supplier"
-F 6 "ATSAMD21J18A-MU " H 8400 3300 60  0001 C CNN "supplier PN"
-F 7 "Value" H 8400 3300 60  0001 C CNN "MOQ"
-F 8 "Value" H 8400 3300 60  0001 C CNN "leadtime"
-	1    8400 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR036
 U 1 1 5A9D99C2
 P 6250 1100
@@ -456,17 +441,6 @@ F 3 "" H 8200 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR053
-U 1 1 5A9DA1F0
-P 9850 4150
-F 0 "#PWR053" H 9850 3900 50  0001 C CNN
-F 1 "Earth" H 9850 4000 50  0001 C CNN
-F 2 "" H 9850 4150 60  0000 C CNN
-F 3 "" H 9850 4150 60  0000 C CNN
-	1    9850 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Earth #PWR052
 U 1 1 5A9DA329
 P 9850 2750
@@ -486,17 +460,6 @@ F 1 "+3.3V" V 9915 2778 50  0000 L CNN
 F 2 "" H 9900 2650 50  0001 C CNN
 F 3 "" H 9900 2650 50  0001 C CNN
 	1    9900 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L +3.3V #PWR055
-U 1 1 5A9DA508
-P 9900 4050
-F 0 "#PWR055" H 9900 3900 50  0001 C CNN
-F 1 "+3.3V" V 9915 4178 50  0000 L CNN
-F 2 "" H 9900 4050 50  0001 C CNN
-F 3 "" H 9900 4050 50  0001 C CNN
-	1    9900 4050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -621,28 +584,17 @@ Text GLabel 7300 3650 0    60   Input ~ 0
 ufp-cc
 NoConn ~ 8300 4550
 NoConn ~ 8400 4550
-NoConn ~ 8500 4550
-NoConn ~ 8600 4550
-NoConn ~ 8800 4550
 NoConn ~ 8900 4550
 NoConn ~ 9000 4550
 NoConn ~ 9100 4550
 NoConn ~ 9600 3850
-NoConn ~ 9600 3450
-NoConn ~ 9600 3550
 NoConn ~ 9600 3250
 NoConn ~ 9200 2200
 NoConn ~ 9100 2200
 NoConn ~ 9000 2200
 NoConn ~ 8800 2200
-NoConn ~ 8200 2200
-NoConn ~ 8100 2200
-NoConn ~ 8000 2200
-NoConn ~ 7900 2200
 NoConn ~ 7800 2200
 NoConn ~ 7700 2200
-NoConn ~ 7300 3450
-NoConn ~ 7300 3550
 NoConn ~ 7300 3950
 Text Label 8900 1950 1    60   ~ 0
 reset
@@ -752,17 +704,6 @@ Text Label 1850 5550 0    60   ~ 0
 scl5
 Text Label 1850 5250 0    60   ~ 0
 sda5
-$Comp
-L +5V #PWR026
-U 1 1 5A9EB9A3
-P 1800 1050
-F 0 "#PWR026" H 1800 900 50  0001 C CNN
-F 1 "+5V" H 1800 1190 50  0000 C CNN
-F 2 "" H 1800 1050 60  0000 C CNN
-F 3 "" H 1800 1050 60  0000 C CNN
-	1    1800 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 1150 6250 1100
 Connection ~ 6250 1150
@@ -826,13 +767,9 @@ Wire Wire Line
 Wire Wire Line
 	8200 4550 8200 4750
 Wire Wire Line
-	9600 4150 9850 4150
-Wire Wire Line
 	9850 2750 9600 2750
 Wire Wire Line
 	9600 2650 9900 2650
-Wire Wire Line
-	9900 4050 9600 4050
 Wire Wire Line
 	7100 3350 7300 3350
 Wire Wire Line
@@ -892,12 +829,12 @@ Wire Wire Line
 $Comp
 L +5V #PWR027
 U 1 1 5A9EBCEA
-P 1850 4450
-F 0 "#PWR027" H 1850 4300 50  0001 C CNN
-F 1 "+5V" H 1850 4590 50  0000 C CNN
-F 2 "" H 1850 4450 60  0000 C CNN
-F 3 "" H 1850 4450 60  0000 C CNN
-	1    1850 4450
+P 2500 4100
+F 0 "#PWR027" H 2500 3950 50  0001 C CNN
+F 1 "+5V" H 2500 4240 50  0000 C CNN
+F 2 "" H 2500 4100 60  0000 C CNN
+F 3 "" H 2500 4100 60  0000 C CNN
+	1    2500 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -937,22 +874,6 @@ F 8 "Value" H 5050 5150 60  0001 C CNN "leadtime"
 	0    1    1    0   
 $EndComp
 $Comp
-L Q_NMOS_GSD Q1
-U 1 1 5A9ECF44
-P 2200 7350
-F 0 "Q1" H 2406 7396 50  0000 L CNN
-F 1 "Q_NMOS_GSD 1Amp" H 2406 7305 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-323_SC-70" H 2400 7450 50  0001 C CNN
-F 3 "" H 2200 7350 50  0001 C CNN
-F 4 "2061403" H 2200 7350 60  0001 C CNN "farnell #"
-F 5 "any/open" H 2200 7350 60  0001 C CNN "supplier"
-F 6 "Value" H 2200 7350 60  0001 C CNN "supplier PN"
-F 7 "Value" H 2200 7350 60  0001 C CNN "MOQ"
-F 8 "Value" H 2200 7350 60  0001 C CNN "leadtime"
-	1    2200 7350
-	-1   0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR028
 U 1 1 5A9ED369
 P 4400 6550
@@ -988,50 +909,26 @@ $EndComp
 $Comp
 L Earth #PWR045
 U 1 1 5A9ED44A
-P 2100 7550
-F 0 "#PWR045" H 2100 7300 50  0001 C CNN
-F 1 "Earth" H 2100 7400 50  0001 C CNN
-F 2 "" H 2100 7550 60  0000 C CNN
-F 3 "" H 2100 7550 60  0000 C CNN
-	1    2100 7550
+P 1350 7350
+F 0 "#PWR045" H 1350 7100 50  0001 C CNN
+F 1 "Earth" H 1350 7200 50  0001 C CNN
+F 2 "" H 1350 7350 60  0000 C CNN
+F 3 "" H 1350 7350 60  0000 C CNN
+	1    1350 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Earth #PWR046
 U 1 1 5A9ED4F5
-P 2150 4200
-F 0 "#PWR046" H 2150 3950 50  0001 C CNN
-F 1 "Earth" H 2150 4050 50  0001 C CNN
-F 2 "" H 2150 4200 60  0000 C CNN
-F 3 "" H 2150 4200 60  0000 C CNN
-	1    2150 4200
+P 1300 3950
+F 0 "#PWR046" H 1300 3700 50  0001 C CNN
+F 1 "Earth" H 1300 3800 50  0001 C CNN
+F 2 "" H 1300 3950 60  0000 C CNN
+F 3 "" H 1300 3950 60  0000 C CNN
+	1    1300 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Q_NMOS_GSD Q2
-U 1 1 5A9ED560
-P 2250 4000
-F 0 "Q2" H 2456 4046 50  0000 L CNN
-F 1 "Q_NMOS_GSD 1Amp" H 2456 3955 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-323_SC-70" H 2450 4100 50  0001 C CNN
-F 3 "" H 2250 4000 50  0001 C CNN
-F 4 "2061403" H 2250 4000 60  0001 C CNN "farnell #"
-F 5 "any/open" H 2250 4000 60  0001 C CNN "supplier"
-F 6 "Value" H 2250 4000 60  0001 C CNN "supplier PN"
-F 7 "Value" H 2250 4000 60  0001 C CNN "MOQ"
-F 8 "Value" H 2250 4000 60  0001 C CNN "leadtime"
-	1    2250 4000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 3950 1800 3800
-Wire Wire Line
-	1800 3800 2150 3800
 Connection ~ 1300 3950
-Wire Wire Line
-	1750 7350 1750 7150
-Wire Wire Line
-	1750 7150 2100 7150
 Connection ~ 1350 7350
 $Comp
 L PWR_FLAG #FLG04
@@ -1091,9 +988,9 @@ $EndComp
 Text Notes 4950 4000 0    60   ~ 0
 esd protection
 Wire Wire Line
-	1050 7350 1750 7350
+	1050 7350 1350 7350
 Wire Wire Line
-	1000 3950 1800 3950
+	1000 3950 1300 3950
 $Comp
 L Crystal Y2
 U 1 1 5AA0026E
@@ -1135,30 +1032,6 @@ F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST TP3
-U 1 1 5AA0116F
-P 7300 3050
-F 0 "TP3" V 7515 3144 50  0000 C CNN
-F 1 "TEST" V 7424 3144 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7300 3050 50  0001 C CNN
-F 3 "" H 7300 3050 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-	1    7300 3050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TEST TP4
-U 1 1 5AA011CD
-P 7300 3150
-F 0 "TP4" V 7515 3244 50  0000 C CNN
-F 1 "TEST" V 7424 3244 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7300 3150 50  0001 C CNN
-F 3 "" H 7300 3150 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-	1    7300 3150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L USB_C_Receptacle_16pin J2
 U 1 1 5AA289BC
 P 1200 2350
@@ -1197,10 +1070,6 @@ F 3 "" H 9600 2400 60  0000 C CNN
 	1    9600 2400
 	0    -1   -1   0   
 $EndComp
-Text Label 2100 7150 0    60   ~ 0
-right-usb-gnd
-Text Label 2150 3800 0    60   ~ 0
-left-usb-gnd
 Text Notes 4250 7400 0    60   ~ 0
 42 ohm for G & B,  185 for R
 $Comp
@@ -1227,5 +1096,67 @@ F 5 "1865556" H 7150 -1350 60  0001 C CNN "farnell #"
 	1    8600 1300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8700 4550
+$Comp
+L samd21g U?
+U 1 1 5AD5CE48
+P 8400 3300
+F 0 "U?" H 8400 3500 60  0000 C CNN
+F 1 "samd21g" H 8400 3700 60  0000 C CNN
+F 2 "" H 8400 3300 60  0001 C CNN
+F 3 "" H 8400 3300 60  0001 C CNN
+	1    8400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5AD608C3
+P 3800 800
+F 0 "#PWR?" H 3800 650 50  0001 C CNN
+F 1 "+5V" V 3815 928 50  0000 L CNN
+F 2 "" H 3800 800 50  0000 C CNN
+F 3 "" H 3800 800 50  0000 C CNN
+	1    3800 800 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1100 2900 1200
+Connection ~ 3800 800 
+Connection ~ 2450 800 
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5AD608F4
+P 2450 800
+F 0 "#FLG?" H 2450 895 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 1023 50  0000 C CNN
+F 2 "" H 2450 800 50  0000 C CNN
+F 3 "" H 2450 800 50  0000 C CNN
+	1    2450 800 
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 5AD6091D
+P 2900 900
+F 0 "Q?" V 3243 900 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 3152 900 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3100 1000 50  0001 C CNN
+F 3 "" H 2900 900 50  0001 C CNN
+F 4 "2061419" H 2900 900 60  0001 C CNN "farnell #"
+F 5 "diodes inc" H -200 -5800 60  0001 C CNN "supplier"
+F 6 "DMP2035U" H -200 -5800 60  0001 C CNN "supplier PN"
+	1    2900 900 
+	0    -1   -1   0   
+$EndComp
+Text Notes 3100 800  2    60   ~ 0
+S
+Text Notes 2750 800  2    60   ~ 0
+D
+Wire Wire Line
+	3800 800  3100 800 
+Wire Wire Line
+	2150 800  2700 800 
+Wire Wire Line
+	1800 1050 2150 1050
+Wire Wire Line
+	2150 1050 2150 800 
 $EndSCHEMATC
