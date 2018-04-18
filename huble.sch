@@ -113,11 +113,13 @@ L R R9
 U 1 1 59957A5D
 P 5450 4850
 F 0 "R9" V 5530 4850 50  0000 C CNN
-F 1 "10k, 125mW, 5%" V 5350 4850 50  0000 C CNN
+F 1 "4.7k, 125mW, 5%" V 5350 4850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 5380 4850 30  0001 C CNN
 F 3 "" H 5450 4850 30  0000 C CNN
-F 4 "2447230" H 5450 4850 60  0001 C CNN "farnell #"
-F 5 "any/open" H 950 1650 60  0001 C CNN "supplier"
+F 4 "any/open" H 950 1650 60  0001 C CNN "supplier"
+F 5 "Value" H 5450 4850 60  0001 C CNN "supplier PN"
+F 6 "Value" H 5450 4850 60  0001 C CNN "MOQ"
+F 7 "Value" H 5450 4850 60  0001 C CNN "leadtime"
 	1    5450 4850
 	1    0    0    -1  
 $EndComp
@@ -126,11 +128,13 @@ L R R10
 U 1 1 59957B3F
 P 5650 5100
 F 0 "R10" V 5730 5100 50  0000 C CNN
-F 1 "10k, 125mW, 5%" V 5850 5150 50  0000 C CNN
+F 1 "4.7k, 125mW, 5%" V 5850 5150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 5580 5100 30  0001 C CNN
 F 3 "" H 5650 5100 30  0000 C CNN
-F 4 "2447230" H 5650 5100 60  0001 C CNN "farnell #"
-F 5 "any/open" H 1150 1600 60  0001 C CNN "supplier"
+F 4 "any/open" H 1150 1600 60  0001 C CNN "supplier"
+F 5 "Value" H 5650 5100 60  0001 C CNN "supplier PN"
+F 6 "Value" H 5650 5100 60  0001 C CNN "MOQ"
+F 7 "Value" H 5650 5100 60  0001 C CNN "leadtime"
 	1    5650 5100
 	1    0    0    -1  
 $EndComp
@@ -633,9 +637,9 @@ F 3 "" H 4150 4700 50  0001 C CNN
 	1    4150 4700
 	1    0    0    -1  
 $EndComp
-Text Label 5950 5000 0    60   ~ 0
+Text Label 6500 5000 0    60   ~ 0
 sda5
-Text Label 5950 5250 0    60   ~ 0
+Text Label 6500 5250 0    60   ~ 0
 scl5
 $Comp
 L +3.3V #PWR059
@@ -749,9 +753,9 @@ Wire Wire Line
 Wire Wire Line
 	3800 5250 4850 5250
 Wire Wire Line
-	4750 5000 5950 5000
+	4750 5000 6500 5000
 Wire Wire Line
-	5250 5250 5950 5250
+	5250 5250 6500 5250
 Connection ~ 5650 5250
 Connection ~ 5450 5000
 Connection ~ 4150 5000
@@ -763,7 +767,7 @@ Wire Wire Line
 Wire Notes Line
 	3650 4300 6200 4300
 Wire Notes Line
-	6200 4300 6200 5550
+	6700 4300 6700 5550
 Wire Notes Line
 	6200 5550 3650 5550
 Wire Notes Line
@@ -861,38 +865,7 @@ F 3 "" H 1000 3950 60  0000 C CNN
 	1    1000 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L MMBZx U7
-U 1 1 5A9F0C13
-P 5200 3700
-F 0 "U7" H 5250 4047 60  0000 C CNN
-F 1 "MMBZx" H 5250 3941 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 5200 3700 60  0001 C CNN
-F 3 "" H 5200 3700 60  0001 C CNN
-F 4 "1431253" H 5200 3700 60  0001 C CNN "farnell #"
-F 5 "any/open" H 5200 3700 60  0001 C CNN "supplier"
-F 6 "Value" H 5200 3700 60  0001 C CNN "supplier PN"
-F 7 "Value" H 5200 3700 60  0001 C CNN "MOQ"
-F 8 "Value" H 5200 3700 60  0001 C CNN "leadtime"
-	1    5200 3700
-	1    0    0    -1  
-$EndComp
-Text Label 4950 3600 2    60   ~ 0
-sda5
-Text Label 4950 3800 2    60   ~ 0
-scl5
-$Comp
-L Earth #PWR020
-U 1 1 5A9F0F5D
-P 5550 3700
-F 0 "#PWR020" H 5550 3450 50  0001 C CNN
-F 1 "Earth" H 5550 3550 50  0001 C CNN
-F 2 "" H 5550 3700 50  0001 C CNN
-F 3 "~" H 5550 3700 50  0001 C CNN
-	1    5550 3700
-	1    0    0    -1  
-$EndComp
-Text Notes 4950 4000 0    60   ~ 0
+Text Notes 6100 4450 0    60   ~ 0
 esd protection
 $Comp
 L Crystal Y2
@@ -1386,5 +1359,113 @@ F 2 "fp:testpoint" H 5950 5250 50  0001 C CNN
 F 3 "" H 5950 5250 50  0001 C CNN
 	1    5950 5250
 	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small D1
+U 1 1 5AD72760
+P 6350 4900
+F 0 "D1" V 6250 4900 50  0000 L CNN
+F 1 "ESD" V 6100 4500 50  0000 L CNN
+F 2 "Diodes_SMD:D_0603" V 6350 4900 50  0001 C CNN
+F 3 "" V 6350 4900 50  0001 C CNN
+F 4 "Value" H 6350 4900 60  0001 C CNN "supplier"
+F 5 "Value" H 6350 4900 60  0001 C CNN "supplier PN"
+F 6 "Value" H 6350 4900 60  0001 C CNN "MOQ"
+F 7 "Value" H 6350 4900 60  0001 C CNN "leadtime"
+	1    6350 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D3
+U 1 1 5AD728C1
+P 6500 4900
+F 0 "D3" V 6600 4900 50  0000 R CNN
+F 1 "ESD" V 6750 4850 50  0000 R CNN
+F 2 "Diodes_SMD:D_0603" V 6500 4900 50  0001 C CNN
+F 3 "" V 6500 4900 50  0001 C CNN
+F 4 "Value" H 6500 4900 60  0001 C CNN "supplier"
+F 5 "Value" H 6500 4900 60  0001 C CNN "supplier PN"
+F 6 "Value" H 6500 4900 60  0001 C CNN "MOQ"
+F 7 "Value" H 6500 4900 60  0001 C CNN "leadtime"
+	1    6500 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Small D2
+U 1 1 5AD729A7
+P 6350 5350
+F 0 "D2" V 6400 5400 50  0000 L CNN
+F 1 "ESD" V 6500 5000 50  0000 L CNN
+F 2 "Diodes_SMD:D_0603" V 6350 5350 50  0001 C CNN
+F 3 "" V 6350 5350 50  0001 C CNN
+F 4 "Value" H 6350 5350 60  0001 C CNN "supplier"
+F 5 "Value" H 6350 5350 60  0001 C CNN "supplier PN"
+F 6 "Value" H 6350 5350 60  0001 C CNN "MOQ"
+F 7 "Value" H 6350 5350 60  0001 C CNN "leadtime"
+	1    6350 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D4
+U 1 1 5AD72A25
+P 6500 5350
+F 0 "D4" V 6450 5300 50  0000 R CNN
+F 1 "ESD" V 6350 5300 50  0000 R CNN
+F 2 "Diodes_SMD:D_0603" V 6500 5350 50  0001 C CNN
+F 3 "" V 6500 5350 50  0001 C CNN
+F 4 "Value" H 6500 5350 60  0001 C CNN "supplier"
+F 5 "Value" H 6500 5350 60  0001 C CNN "supplier PN"
+F 6 "Value" H 6500 5350 60  0001 C CNN "MOQ"
+F 7 "Value" H 6500 5350 60  0001 C CNN "leadtime"
+	1    6500 5350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5950 5000
+Connection ~ 6350 5000
+Connection ~ 5950 5250
+Connection ~ 6350 5250
+$Comp
+L Earth #PWR068
+U 1 1 5AD73272
+P 6350 5450
+F 0 "#PWR068" H 6350 5200 50  0001 C CNN
+F 1 "Earth" H 6350 5300 50  0001 C CNN
+F 2 "" H 6350 5450 50  0001 C CNN
+F 3 "~" H 6350 5450 50  0001 C CNN
+	1    6350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR069
+U 1 1 5AD732DB
+P 6500 4800
+F 0 "#PWR069" H 6500 4550 50  0001 C CNN
+F 1 "Earth" H 6500 4650 50  0001 C CNN
+F 2 "" H 6500 4800 50  0001 C CNN
+F 3 "~" H 6500 4800 50  0001 C CNN
+	1    6500 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR020
+U 1 1 5AD733A2
+P 6350 4800
+F 0 "#PWR020" H 6350 4650 50  0001 C CNN
+F 1 "+5V" H 6350 4940 50  0000 C CNN
+F 2 "" H 6350 4800 60  0000 C CNN
+F 3 "" H 6350 4800 60  0000 C CNN
+	1    6350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR070
+U 1 1 5AD7340B
+P 6500 5450
+F 0 "#PWR070" H 6500 5300 50  0001 C CNN
+F 1 "+5V" H 6500 5590 50  0000 C CNN
+F 2 "" H 6500 5450 60  0000 C CNN
+F 3 "" H 6500 5450 60  0000 C CNN
+	1    6500 5450
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
