@@ -38,6 +38,7 @@ LIBS:mmbzx
 LIBS:usb_c_16pin
 LIBS:fe1-4port-hub
 LIBS:samd21g
+LIBS:usblc6-4
 LIBS:usb-hub-cache
 EELAYER 26 0
 EELAYER END
