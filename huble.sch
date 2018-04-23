@@ -121,6 +121,7 @@ F 4 "any/open" H 950 1650 60  0001 C CNN "supplier"
 F 5 "Value" H 5450 4850 60  0001 C CNN "supplier PN"
 F 6 "Value" H 5450 4850 60  0001 C CNN "MOQ"
 F 7 "Value" H 5450 4850 60  0001 C CNN "leadtime"
+F 8 "1469807" H 0   0   60  0001 C CNN "farnell #"
 	1    5450 4850
 	1    0    0    -1  
 $EndComp
@@ -136,6 +137,7 @@ F 4 "any/open" H 1150 1600 60  0001 C CNN "supplier"
 F 5 "Value" H 5650 5100 60  0001 C CNN "supplier PN"
 F 6 "Value" H 5650 5100 60  0001 C CNN "MOQ"
 F 7 "Value" H 5650 5100 60  0001 C CNN "leadtime"
+F 8 "1469807" H 0   0   60  0001 C CNN "farnell #"
 	1    5650 5100
 	1    0    0    -1  
 $EndComp
@@ -893,6 +895,7 @@ F 1 "TEST" V 7424 2944 50  0000 C CNN
 F 2 "fp:testpoint" H 7300 2850 50  0001 C CNN
 F 3 "" H 7300 2850 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    7300 2850
 	0    -1   -1   0   
 $EndComp
@@ -905,6 +908,7 @@ F 1 "TEST" V 7424 3044 50  0000 C CNN
 F 2 "fp:testpoint" H 7300 2950 50  0001 C CNN
 F 3 "" H 7300 2950 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    7300 2950
 	0    -1   -1   0   
 $EndComp
@@ -982,8 +986,8 @@ F 1 "samd21g" H 8400 3700 60  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm" H 8400 3300 60  0001 C CNN
 F 3 "" H 8400 3300 60  0001 C CNN
 F 4 "2409249" H 8400 3300 60  0001 C CNN "farnell #"
-F 5 "Value" H 8400 3300 60  0001 C CNN "supplier"
-F 6 "Value" H 8400 3300 60  0001 C CNN "supplier PN"
+F 5 "Microchip" H 8400 3300 60  0001 C CNN "supplier"
+F 6 "ATSAMD21G18A-MU " H 8400 3300 60  0001 C CNN "supplier PN"
 F 7 "Value" H 8400 3300 60  0001 C CNN "MOQ"
 F 8 "Value" H 8400 3300 60  0001 C CNN "leadtime"
 	1    8400 3300
@@ -1325,6 +1329,8 @@ F 0 "TP9" H 1878 1190 50  0000 L CNN
 F 1 "TEST" H 1878 1099 50  0000 L CNN
 F 2 "fp:testpoint" H 1800 1050 50  0001 C CNN
 F 3 "" H 1800 1050 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    1800 1050
 	1    0    0    -1  
 $EndComp
@@ -1336,6 +1342,8 @@ F 0 "TP10" H 1928 4590 50  0000 L CNN
 F 1 "TEST" H 1928 4499 50  0000 L CNN
 F 2 "fp:testpoint" H 1850 4450 50  0001 C CNN
 F 3 "" H 1850 4450 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    1850 4450
 	1    0    0    -1  
 $EndComp
@@ -1347,6 +1355,8 @@ F 0 "TP11" H 6028 5140 50  0000 L CNN
 F 1 "TEST" H 6028 5049 50  0000 L CNN
 F 2 "fp:testpoint" H 5950 5000 50  0001 C CNN
 F 3 "" H 5950 5000 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    5950 5000
 	1    0    0    -1  
 $EndComp
@@ -1358,6 +1368,8 @@ F 0 "TP12" H 6028 5390 50  0000 L CNN
 F 1 "TEST" H 6028 5299 50  0000 L CNN
 F 2 "fp:testpoint" H 5950 5250 50  0001 C CNN
 F 3 "" H 5950 5250 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    5950 5250
 	1    0    0    -1  
 $EndComp
@@ -1373,6 +1385,7 @@ F 0 "U7" H 4200 2347 60  0000 C CNN
 F 1 "usblc6-4" H 4200 2241 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4200 2000 60  0001 C CNN
 F 3 "" H 4200 2000 60  0001 C CNN
+F 4 "1295311" H 0   0   60  0001 C CNN "farnell #"
 	1    4200 2000
 	1    0    0    -1  
 $EndComp

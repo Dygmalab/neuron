@@ -75,14 +75,14 @@ L Crystal_GND24 Y1
 U 1 1 5A5F4E5A
 P 1500 5050
 F 0 "Y1" V 1454 5291 50  0000 L CNN
-F 1 "12mhz 20pf" V 1545 5291 50  0000 L CNN
+F 1 "12mhz +-50ppm 16-20pf" V 1700 4550 50  0000 L CNN
 F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1500 5050 50  0001 C CNN
 F 3 "" H 1500 5050 50  0001 C CNN
-F 4 "any/open" H 50  50  60  0001 C CNN "supplier"
-F 5 "Value" H 1500 5050 60  0001 C CNN "supplier PN"
-F 6 "Value" H 1500 5050 60  0001 C CNN "MOQ"
-F 7 "Value" H 1500 5050 60  0001 C CNN "leadtime"
-F 8 "2508794" H 0   0   60  0001 C CNN "farnell #"
+F 4 "2308707" H 0   0   60  0001 C CNN "farnell #"
+F 5 "any/open" H 50  50  60  0001 C CNN "supplier"
+F 6 "Value" H 1500 5050 60  0001 C CNN "supplier PN"
+F 7 "Value" H 1500 5050 60  0001 C CNN "MOQ"
+F 8 "Value" H 1500 5050 60  0001 C CNN "leadtime"
 	1    1500 5050
 	0    1    1    0   
 $EndComp
@@ -589,7 +589,7 @@ F 0 "U2" H 6400 1492 50  0000 C CNN
 F 1 "LY2508" H 6400 1401 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 6400 1450 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6500 1000 50  0001 C CNN
-F 4 "1202826" H 200 0   60  0001 C CNN "farnell #"
+F 4 "2218573" H 200 0   60  0001 C CNN "farnell #"
 F 5 "Liani" H 200 0   60  0001 C CNN "supplier"
 F 6 "LY2508A33M" H 200 0   60  0001 C CNN "supplier PN"
 F 7 "Value" H 6400 1250 60  0001 C CNN "MOQ"
@@ -756,7 +756,7 @@ F 0 "C11" H 3115 1746 50  0000 L CNN
 F 1 "100uf 6.3v, x5r, 20%" H 3115 1655 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206" H 3038 1550 50  0001 C CNN
 F 3 "" H 3000 1700 50  0001 C CNN
-F 4 "2611952" H 3000 1700 60  0001 C CNN "farnell #"
+F 4 "2494474" H 3000 1700 60  0001 C CNN "farnell #"
 F 5 "Value" H 3000 1700 60  0001 C CNN "supplier"
 F 6 "Value" H 3000 1700 60  0001 C CNN "supplier PN"
 F 7 "Value" H 3000 1700 60  0001 C CNN "MOQ"
@@ -805,6 +805,8 @@ F 0 "TP3" H 6928 4640 50  0000 L CNN
 F 1 "TEST" H 6928 4549 50  0000 L CNN
 F 2 "fp:testpoint" H 6850 4500 50  0001 C CNN
 F 3 "" H 6850 4500 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    6850 4500
 	1    0    0    -1  
 $EndComp
@@ -818,6 +820,8 @@ F 0 "TP4" H 6928 4990 50  0000 L CNN
 F 1 "TEST" H 6928 4899 50  0000 L CNN
 F 2 "fp:testpoint" H 6850 4850 50  0001 C CNN
 F 3 "" H 6850 4850 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    6850 4850
 	1    0    0    -1  
 $EndComp
@@ -831,6 +835,8 @@ F 0 "TP6" H 5628 4990 50  0000 L CNN
 F 1 "TEST" H 5628 4899 50  0000 L CNN
 F 2 "fp:testpoint" H 5550 4850 50  0001 C CNN
 F 3 "" H 5550 4850 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    5550 4850
 	1    0    0    -1  
 $EndComp
@@ -842,6 +848,8 @@ F 0 "TP7" H 6378 4990 50  0000 L CNN
 F 1 "TEST" H 6378 4899 50  0000 L CNN
 F 2 "fp:testpoint" H 6300 4850 50  0001 C CNN
 F 3 "" H 6300 4850 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    6300 4850
 	1    0    0    -1  
 $EndComp
@@ -857,6 +865,8 @@ F 0 "TP5" H 5628 4640 50  0000 L CNN
 F 1 "TEST" H 5628 4549 50  0000 L CNN
 F 2 "fp:testpoint" H 5550 4500 50  0001 C CNN
 F 3 "" H 5550 4500 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    5550 4500
 	1    0    0    -1  
 $EndComp
@@ -881,6 +891,8 @@ F 0 "TP8" H 6378 4640 50  0000 L CNN
 F 1 "TEST" H 6378 4549 50  0000 L CNN
 F 2 "fp:testpoint" H 6300 4500 50  0001 C CNN
 F 3 "" H 6300 4500 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    6300 4500
 	1    0    0    -1  
 $EndComp
@@ -913,6 +925,8 @@ F 0 "TP13" H 7528 4640 50  0000 L CNN
 F 1 "TEST" H 7528 4549 50  0000 L CNN
 F 2 "fp:testpoint" H 7450 4500 50  0001 C CNN
 F 3 "" H 7450 4500 50  0001 C CNN
+F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
+F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
 	1    7450 4500
 	1    0    0    -1  
 $EndComp
