@@ -612,15 +612,14 @@ $Comp
 L R R11
 U 1 1 5AD5D031
 P 2450 4700
-F 0 "R11" V 2243 4700 50  0000 C CNN
+F 0 "R11" V 2550 4700 50  0000 C CNN
 F 1 "0R, 125mW, 1%" V 2350 5150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2380 4700 50  0001 C CNN
 F 3 "" H 2450 4700 50  0001 C CNN
-F 4 "2447324" H 0   -600 60  0001 C CNN "farnell #"
-F 5 "any/open" H -1400 300 60  0001 C CNN "supplier"
-F 6 "Value" H 2450 4700 60  0001 C CNN "supplier PN"
-F 7 "Value" H 2450 4700 60  0001 C CNN "MOQ"
-F 8 "Value" H 2450 4700 60  0001 C CNN "leadtime"
+F 4 "any/open" H -1400 300 60  0001 C CNN "supplier"
+F 5 "Value" H 2450 4700 60  0001 C CNN "supplier PN"
+F 6 "Value" H 2450 4700 60  0001 C CNN "MOQ"
+F 7 "Value" H 2450 4700 60  0001 C CNN "leadtime"
 	1    2450 4700
 	0    -1   -1   0   
 $EndComp
