@@ -1,5 +1,4 @@
 EESchema Schematic File Version 3
-LIBS:usb-hub-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,16 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:usb-2412
-LIBS:huble-rescue
 LIBS:rgbled
-LIBS:samd21j
-LIBS:tlv760
-LIBS:mmbzx
+LIBS:sled1735
 LIBS:usb_c_16pin
-LIBS:fe1-4port-hub
-LIBS:samd21g
-LIBS:usblc6-4
 LIBS:usb-hub-cache
 EELAYER 26 0
 EELAYER END
@@ -60,7 +52,7 @@ U 1 1 5A5F4B7B
 P 1900 1650
 F 0 "J5" H 1650 2000 50  0000 C CNN
 F 1 "USB_A socket SMT" H 1900 2150 50  0000 C CNN
-F 2 "fp:usb-a-smt-bfriend" H 2050 1600 50  0001 C CNN
+F 2 "raise_fp:usb-a-smt-bfriend" H 2050 1600 50  0001 C CNN
 F 3 "" H 2050 1600 50  0001 C CNN
 F 4 "2112370" H 1900 1650 60  0001 C CNN "farnell #"
 F 5 "any/open" H -650 350 60  0001 C CNN "supplier"
@@ -76,7 +68,7 @@ U 1 1 5A5F4E5A
 P 1500 5050
 F 0 "Y1" V 1454 5291 50  0000 L CNN
 F 1 "12mhz +-50ppm 16-20pf" V 1700 4550 50  0000 L CNN
-F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1500 5050 50  0001 C CNN
+F 2 "raise_fp:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1500 5050 50  0001 C CNN
 F 3 "" H 1500 5050 50  0001 C CNN
 F 4 "2308707" H 0   0   60  0001 C CNN "farnell #"
 F 5 "any/open" H 50  50  60  0001 C CNN "supplier"
@@ -93,7 +85,7 @@ U 1 1 5A5F5473
 P 2450 5300
 F 0 "R5" V 2243 5300 50  0000 C CNN
 F 1 "2.7k, 125mW, 1%" V 2334 5300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2380 5300 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 2380 5300 50  0001 C CNN
 F 3 "" H 2450 5300 50  0001 C CNN
 F 4 "any/open" H -1400 900 60  0001 C CNN "supplier"
 F 5 "Value" H 2450 5300 60  0001 C CNN "supplier PN"
@@ -131,7 +123,7 @@ U 1 1 5A5F59B1
 P 3100 3700
 F 0 "C5" H 2900 3850 50  0000 L CNN
 F 1 "10uF, ceramic, 6v, 10%, x5r" H 1850 3700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3138 3550 50  0001 C CNN
+F 2 "raise_fp:C_0603" H 3138 3550 50  0001 C CNN
 F 3 "" H 3100 3700 50  0001 C CNN
 F 4 "1288201" H -950 -1200 60  0001 C CNN "farnell #"
 F 5 "any/open" H -950 -1200 60  0001 C CNN "supplier"
@@ -177,7 +169,7 @@ U 1 1 5A5F6089
 P 2000 6250
 F 0 "R2" H 1930 6204 50  0000 R CNN
 F 1 "100k, 125mW, 5%" H 1800 6400 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" V 1930 6250 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 1930 6250 50  0001 C CNN
 F 3 "" H 2000 6250 50  0001 C CNN
 F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
 F 5 "Value" H 2000 6250 60  0001 C CNN "supplier PN"
@@ -193,7 +185,7 @@ U 1 1 5A5F6133
 P 2000 5950
 F 0 "R1" H 1930 5904 50  0000 R CNN
 F 1 "10k, 125mW, 5%" H 1930 5995 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" V 1930 5950 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 1930 5950 50  0001 C CNN
 F 3 "" H 2000 5950 50  0001 C CNN
 F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
 F 5 "2447230" H 200 3600 60  0001 C CNN "farnell #"
@@ -357,7 +349,7 @@ U 1 1 5A61E80C
 P 10700 2300
 F 0 "R6" H 10630 2254 50  0000 R CNN
 F 1 "5.1k, 125mW, 5%" H 10630 2345 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" V 10630 2300 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 10630 2300 50  0001 C CNN
 F 3 "" H 10700 2300 50  0001 C CNN
 F 4 "any/open" H 0   0   60  0001 C CNN "supplier"
 F 5 "2447404" H 0   0   60  0001 C CNN "farnell #"
@@ -411,7 +403,7 @@ U 1 1 5A9E6EA2
 P 6900 1400
 F 0 "C8" H 6925 1500 50  0000 L CNN
 F 1 "10uF, ceramic, 6v, 10%, x5r" H 6925 1300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6938 1250 30  0001 C CNN
+F 2 "raise_fp:C_0603" H 6938 1250 30  0001 C CNN
 F 3 "" H 6900 1400 60  0000 C CNN
 F 4 "1288201" H 6900 1400 60  0001 C CNN "farnell #"
 F 5 "any/open" H 900 100 60  0001 C CNN "supplier"
@@ -427,7 +419,7 @@ U 1 1 5A9E6F17
 P 5950 1400
 F 0 "C7" H 5975 1500 50  0000 L CNN
 F 1 "10uF, ceramic, 6v, 10%, x5r" H 4700 1200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 5988 1250 30  0001 C CNN
+F 2 "raise_fp:C_0603" H 5988 1250 30  0001 C CNN
 F 3 "" H 5950 1400 60  0000 C CNN
 F 4 "1288201" H 5950 1400 60  0001 C CNN "farnell #"
 F 5 "any/open" H -50 100 60  0001 C CNN "supplier"
@@ -465,7 +457,7 @@ U 1 1 5AA283CC
 P 9950 3000
 F 0 "J1" H 10055 4567 50  0000 C CNN
 F 1 "USB_C_Receptacle_16pin" H 10000 4650 50  0000 C CNN
-F 2 "fp:usb-c-16smt" H 10100 3000 50  0001 C CNN
+F 2 "raise_fp:usb-c-16smt" H 10100 3000 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 10100 3000 50  0001 C CNN
 F 4 "contact technology corp" H 0   0   60  0001 C CNN "supplier"
 F 5 "sbc-160s-202-s338" H 0   0   60  0001 C CNN "supplier PN"
@@ -480,7 +472,7 @@ U 1 1 5ABCC269
 P 3300 5250
 F 0 "U1" H 3275 6337 60  0000 C CNN
 F 1 "fe1-4port-hub" H 3275 6231 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm" H 3800 5050 60  0001 C CNN
+F 2 "raise_fp:QFN-24-1EP_4x4mm_Pitch0.5mm" H 3800 5050 60  0001 C CNN
 F 3 "" H 3800 5050 60  0001 C CNN
 F 4 "terminus" H 0   0   60  0001 C CNN "supplier"
 F 5 "FE1.1s-BQFN24B" H 0   0   60  0001 C CNN "supplier PN"
@@ -545,7 +537,7 @@ U 1 1 5ABCDBF0
 P 1800 5400
 F 0 "R3" H 1730 5354 50  0000 R CNN
 F 1 "100k, 125mW, 5%" V 1700 6150 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" V 1730 5400 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 1730 5400 50  0001 C CNN
 F 3 "" H 1800 5400 50  0001 C CNN
 F 4 "any/open" H 0   2750 60  0001 C CNN "supplier"
 F 5 "Value" H 1800 5400 60  0001 C CNN "supplier PN"
@@ -568,7 +560,7 @@ U 1 1 5ABCE581
 P 1800 5700
 F 0 "R4" H 1730 5654 50  0000 R CNN
 F 1 "10k, 125mW, 5%" V 1650 6500 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" V 1730 5700 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 1730 5700 50  0001 C CNN
 F 3 "" H 1800 5700 50  0001 C CNN
 F 4 "any/open" H 0   3350 60  0001 C CNN "supplier"
 F 5 "2447230" H 0   3350 60  0001 C CNN "farnell #"
@@ -587,7 +579,7 @@ U 1 1 5AC22206
 P 6400 1250
 F 0 "U2" H 6400 1492 50  0000 C CNN
 F 1 "LY2508" H 6400 1401 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 6400 1450 50  0001 C CNN
+F 2 "raise_fp:SOT-23" H 6400 1450 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6500 1000 50  0001 C CNN
 F 4 "2218573" H 200 0   60  0001 C CNN "farnell #"
 F 5 "Liani" H 200 0   60  0001 C CNN "supplier"
@@ -614,7 +606,7 @@ U 1 1 5AD5D031
 P 2450 4700
 F 0 "R11" V 2550 4700 50  0000 C CNN
 F 1 "0R, 125mW, 1%" V 2350 5150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2380 4700 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 2380 4700 50  0001 C CNN
 F 3 "" H 2450 4700 50  0001 C CNN
 F 4 "any/open" H -1400 300 60  0001 C CNN "supplier"
 F 5 "Value" H 2450 4700 60  0001 C CNN "supplier PN"
@@ -633,7 +625,7 @@ U 1 1 5AD5E01B
 P 3350 3700
 F 0 "C3" H 3550 3800 50  0000 L CNN
 F 1 "1uF, ceramic, 6v, 10%, x5r" H 3550 3650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3388 3550 50  0001 C CNN
+F 2 "raise_fp:C_0603" H 3388 3550 50  0001 C CNN
 F 3 "" H 3350 3700 50  0001 C CNN
 F 4 "any/open" H 1900 1050 60  0001 C CNN "supplier"
 F 5 "1865556" H 1900 1050 60  0001 C CNN "farnell #"
@@ -646,7 +638,7 @@ U 1 1 5AD5E1EB
 P 1650 6250
 F 0 "C1" H 1765 6296 50  0000 L CNN
 F 1 "1uF, ceramic, 6v, 10%, x5r" H 550 6150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1688 6100 50  0001 C CNN
+F 2 "raise_fp:C_0603" H 1688 6100 50  0001 C CNN
 F 3 "" H 1650 6250 50  0001 C CNN
 F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
 F 5 "1865556" H 200 3600 60  0001 C CNN "farnell #"
@@ -681,7 +673,7 @@ U 1 1 5AD62941
 P 3300 1450
 F 0 "L1" V 3026 1450 50  0000 C CNN
 F 1 "470R at 100M, 1A" V 3150 2000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3230 1450 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 3230 1450 50  0001 C CNN
 F 3 "" H 3300 1450 50  0001 C CNN
 F 4 "1515745" H 3300 1450 60  0001 C CNN "farnell #"
 F 5 "any/open" H 3300 1450 60  0001 C CNN "supplier"
@@ -697,7 +689,7 @@ U 1 1 5AD62AD8
 P 10650 1550
 F 0 "L2" V 10376 1550 50  0000 C CNN
 F 1 "470R at 100M, 1A" H 10600 1100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10580 1550 50  0001 C CNN
+F 2 "raise_fp:R_0603" V 10580 1550 50  0001 C CNN
 F 3 "" H 10650 1550 50  0001 C CNN
 F 4 "1515745" H 10650 1550 60  0001 C CNN "farnell #"
 F 5 "any/open" H 10650 1550 60  0001 C CNN "supplier"
@@ -753,7 +745,7 @@ U 1 1 5AD67267
 P 3000 1700
 F 0 "C11" H 3115 1746 50  0000 L CNN
 F 1 "100uf 6.3v, x5r, 20%" H 3115 1655 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3038 1550 50  0001 C CNN
+F 2 "raise_fp:C_1206" H 3038 1550 50  0001 C CNN
 F 3 "" H 3000 1700 50  0001 C CNN
 F 4 "2494474" H 3000 1700 60  0001 C CNN "farnell #"
 F 5 "Value" H 3000 1700 60  0001 C CNN "supplier"
@@ -802,7 +794,7 @@ U 1 1 5AD6FF9C
 P 6850 4500
 F 0 "TP3" H 6928 4640 50  0000 L CNN
 F 1 "TEST" H 6928 4549 50  0000 L CNN
-F 2 "fp:testpoint" H 6850 4500 50  0001 C CNN
+F 2 "raise_fp:testpoint" H 6850 4500 50  0001 C CNN
 F 3 "" H 6850 4500 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
@@ -817,7 +809,7 @@ U 1 1 5AD7005A
 P 6850 4850
 F 0 "TP4" H 6928 4990 50  0000 L CNN
 F 1 "TEST" H 6928 4899 50  0000 L CNN
-F 2 "fp:testpoint" H 6850 4850 50  0001 C CNN
+F 2 "raise_fp:testpoint" H 6850 4850 50  0001 C CNN
 F 3 "" H 6850 4850 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
@@ -832,7 +824,7 @@ U 1 1 5AD7078F
 P 5550 4850
 F 0 "TP6" H 5628 4990 50  0000 L CNN
 F 1 "TEST" H 5628 4899 50  0000 L CNN
-F 2 "fp:testpoint" H 5550 4850 50  0001 C CNN
+F 2 "raise_fp:testpoint" H 5550 4850 50  0001 C CNN
 F 3 "" H 5550 4850 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
@@ -845,7 +837,7 @@ U 1 1 5AD707D3
 P 6300 4850
 F 0 "TP7" H 6378 4990 50  0000 L CNN
 F 1 "TEST" H 6378 4899 50  0000 L CNN
-F 2 "fp:testpoint" H 6300 4850 50  0001 C CNN
+F 2 "raise_fp:testpoint" H 6300 4850 50  0001 C CNN
 F 3 "" H 6300 4850 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
@@ -862,7 +854,7 @@ U 1 1 5AD7092D
 P 5550 4500
 F 0 "TP5" H 5628 4640 50  0000 L CNN
 F 1 "TEST" H 5628 4549 50  0000 L CNN
-F 2 "fp:testpoint" H 5550 4500 50  0001 C CNN
+F 2 "raise_fp:testpoint" H 5550 4500 50  0001 C CNN
 F 3 "" H 5550 4500 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
@@ -888,7 +880,7 @@ U 1 1 5AD70C92
 P 6300 4500
 F 0 "TP8" H 6378 4640 50  0000 L CNN
 F 1 "TEST" H 6378 4549 50  0000 L CNN
-F 2 "fp:testpoint" H 6300 4500 50  0001 C CNN
+F 2 "raise_fp:testpoint" H 6300 4500 50  0001 C CNN
 F 3 "" H 6300 4500 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
@@ -922,7 +914,7 @@ U 1 1 5AD7201A
 P 7450 4500
 F 0 "TP13" H 7528 4640 50  0000 L CNN
 F 1 "TEST" H 7528 4549 50  0000 L CNN
-F 2 "fp:testpoint" H 7450 4500 50  0001 C CNN
+F 2 "raise_fp:testpoint" H 7450 4500 50  0001 C CNN
 F 3 "" H 7450 4500 50  0001 C CNN
 F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
 F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
