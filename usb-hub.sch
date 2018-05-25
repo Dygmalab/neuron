@@ -1,33 +1,4 @@
 EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:rgbled
 LIBS:sled1735
 LIBS:usb_c_16pin
@@ -36,7 +7,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -46,193 +17,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L USB_A J5
-U 1 1 5A5F4B7B
-P 1900 1650
-F 0 "J5" H 1650 2000 50  0000 C CNN
-F 1 "USB_A socket SMT" H 1900 2150 50  0000 C CNN
-F 2 "raise_fp:usb-a-smt-bfriend" H 2050 1600 50  0001 C CNN
-F 3 "" H 2050 1600 50  0001 C CNN
-F 4 "2112370" H 1900 1650 60  0001 C CNN "farnell #"
-F 5 "any/open" H -650 350 60  0001 C CNN "supplier"
-F 6 "UB001-2F" H 1900 1650 60  0001 C CNN "supplier PN"
-F 7 "Value" H 1900 1650 60  0001 C CNN "MOQ"
-F 8 "Value" H 1900 1650 60  0001 C CNN "leadtime"
-	1    1900 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Crystal_GND24 Y1
-U 1 1 5A5F4E5A
-P 1500 5050
-F 0 "Y1" V 1454 5291 50  0000 L CNN
-F 1 "12mhz +-50ppm 16-20pf" V 1700 4550 50  0000 L CNN
-F 2 "raise_fp:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1500 5050 50  0001 C CNN
-F 3 "" H 1500 5050 50  0001 C CNN
-F 4 "2308707" H 0   0   60  0001 C CNN "farnell #"
-F 5 "any/open" H 50  50  60  0001 C CNN "supplier"
-F 6 "Value" H 1500 5050 60  0001 C CNN "supplier PN"
-F 7 "Value" H 1500 5050 60  0001 C CNN "MOQ"
-F 8 "Value" H 1500 5050 60  0001 C CNN "leadtime"
-	1    1500 5050
-	0    1    1    0   
-$EndComp
-NoConn ~ 1700 5050
-$Comp
-L R R5
-U 1 1 5A5F5473
-P 2450 5300
-F 0 "R5" V 2243 5300 50  0000 C CNN
-F 1 "2.7k, 125mW, 1%" V 2334 5300 50  0000 C CNN
-F 2 "raise_fp:R_0603" V 2380 5300 50  0001 C CNN
-F 3 "" H 2450 5300 50  0001 C CNN
-F 4 "any/open" H -1400 900 60  0001 C CNN "supplier"
-F 5 "Value" H 2450 5300 60  0001 C CNN "supplier PN"
-F 6 "Value" H 2450 5300 60  0001 C CNN "MOQ"
-F 7 "Value" H 2450 5300 60  0001 C CNN "leadtime"
-F 8 "2447324" H 0   0   60  0001 C CNN "farnell #"
-	1    2450 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Earth #PWR012
-U 1 1 5A5F54AB
-P 2300 5300
-F 0 "#PWR012" H 2300 5050 50  0001 C CNN
-F 1 "Earth" H 2300 5150 50  0001 C CNN
-F 2 "" H 2300 5300 50  0001 C CNN
-F 3 "~" H 2300 5300 50  0001 C CNN
-	1    2300 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L +3.3V #PWR015
-U 1 1 5A5F58BD
-P 3200 3550
-F 0 "#PWR015" H 3200 3400 50  0001 C CNN
-F 1 "+3.3V" V 3215 3678 50  0000 L CNN
-F 2 "" H 3200 3550 50  0001 C CNN
-F 3 "" H 3200 3550 50  0001 C CNN
-	1    3200 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C5
-U 1 1 5A5F59B1
-P 3100 3700
-F 0 "C5" H 2900 3850 50  0000 L CNN
-F 1 "10uF, ceramic, 6v, 10%, x5r" H 1850 3700 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 3138 3550 50  0001 C CNN
-F 3 "" H 3100 3700 50  0001 C CNN
-F 4 "1288201" H -950 -1200 60  0001 C CNN "farnell #"
-F 5 "any/open" H -950 -1200 60  0001 C CNN "supplier"
-F 6 "Value" H 3100 3700 60  0001 C CNN "supplier PN"
-F 7 "Value" H 3100 3700 60  0001 C CNN "MOQ"
-F 8 "Value" H 3100 3700 60  0001 C CNN "leadtime"
-	1    3100 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR013
-U 1 1 5A5F5A76
-P 3100 3850
-F 0 "#PWR013" H 3100 3600 50  0001 C CNN
-F 1 "Earth" H 3100 3700 50  0001 C CNN
-F 2 "" H 3100 3850 50  0001 C CNN
-F 3 "~" H 3100 3850 50  0001 C CNN
-	1    3100 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR014
-U 1 1 5A5F5AA9
-P 3350 3850
-F 0 "#PWR014" H 3350 3600 50  0001 C CNN
-F 1 "Earth" H 3350 3700 50  0001 C CNN
-F 2 "" H 3350 3850 50  0001 C CNN
-F 3 "~" H 3350 3850 50  0001 C CNN
-	1    3350 3850
-	1    0    0    -1  
-$EndComp
-Text Label 3800 5600 0    60   ~ 0
-ext-usb_P
-Text Label 3800 5500 0    60   ~ 0
-ext-usb_N
-Text Label 3800 4850 0    60   ~ 0
-usb-up_P
-Text Label 3800 4750 0    60   ~ 0
-usb-up_N
-$Comp
-L R R2
-U 1 1 5A5F6089
-P 2000 6250
-F 0 "R2" H 1930 6204 50  0000 R CNN
-F 1 "100k, 125mW, 5%" H 1800 6400 50  0000 R CNN
-F 2 "raise_fp:R_0603" V 1930 6250 50  0001 C CNN
-F 3 "" H 2000 6250 50  0001 C CNN
-F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
-F 5 "Value" H 2000 6250 60  0001 C CNN "supplier PN"
-F 6 "Value" H 2000 6250 60  0001 C CNN "MOQ"
-F 7 "Value" H 2000 6250 60  0001 C CNN "leadtime"
-F 8 "2073350" H 0   0   60  0001 C CNN "farnell #"
-	1    2000 6250
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R1
-U 1 1 5A5F6133
-P 2000 5950
-F 0 "R1" H 1930 5904 50  0000 R CNN
-F 1 "10k, 125mW, 5%" H 1930 5995 50  0000 R CNN
-F 2 "raise_fp:R_0603" V 1930 5950 50  0001 C CNN
-F 3 "" H 2000 5950 50  0001 C CNN
-F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
-F 5 "2447230" H 200 3600 60  0001 C CNN "farnell #"
-	1    2000 5950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Earth #PWR04
-U 1 1 5A5F61AB
-P 2000 6400
-F 0 "#PWR04" H 2000 6150 50  0001 C CNN
-F 1 "Earth" H 2000 6250 50  0001 C CNN
-F 2 "" H 2000 6400 50  0001 C CNN
-F 3 "~" H 2000 6400 50  0001 C CNN
-	1    2000 6400
-	1    0    0    -1  
-$EndComp
-Text Label 2000 5800 0    60   ~ 0
-vbus-up
-$Comp
-L Earth #PWR01
-U 1 1 5A5F6319
-P 1650 6400
-F 0 "#PWR01" H 1650 6150 50  0001 C CNN
-F 1 "Earth" H 1650 6250 50  0001 C CNN
-F 2 "" H 1650 6400 50  0001 C CNN
-F 3 "~" H 1650 6400 50  0001 C CNN
-	1    1650 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR08
-U 1 1 5A5F6401
-P 1900 2050
-F 0 "#PWR08" H 1900 1800 50  0001 C CNN
-F 1 "Earth" H 1900 1900 50  0001 C CNN
-F 2 "" H 1900 2050 50  0001 C CNN
-F 3 "~" H 1900 2050 50  0001 C CNN
-	1    1900 2050
-	1    0    0    -1  
-$EndComp
-Text Label 3600 1450 0    60   ~ 0
-vbus-up
-Text Label 2200 1650 0    60   ~ 0
-ext-usb_P
-Text Label 2200 1750 0    60   ~ 0
-ext-usb_N
 $Comp
 L Earth #PWR021
 U 1 1 5A5F6899
@@ -263,75 +47,63 @@ Text Label 10550 2500 0    60   ~ 0
 usb-up_N
 NoConn ~ 10550 4200
 NoConn ~ 10550 4300
-Text Label 5850 1250 2    60   ~ 0
+Text Label 6950 1150 2    60   ~ 0
 vbus-up
 $Comp
 L Earth #PWR017
 U 1 1 5A5F7A3F
-P 6400 1550
-F 0 "#PWR017" H 6400 1300 50  0001 C CNN
-F 1 "Earth" H 6400 1400 50  0001 C CNN
-F 2 "" H 6400 1550 50  0001 C CNN
-F 3 "~" H 6400 1550 50  0001 C CNN
-	1    6400 1550
+P 7500 1450
+F 0 "#PWR017" H 7500 1200 50  0001 C CNN
+F 1 "Earth" H 7500 1300 50  0001 C CNN
+F 2 "" H 7500 1450 50  0001 C CNN
+F 3 "~" H 7500 1450 50  0001 C CNN
+	1    7500 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR019
 U 1 1 5A5F7AC2
-P 7100 1250
-F 0 "#PWR019" H 7100 1100 50  0001 C CNN
-F 1 "+3.3V" V 7115 1378 50  0000 L CNN
-F 2 "" H 7100 1250 50  0001 C CNN
-F 3 "" H 7100 1250 50  0001 C CNN
-	1    7100 1250
+P 8200 1150
+F 0 "#PWR019" H 8200 1000 50  0001 C CNN
+F 1 "+3.3V" V 8215 1278 50  0000 L CNN
+F 2 "" H 8200 1150 50  0001 C CNN
+F 3 "" H 8200 1150 50  0001 C CNN
+	1    8200 1150
 	0    1    1    0   
 $EndComp
 $Comp
 L Earth #PWR016
 U 1 1 5A5F7E45
-P 5950 1550
-F 0 "#PWR016" H 5950 1300 50  0001 C CNN
-F 1 "Earth" H 5950 1400 50  0001 C CNN
-F 2 "" H 5950 1550 50  0001 C CNN
-F 3 "~" H 5950 1550 50  0001 C CNN
-	1    5950 1550
+P 7050 1450
+F 0 "#PWR016" H 7050 1200 50  0001 C CNN
+F 1 "Earth" H 7050 1300 50  0001 C CNN
+F 2 "" H 7050 1450 50  0001 C CNN
+F 3 "~" H 7050 1450 50  0001 C CNN
+	1    7050 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Earth #PWR018
 U 1 1 5A5F7E90
-P 6900 1550
-F 0 "#PWR018" H 6900 1300 50  0001 C CNN
-F 1 "Earth" H 6900 1400 50  0001 C CNN
-F 2 "" H 6900 1550 50  0001 C CNN
-F 3 "~" H 6900 1550 50  0001 C CNN
-	1    6900 1550
+P 8000 1450
+F 0 "#PWR018" H 8000 1200 50  0001 C CNN
+F 1 "Earth" H 8000 1300 50  0001 C CNN
+F 2 "" H 8000 1450 50  0001 C CNN
+F 3 "~" H 8000 1450 50  0001 C CNN
+	1    8000 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 5A5F812B
-P 5950 1250
-F 0 "#FLG01" H 5950 1325 50  0001 C CNN
-F 1 "PWR_FLAG" H 5950 1424 50  0000 C CNN
-F 2 "" H 5950 1250 50  0001 C CNN
-F 3 "" H 5950 1250 50  0001 C CNN
-	1    5950 1250
+P 7050 1150
+F 0 "#FLG01" H 7050 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 7050 1324 50  0000 C CNN
+F 2 "" H 7050 1150 50  0001 C CNN
+F 3 "" H 7050 1150 50  0001 C CNN
+	1    7050 1150
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 5350 2800 1400 800 
-U 5A5F9C94
-F0 "huble" 60
-F1 "huble.sch" 60
-$EndSheet
-Text GLabel 3800 5800 2    60   Input ~ 0
-samd-usb_P
-Text GLabel 3800 5700 2    60   Input ~ 0
-samd-usb_N
-Text Notes 1600 1050 0    60   ~ 0
-expansion port
 $Comp
 L +5V #PWR025
 U 1 1 5A5FE2CC
@@ -370,22 +142,13 @@ $EndComp
 Text GLabel 10650 2200 2    60   Input ~ 0
 ufp-cc
 Wire Wire Line
-	1500 5200 2350 5200
-Wire Wire Line
-	2750 5300 2600 5300
-Connection ~ 3100 3550
-Connection ~ 3350 3550
-Wire Wire Line
-	1650 6100 2750 6100
-Connection ~ 2000 6100
-Wire Wire Line
 	10550 1700 10650 1700
 Wire Wire Line
-	5850 1250 6100 1250
-Connection ~ 5950 1250
+	6950 1150 7200 1150
+Connection ~ 7050 1150
 Wire Wire Line
-	6700 1250 7100 1250
-Connection ~ 6900 1250
+	7800 1150 8200 1150
+Connection ~ 8000 1150
 Connection ~ 10600 1700
 Wire Wire Line
 	10550 2500 10550 2600
@@ -395,60 +158,60 @@ Wire Wire Line
 	10550 2200 10550 2300
 Wire Wire Line
 	10550 2200 10650 2200
-Text Notes 5800 1900 0    60   ~ 0
+Text Notes 6900 1800 0    60   ~ 0
 usb hub: 65mA\nsamd21 with 3 RGBs: 10mA
 $Comp
 L C C8
 U 1 1 5A9E6EA2
-P 6900 1400
-F 0 "C8" H 6925 1500 50  0000 L CNN
-F 1 "10uF, ceramic, 6v, 10%, x5r" H 6925 1300 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 6938 1250 30  0001 C CNN
-F 3 "" H 6900 1400 60  0000 C CNN
-F 4 "1288201" H 6900 1400 60  0001 C CNN "farnell #"
-F 5 "any/open" H 900 100 60  0001 C CNN "supplier"
-F 6 "Value" H 6900 1400 60  0001 C CNN "supplier PN"
-F 7 "Value" H 6900 1400 60  0001 C CNN "MOQ"
-F 8 "Value" H 6900 1400 60  0001 C CNN "leadtime"
-	1    6900 1400
+P 8000 1300
+F 0 "C8" H 8025 1400 50  0000 L CNN
+F 1 "10uF, ceramic, 6v, 10%, x5r" H 8025 1200 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 8038 1150 30  0001 C CNN
+F 3 "" H 8000 1300 60  0000 C CNN
+F 4 "1288201" H 8000 1300 60  0001 C CNN "farnell #"
+F 5 "any/open" H 2000 0   60  0001 C CNN "supplier"
+F 6 "Value" H 8000 1300 60  0001 C CNN "supplier PN"
+F 7 "Value" H 8000 1300 60  0001 C CNN "MOQ"
+F 8 "Value" H 8000 1300 60  0001 C CNN "leadtime"
+	1    8000 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C7
 U 1 1 5A9E6F17
-P 5950 1400
-F 0 "C7" H 5975 1500 50  0000 L CNN
-F 1 "10uF, ceramic, 6v, 10%, x5r" H 4700 1200 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 5988 1250 30  0001 C CNN
-F 3 "" H 5950 1400 60  0000 C CNN
-F 4 "1288201" H 5950 1400 60  0001 C CNN "farnell #"
-F 5 "any/open" H -50 100 60  0001 C CNN "supplier"
-F 6 "Value" H 5950 1400 60  0001 C CNN "supplier PN"
-F 7 "Value" H 5950 1400 60  0001 C CNN "MOQ"
-F 8 "Value" H 5950 1400 60  0001 C CNN "leadtime"
-	1    5950 1400
+P 7050 1300
+F 0 "C7" H 7075 1400 50  0000 L CNN
+F 1 "10uF, ceramic, 6v, 10%, x5r" H 5800 1100 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 7088 1150 30  0001 C CNN
+F 3 "" H 7050 1300 60  0000 C CNN
+F 4 "1288201" H 7050 1300 60  0001 C CNN "farnell #"
+F 5 "any/open" H 1050 0   60  0001 C CNN "supplier"
+F 6 "Value" H 7050 1300 60  0001 C CNN "supplier PN"
+F 7 "Value" H 7050 1300 60  0001 C CNN "MOQ"
+F 8 "Value" H 7050 1300 60  0001 C CNN "leadtime"
+	1    7050 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Earth #PWR057
 U 1 1 5A9E763F
-P 5200 1350
-F 0 "#PWR057" H 5200 1100 50  0001 C CNN
-F 1 "Earth" H 5200 1200 50  0001 C CNN
-F 2 "" H 5200 1350 50  0001 C CNN
-F 3 "~" H 5200 1350 50  0001 C CNN
-	1    5200 1350
+P 6300 1250
+F 0 "#PWR057" H 6300 1000 50  0001 C CNN
+F 1 "Earth" H 6300 1100 50  0001 C CNN
+F 2 "" H 6300 1250 50  0001 C CNN
+F 3 "~" H 6300 1250 50  0001 C CNN
+	1    6300 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG02
 U 1 1 5A9E7674
-P 5200 1350
-F 0 "#FLG02" H 5200 1425 50  0001 C CNN
-F 1 "PWR_FLAG" H 5200 1524 50  0000 C CNN
-F 2 "" H 5200 1350 50  0001 C CNN
-F 3 "" H 5200 1350 50  0001 C CNN
-	1    5200 1350
+P 6300 1250
+F 0 "#FLG02" H 6300 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 1424 50  0000 C CNN
+F 2 "" H 6300 1250 50  0001 C CNN
+F 3 "" H 6300 1250 50  0001 C CNN
+	1    6300 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -467,182 +230,19 @@ $EndComp
 Wire Wire Line
 	10550 1900 10550 1700
 $Comp
-L fe1-4port-hub U1
-U 1 1 5ABCC269
-P 3300 5250
-F 0 "U1" H 3275 6337 60  0000 C CNN
-F 1 "fe1-4port-hub" H 3275 6231 60  0000 C CNN
-F 2 "raise_fp:QFN-24-1EP_4x4mm_Pitch0.5mm" H 3800 5050 60  0001 C CNN
-F 3 "" H 3800 5050 60  0001 C CNN
-F 4 "terminus" H 0   0   60  0001 C CNN "supplier"
-F 5 "FE1.1s-BQFN24B" H 0   0   60  0001 C CNN "supplier PN"
-	1    3300 5250
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3800 5400
-NoConn ~ 3800 5300
-NoConn ~ 3800 5200
-NoConn ~ 3800 5100
-NoConn ~ 2750 5600
-NoConn ~ 2750 5700
-NoConn ~ 2750 6000
-Wire Wire Line
-	1500 4900 2750 4900
-Wire Wire Line
-	2750 4900 2750 4950
-Wire Wire Line
-	2750 5050 2350 5050
-Wire Wire Line
-	2350 5050 2350 5200
-NoConn ~ 1300 5050
-$Comp
-L Earth #PWR03
-U 1 1 5ABCCD99
-P 2750 4600
-F 0 "#PWR03" H 2750 4350 50  0001 C CNN
-F 1 "Earth" H 2750 4450 50  0001 C CNN
-F 2 "" H 2750 4600 50  0001 C CNN
-F 3 "~" H 2750 4600 50  0001 C CNN
-	1    2750 4600
-	0    1    1    0   
-$EndComp
-NoConn ~ 2750 4500
-$Comp
-L +3.3V #PWR06
-U 1 1 5ABCD734
-P 2750 4800
-F 0 "#PWR06" H 2750 4650 50  0001 C CNN
-F 1 "+3.3V" V 2765 4928 50  0000 L CNN
-F 2 "" H 2750 4800 50  0001 C CNN
-F 3 "" H 2750 4800 50  0001 C CNN
-	1    2750 4800
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 2750 5500
-NoConn ~ 2750 5800
-$Comp
-L +3.3V #PWR02
-U 1 1 5ABCDBB9
-P 1650 5400
-F 0 "#PWR02" H 1650 5250 50  0001 C CNN
-F 1 "+3.3V" V 1665 5528 50  0000 L CNN
-F 2 "" H 1650 5400 50  0001 C CNN
-F 3 "" H 1650 5400 50  0001 C CNN
-	1    1650 5400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R3
-U 1 1 5ABCDBF0
-P 1800 5400
-F 0 "R3" H 1730 5354 50  0000 R CNN
-F 1 "100k, 125mW, 5%" V 1700 6150 50  0000 R CNN
-F 2 "raise_fp:R_0603" V 1730 5400 50  0001 C CNN
-F 3 "" H 1800 5400 50  0001 C CNN
-F 4 "any/open" H 0   2750 60  0001 C CNN "supplier"
-F 5 "Value" H 1800 5400 60  0001 C CNN "supplier PN"
-F 6 "Value" H 1800 5400 60  0001 C CNN "MOQ"
-F 7 "Value" H 1800 5400 60  0001 C CNN "leadtime"
-F 8 "2073350" H 0   0   60  0001 C CNN "farnell #"
-	1    1800 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1950 5400 2750 5400
-Wire Wire Line
-	3100 3550 3350 3550
-Connection ~ 3200 3550
-Text Label 1650 5700 2    60   ~ 0
-vbus-up
-$Comp
-L R R4
-U 1 1 5ABCE581
-P 1800 5700
-F 0 "R4" H 1730 5654 50  0000 R CNN
-F 1 "10k, 125mW, 5%" V 1650 6500 50  0000 R CNN
-F 2 "raise_fp:R_0603" V 1730 5700 50  0001 C CNN
-F 3 "" H 1800 5700 50  0001 C CNN
-F 4 "any/open" H 0   3350 60  0001 C CNN "supplier"
-F 5 "2447230" H 0   3350 60  0001 C CNN "farnell #"
-	1    1800 5700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1950 5700 2550 5700
-Wire Wire Line
-	2550 5700 2550 5900
-Wire Wire Line
-	2550 5900 2750 5900
-$Comp
 L LD1117S12TR_SOT223 U2
 U 1 1 5AC22206
-P 6400 1250
-F 0 "U2" H 6400 1492 50  0000 C CNN
-F 1 "LY2508" H 6400 1401 50  0000 C CNN
-F 2 "raise_fp:SOT-23" H 6400 1450 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6500 1000 50  0001 C CNN
-F 4 "2218573" H 200 0   60  0001 C CNN "farnell #"
-F 5 "Liani" H 200 0   60  0001 C CNN "supplier"
-F 6 "LY2508A33M" H 200 0   60  0001 C CNN "supplier PN"
-F 7 "Value" H 6400 1250 60  0001 C CNN "MOQ"
-F 8 "Value" H 6400 1250 60  0001 C CNN "leadtime"
-	1    6400 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR05
-U 1 1 5AD5D001
-P 2100 4700
-F 0 "#PWR05" H 2100 4550 50  0001 C CNN
-F 1 "+3.3V" V 2115 4828 50  0000 L CNN
-F 2 "" H 2100 4700 50  0001 C CNN
-F 3 "" H 2100 4700 50  0001 C CNN
-	1    2100 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R11
-U 1 1 5AD5D031
-P 2450 4700
-F 0 "R11" V 2550 4700 50  0000 C CNN
-F 1 "0R, 125mW, 1%" V 2350 5150 50  0000 C CNN
-F 2 "raise_fp:R_0603" V 2380 4700 50  0001 C CNN
-F 3 "" H 2450 4700 50  0001 C CNN
-F 4 "any/open" H -1400 300 60  0001 C CNN "supplier"
-F 5 "Value" H 2450 4700 60  0001 C CNN "supplier PN"
-F 6 "Value" H 2450 4700 60  0001 C CNN "MOQ"
-F 7 "Value" H 2450 4700 60  0001 C CNN "leadtime"
-	1    2450 4700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2600 4700 2750 4700
-Wire Wire Line
-	2100 4700 2300 4700
-$Comp
-L C C3
-U 1 1 5AD5E01B
-P 3350 3700
-F 0 "C3" H 3550 3800 50  0000 L CNN
-F 1 "1uF, ceramic, 6v, 10%, x5r" H 3550 3650 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 3388 3550 50  0001 C CNN
-F 3 "" H 3350 3700 50  0001 C CNN
-F 4 "any/open" H 1900 1050 60  0001 C CNN "supplier"
-F 5 "1865556" H 1900 1050 60  0001 C CNN "farnell #"
-	1    3350 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C1
-U 1 1 5AD5E1EB
-P 1650 6250
-F 0 "C1" H 1765 6296 50  0000 L CNN
-F 1 "1uF, ceramic, 6v, 10%, x5r" H 550 6150 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 1688 6100 50  0001 C CNN
-F 3 "" H 1650 6250 50  0001 C CNN
-F 4 "any/open" H 200 3600 60  0001 C CNN "supplier"
-F 5 "1865556" H 200 3600 60  0001 C CNN "farnell #"
-	1    1650 6250
+P 7500 1150
+F 0 "U2" H 7500 1392 50  0000 C CNN
+F 1 "LY2508" H 7500 1301 50  0000 C CNN
+F 2 "raise_fp:SOT-23" H 7500 1350 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 7600 900 50  0001 C CNN
+F 4 "2218573" H 1300 -100 60  0001 C CNN "farnell #"
+F 5 "Liani" H 1300 -100 60  0001 C CNN "supplier"
+F 6 "LY2508A33M" H 1300 -100 60  0001 C CNN "supplier PN"
+F 7 "Value" H 7500 1150 60  0001 C CNN "MOQ"
+F 8 "Value" H 7500 1150 60  0001 C CNN "leadtime"
+	1    7500 1150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -655,33 +255,6 @@ F 2 "" H 9650 4600 50  0001 C CNN
 F 3 "~" H 9650 4600 50  0001 C CNN
 	1    9650 4600
 	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR024
-U 1 1 5AD61207
-P 1800 2050
-F 0 "#PWR024" H 1800 1800 50  0001 C CNN
-F 1 "Earth" H 1800 1900 50  0001 C CNN
-F 2 "" H 1800 2050 50  0001 C CNN
-F 3 "~" H 1800 2050 50  0001 C CNN
-	1    1800 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Ferrite_Bead L1
-U 1 1 5AD62941
-P 3300 1450
-F 0 "L1" V 3026 1450 50  0000 C CNN
-F 1 "470R at 100M, 1A" V 3150 2000 50  0000 C CNN
-F 2 "raise_fp:R_0603" V 3230 1450 50  0001 C CNN
-F 3 "" H 3300 1450 50  0001 C CNN
-F 4 "1515745" H 3300 1450 60  0001 C CNN "farnell #"
-F 5 "any/open" H 3300 1450 60  0001 C CNN "supplier"
-F 6 "Value" H 3300 1450 60  0001 C CNN "supplier PN"
-F 7 "Value" H 3300 1450 60  0001 C CNN "MOQ"
-F 8 "Value" H 3300 1450 60  0001 C CNN "leadtime"
-	1    3300 1450
-	0    1    1    0   
 $EndComp
 $Comp
 L Ferrite_Bead L2
@@ -700,17 +273,6 @@ F 8 "Value" H 10650 1550 60  0001 C CNN "leadtime"
 	-1   0    0    1   
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
-U 1 1 5AD635D4
-P 2200 1450
-F 0 "#FLG04" H 2200 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 2200 1624 50  0000 C CNN
-F 2 "" H 2200 1450 50  0001 C CNN
-F 3 "" H 2200 1450 50  0001 C CNN
-	1    2200 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L PWR_FLAG #FLG05
 U 1 1 5AD63744
 P 10600 1700
@@ -719,40 +281,6 @@ F 1 "PWR_FLAG" H 11000 1750 50  0000 C CNN
 F 2 "" H 10600 1700 50  0001 C CNN
 F 3 "" H 10600 1700 50  0001 C CNN
 	1    10600 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1450 3150 1450
-Wire Wire Line
-	3000 1550 3000 1450
-Connection ~ 3000 1450
-$Comp
-L Earth #PWR049
-U 1 1 5AD66AE7
-P 3000 1850
-F 0 "#PWR049" H 3000 1600 50  0001 C CNN
-F 1 "Earth" H 3000 1700 50  0001 C CNN
-F 2 "" H 3000 1850 50  0001 C CNN
-F 3 "~" H 3000 1850 50  0001 C CNN
-	1    3000 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 1450 3600 1450
-$Comp
-L C C11
-U 1 1 5AD67267
-P 3000 1700
-F 0 "C11" H 3115 1746 50  0000 L CNN
-F 1 "100uf 6.3v, x5r, 20%" H 3115 1655 50  0000 L CNN
-F 2 "raise_fp:C_1206" H 3038 1550 50  0001 C CNN
-F 3 "" H 3000 1700 50  0001 C CNN
-F 4 "2494474" H 3000 1700 60  0001 C CNN "farnell #"
-F 5 "Value" H 3000 1700 60  0001 C CNN "supplier"
-F 6 "Value" H 3000 1700 60  0001 C CNN "supplier PN"
-F 7 "Value" H 3000 1700 60  0001 C CNN "MOQ"
-F 8 "Value" H 3000 1700 60  0001 C CNN "leadtime"
-	1    3000 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -791,134 +319,1383 @@ $EndComp
 $Comp
 L TEST TP3
 U 1 1 5AD6FF9C
-P 6850 4500
-F 0 "TP3" H 6928 4640 50  0000 L CNN
-F 1 "TEST" H 6928 4549 50  0000 L CNN
-F 2 "raise_fp:testpoint" H 6850 4500 50  0001 C CNN
-F 3 "" H 6850 4500 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
-	1    6850 4500
+P 10050 5700
+F 0 "TP3" H 10128 5840 50  0000 L CNN
+F 1 "TEST" H 10128 5749 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 10050 5700 50  0001 C CNN
+F 3 "" H 10050 5700 50  0001 C CNN
+F 4 "dnp" H 3200 1200 60  0001 C CNN "farnell #"
+F 5 "dnp" H 3200 1200 60  0001 C CNN "supplier"
+	1    10050 5700
 	1    0    0    -1  
 $EndComp
-Text Label 6850 4500 0    60   ~ 0
+Text Label 10050 5700 0    60   ~ 0
 usb-up_N
 $Comp
 L TEST TP4
 U 1 1 5AD7005A
-P 6850 4850
-F 0 "TP4" H 6928 4990 50  0000 L CNN
-F 1 "TEST" H 6928 4899 50  0000 L CNN
-F 2 "raise_fp:testpoint" H 6850 4850 50  0001 C CNN
-F 3 "" H 6850 4850 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
-	1    6850 4850
+P 10050 6050
+F 0 "TP4" H 10128 6190 50  0000 L CNN
+F 1 "TEST" H 10128 6099 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 10050 6050 50  0001 C CNN
+F 3 "" H 10050 6050 50  0001 C CNN
+F 4 "dnp" H 3200 1200 60  0001 C CNN "farnell #"
+F 5 "dnp" H 3200 1200 60  0001 C CNN "supplier"
+	1    10050 6050
 	1    0    0    -1  
 $EndComp
-Text Label 6850 4850 0    60   ~ 0
+Text Label 10050 6050 0    60   ~ 0
 usb-up_P
-$Comp
-L TEST TP6
-U 1 1 5AD7078F
-P 5550 4850
-F 0 "TP6" H 5628 4990 50  0000 L CNN
-F 1 "TEST" H 5628 4899 50  0000 L CNN
-F 2 "raise_fp:testpoint" H 5550 4850 50  0001 C CNN
-F 3 "" H 5550 4850 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
-	1    5550 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST TP7
-U 1 1 5AD707D3
-P 6300 4850
-F 0 "TP7" H 6378 4990 50  0000 L CNN
-F 1 "TEST" H 6378 4899 50  0000 L CNN
-F 2 "raise_fp:testpoint" H 6300 4850 50  0001 C CNN
-F 3 "" H 6300 4850 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
-	1    6300 4850
-	1    0    0    -1  
-$EndComp
-Text Label 5550 4850 0    60   ~ 0
-ext-usb_P
-Text Label 6300 4850 0    60   ~ 0
-ext-usb_N
 $Comp
 L TEST TP5
 U 1 1 5AD7092D
-P 5550 4500
-F 0 "TP5" H 5628 4640 50  0000 L CNN
-F 1 "TEST" H 5628 4549 50  0000 L CNN
-F 2 "raise_fp:testpoint" H 5550 4500 50  0001 C CNN
-F 3 "" H 5550 4500 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
-	1    5550 4500
+P 8750 5700
+F 0 "TP5" H 8828 5840 50  0000 L CNN
+F 1 "TEST" H 8828 5749 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 8750 5700 50  0001 C CNN
+F 3 "" H 8750 5700 50  0001 C CNN
+F 4 "dnp" H 3200 1200 60  0001 C CNN "farnell #"
+F 5 "dnp" H 3200 1200 60  0001 C CNN "supplier"
+	1    8750 5700
 	1    0    0    -1  
 $EndComp
-Text Label 5550 4500 0    60   ~ 0
+Text Label 8750 5700 0    60   ~ 0
 vbus-up
 $Comp
 L Earth #PWR066
 U 1 1 5AD70C55
-P 6300 4500
-F 0 "#PWR066" H 6300 4250 50  0001 C CNN
-F 1 "Earth" H 6300 4350 50  0001 C CNN
-F 2 "" H 6300 4500 50  0001 C CNN
-F 3 "~" H 6300 4500 50  0001 C CNN
-	1    6300 4500
+P 9500 5700
+F 0 "#PWR066" H 9500 5450 50  0001 C CNN
+F 1 "Earth" H 9500 5550 50  0001 C CNN
+F 2 "" H 9500 5700 50  0001 C CNN
+F 3 "~" H 9500 5700 50  0001 C CNN
+	1    9500 5700
 	1    0    0    -1  
 $EndComp
 $Comp
 L TEST TP8
 U 1 1 5AD70C92
-P 6300 4500
-F 0 "TP8" H 6378 4640 50  0000 L CNN
-F 1 "TEST" H 6378 4549 50  0000 L CNN
-F 2 "raise_fp:testpoint" H 6300 4500 50  0001 C CNN
-F 3 "" H 6300 4500 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
-	1    6300 4500
+P 9500 5700
+F 0 "TP8" H 9578 5840 50  0000 L CNN
+F 1 "TEST" H 9578 5749 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 9500 5700 50  0001 C CNN
+F 3 "" H 9500 5700 50  0001 C CNN
+F 4 "dnp" H 3200 1200 60  0001 C CNN "farnell #"
+F 5 "dnp" H 3200 1200 60  0001 C CNN "supplier"
+	1    9500 5700
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	5350 4000 7600 4000
+	8550 5200 10800 5200
 Wire Notes Line
-	7600 4000 7600 5200
+	10800 5200 10800 6400
 Wire Notes Line
-	7600 5200 5350 5200
+	10800 6400 8550 6400
 Wire Notes Line
-	5350 5200 5350 4000
-Text Notes 5500 5150 0    60   ~ 0
+	8550 6400 8550 5200
+Text Notes 8700 6350 0    60   ~ 0
 testpoints
 $Comp
 L +3.3V #PWR067
 U 1 1 5AD71EF1
-P 7450 4500
-F 0 "#PWR067" H 7450 4350 50  0001 C CNN
-F 1 "+3.3V" V 7465 4628 50  0000 L CNN
-F 2 "" H 7450 4500 50  0001 C CNN
-F 3 "" H 7450 4500 50  0001 C CNN
-	1    7450 4500
+P 10650 5700
+F 0 "#PWR067" H 10650 5550 50  0001 C CNN
+F 1 "+3.3V" V 10665 5828 50  0000 L CNN
+F 2 "" H 10650 5700 50  0001 C CNN
+F 3 "" H 10650 5700 50  0001 C CNN
+	1    10650 5700
 	-1   0    0    1   
 $EndComp
 $Comp
 L TEST TP13
 U 1 1 5AD7201A
-P 7450 4500
-F 0 "TP13" H 7528 4640 50  0000 L CNN
-F 1 "TEST" H 7528 4549 50  0000 L CNN
-F 2 "raise_fp:testpoint" H 7450 4500 50  0001 C CNN
-F 3 "" H 7450 4500 50  0001 C CNN
-F 4 "dnp" H 0   0   60  0001 C CNN "farnell #"
-F 5 "dnp" H 0   0   60  0001 C CNN "supplier"
-	1    7450 4500
+P 10650 5700
+F 0 "TP13" H 10728 5840 50  0000 L CNN
+F 1 "TEST" H 10728 5749 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 10650 5700 50  0001 C CNN
+F 3 "" H 10650 5700 50  0001 C CNN
+F 4 "dnp" H 3200 1200 60  0001 C CNN "farnell #"
+F 5 "dnp" H 3200 1200 60  0001 C CNN "supplier"
+	1    10650 5700
 	1    0    0    -1  
 $EndComp
+$Comp
+L C C9
+U 1 1 5B07FB05
+P 7900 5700
+F 0 "C9" H 7925 5800 50  0000 L CNN
+F 1 "10uF, ceramic, 6v, 10%, x5r" H 6900 5150 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 7938 5550 30  0001 C CNN
+F 3 "" H 7900 5700 60  0000 C CNN
+F 4 "1288201" H 7900 5700 60  0001 C CNN "farnell #"
+F 5 "any/open" H 1900 4400 60  0001 C CNN "supplier"
+F 6 "Value" H 7900 5700 60  0001 C CNN "supplier PN"
+F 7 "Value" H 7900 5700 60  0001 C CNN "MOQ"
+F 8 "Value" H 7900 5700 60  0001 C CNN "leadtime"
+	1    7900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 5B07FB0C
+P 1600 1200
+F 0 "#PWR01" H 1600 950 50  0001 C CNN
+F 1 "Earth" H 1600 1050 50  0001 C CNN
+F 2 "" H 1600 1200 60  0000 C CNN
+F 3 "" H 1600 1200 60  0000 C CNN
+	1    1600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x03_Odd_Even P1
+U 1 1 5B07FB14
+P 1250 1100
+F 0 "P1" H 1250 1300 50  0000 C CNN
+F 1 "CONN_02X03" H 1250 900 50  0000 C CNN
+F 2 "raise_fp:Tag-Connect_TC2030-IDC-NL" H 1250 -100 60  0001 C CNN
+F 3 "" H 1250 -100 60  0000 C CNN
+F 4 "dnp" H 1250 1100 60  0001 C CNN "farnell #"
+F 5 "dnp" H -6400 100 60  0001 C CNN "supplier"
+	1    1250 1100
+	1    0    0    -1  
+$EndComp
+Text Label 4400 3750 0    60   ~ 0
+scl
+Text Label 4400 3850 0    60   ~ 0
+sda
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5B07FB1D
+P 7900 5550
+F 0 "#FLG03" H 7900 5645 50  0001 C CNN
+F 1 "PWR_FLAG" H 7900 5774 50  0000 C CNN
+F 2 "" H 7900 5550 50  0000 C CNN
+F 3 "" H 7900 5550 50  0000 C CNN
+	1    7900 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5B07FB28
+P 7650 2850
+F 0 "R3" V 7730 2850 50  0000 C CNN
+F 1 "4.7k, 125mW, 5%" V 7550 2850 50  0000 C CNN
+F 2 "raise_fp:R_0603" V 7580 2850 30  0001 C CNN
+F 3 "" H 7650 2850 30  0000 C CNN
+F 4 "any/open" H 3150 -350 60  0001 C CNN "supplier"
+F 5 "Value" H 7650 2850 60  0001 C CNN "supplier PN"
+F 6 "Value" H 7650 2850 60  0001 C CNN "MOQ"
+F 7 "Value" H 7650 2850 60  0001 C CNN "leadtime"
+F 8 "1469807" H 2200 -2000 60  0001 C CNN "farnell #"
+	1    7650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5B07FB34
+P 7850 3100
+F 0 "R5" V 7930 3100 50  0000 C CNN
+F 1 "4.7k, 125mW, 5%" V 8050 3150 50  0000 C CNN
+F 2 "raise_fp:R_0603" V 7780 3100 30  0001 C CNN
+F 3 "" H 7850 3100 30  0000 C CNN
+F 4 "any/open" H 3350 -400 60  0001 C CNN "supplier"
+F 5 "Value" H 7850 3100 60  0001 C CNN "supplier PN"
+F 6 "Value" H 7850 3100 60  0001 C CNN "MOQ"
+F 7 "Value" H 7850 3100 60  0001 C CNN "leadtime"
+F 8 "1469807" H 2200 -2000 60  0001 C CNN "farnell #"
+	1    7850 3100
+	1    0    0    -1  
+$EndComp
+Text Label 6000 3000 2    60   ~ 0
+sda
+Text Label 6000 3250 2    60   ~ 0
+scl
+$Comp
+L +5V #PWR02
+U 1 1 5B07FB3D
+P 7850 2950
+F 0 "#PWR02" H 7850 2800 50  0001 C CNN
+F 1 "+5V" H 7850 3090 50  0000 C CNN
+F 2 "" H 7850 2950 60  0000 C CNN
+F 3 "" H 7850 2950 60  0000 C CNN
+	1    7850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5B07FB43
+P 7650 2700
+F 0 "#PWR03" H 7650 2550 50  0001 C CNN
+F 1 "+5V" H 7650 2840 50  0000 C CNN
+F 2 "" H 7650 2700 60  0000 C CNN
+F 3 "" H 7650 2700 60  0000 C CNN
+	1    7650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L rgbled U4
+U 1 1 5B07FB4E
+P 7550 4600
+F 0 "U4" H 7382 4739 60  0000 R CNN
+F 1 "4 pin RGB led, com anode, red: 500mcd 620nm. Green: 1000mcd 520nm. Blue: 500mcd 460nm." H 7382 4633 60  0001 R CNN
+F 2 "raise_fp:3528-4p" V 7550 4650 60  0001 C CNN
+F 3 "" V 7550 4650 60  0001 C CNN
+F 4 "any/open" H -1150 -1300 60  0001 C CNN "supplier"
+F 5 "Value" H 7550 4600 60  0001 C CNN "supplier PN"
+F 6 "Value" H 7550 4600 60  0001 C CNN "MOQ"
+F 7 "Value" H 7550 4600 60  0001 C CNN "leadtime"
+F 8 "" H 3450 -2250 60  0001 C CNN "farnell #"
+	1    7550 4600
+	1    0    0    -1  
+$EndComp
+Text Label 7250 4100 2    60   ~ 0
+pwm1_r
+Text Label 7250 4400 2    60   ~ 0
+pwm1_g
+Text Label 7250 4700 2    60   ~ 0
+pwm1_b
+$Comp
+L R R8
+U 1 1 5B07FB5A
+P 7400 4100
+F 0 "R8" V 7480 4100 50  0000 C CNN
+F 1 "180R, 125mW, 5%" V 7250 3700 50  0000 C CNN
+F 2 "raise_fp:R_0603" V 7330 4100 30  0001 C CNN
+F 3 "" H 7400 4100 30  0000 C CNN
+F 4 "any/open" H -1150 -1300 60  0001 C CNN "supplier"
+F 5 "2447267" H 3450 -2250 60  0001 C CNN "farnell #"
+	1    7400 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5B07FB63
+P 7400 4400
+F 0 "R9" V 7480 4400 50  0000 C CNN
+F 1 "42.2R, 125mW, 5%" V 7300 4000 50  0000 C CNN
+F 2 "raise_fp:R_0603" V 7330 4400 30  0001 C CNN
+F 3 "" H 7400 4400 30  0000 C CNN
+F 4 "any/open" H -1150 -1300 60  0001 C CNN "supplier"
+F 5 "2694864" H 3450 -2250 60  0001 C CNN "farnell #"
+	1    7400 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 5B07FB6C
+P 7400 4700
+F 0 "R10" V 7480 4700 50  0000 C CNN
+F 1 "42.2R, 125mW, 5%" V 7250 4250 50  0000 C CNN
+F 2 "raise_fp:R_0603" V 7330 4700 30  0001 C CNN
+F 3 "" H 7400 4700 30  0000 C CNN
+F 4 "any/open" H -1150 -1300 60  0001 C CNN "supplier"
+F 5 "2694864" H 3450 -2250 60  0001 C CNN "farnell #"
+	1    7400 4700
+	0    1    1    0   
+$EndComp
+Text GLabel 4850 3550 2    60   Input ~ 0
+samd-usb_P
+Text GLabel 4850 3650 2    60   Input ~ 0
+samd-usb_N
+NoConn ~ -2300 3650
+NoConn ~ -2300 3750
+NoConn ~ -2250 7050
+NoConn ~ -2250 7150
+Text Label -900 1450 0    60   ~ 0
+left-switch
+Text Label -750 4450 0    60   ~ 0
+right-switch
+Text Label 2700 5250 3    60   ~ 0
+left-switch
+Text Label 2800 5250 3    60   ~ 0
+right-switch
+Text Label -1750 5050 0    60   ~ 0
+dfp-r-cc
+Text Label -1750 1650 0    60   ~ 0
+dfp-l-cc
+Text Label 2100 4550 2    60   ~ 0
+dfp-r-cc
+Text Label 2100 4450 2    60   ~ 0
+dfp-l-cc
+Text Label 2600 5250 3    60   ~ 0
+pwm1_r
+Text Label 2500 5250 3    60   ~ 0
+pwm1_g
+Text Label 4000 5250 3    60   ~ 0
+pwm1_b
+Text Label 4400 4050 0    60   ~ 0
+pwm2_r
+Text Label 2100 4750 2    60   ~ 0
+pwm2_g
+Text Label 2100 4850 2    60   ~ 0
+pwm2_b
+Text Label 4400 4450 0    60   ~ 0
+pwm3_r
+Text Label 4400 4650 0    60   ~ 0
+pwm3_g
+Text Label 4400 4350 0    60   ~ 0
+pwm3_b
+$Comp
+L +3.3V #PWR04
+U 1 1 5B07FBDE
+P 8150 5500
+F 0 "#PWR04" H 8150 5350 50  0001 C CNN
+F 1 "+3.3V" V 8165 5628 50  0000 L CNN
+F 2 "" H 8150 5500 50  0001 C CNN
+F 3 "" H 8150 5500 50  0001 C CNN
+	1    8150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 5B07FBE4
+P 3300 2700
+F 0 "#PWR05" H 3300 2550 50  0001 C CNN
+F 1 "+3.3V" V 3315 2828 50  0000 L CNN
+F 2 "" H 3300 2700 50  0001 C CNN
+F 3 "" H 3300 2700 50  0001 C CNN
+	1    3300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 5B07FBEA
+P 3500 2600
+F 0 "#PWR06" H 3500 2350 50  0001 C CNN
+F 1 "Earth" H 3500 2450 50  0001 C CNN
+F 2 "" H 3500 2600 60  0000 C CNN
+F 3 "" H 3500 2600 60  0000 C CNN
+	1    3500 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR07
+U 1 1 5B07FBF0
+P 1950 3950
+F 0 "#PWR07" H 1950 3700 50  0001 C CNN
+F 1 "Earth" H 1950 3800 50  0001 C CNN
+F 2 "" H 1950 3950 60  0000 C CNN
+F 3 "" H 1950 3950 60  0000 C CNN
+	1    1950 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR08
+U 1 1 5B07FBF6
+P 3000 5450
+F 0 "#PWR08" H 3000 5200 50  0001 C CNN
+F 1 "Earth" H 3000 5300 50  0001 C CNN
+F 2 "" H 3000 5450 60  0000 C CNN
+F 3 "" H 3000 5450 60  0000 C CNN
+	1    3000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR09
+U 1 1 5B07FBFC
+P 4650 3450
+F 0 "#PWR09" H 4650 3200 50  0001 C CNN
+F 1 "Earth" H 4650 3300 50  0001 C CNN
+F 2 "" H 4650 3450 60  0000 C CNN
+F 3 "" H 4650 3450 60  0000 C CNN
+	1    4650 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR010
+U 1 1 5B07FC02
+P 4700 3350
+F 0 "#PWR010" H 4700 3200 50  0001 C CNN
+F 1 "+3.3V" V 4715 3478 50  0000 L CNN
+F 2 "" H 4700 3350 50  0001 C CNN
+F 3 "" H 4700 3350 50  0001 C CNN
+	1    4700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR012
+U 1 1 5B07FC08
+P 1900 4050
+F 0 "#PWR012" H 1900 3900 50  0001 C CNN
+F 1 "+3.3V" V 1915 4178 50  0000 L CNN
+F 2 "" H 1900 4050 50  0001 C CNN
+F 3 "" H 1900 4050 50  0001 C CNN
+	1    1900 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR013
+U 1 1 5B07FC0E
+P 2900 5500
+F 0 "#PWR013" H 2900 5350 50  0001 C CNN
+F 1 "+3.3V" V 2915 5628 50  0000 L CNN
+F 2 "" H 2900 5500 50  0001 C CNN
+F 3 "" H 2900 5500 50  0001 C CNN
+	1    2900 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C3
+U 1 1 5B07FC16
+P 1250 3700
+F 0 "C3" H 1365 3746 50  0000 L CNN
+F 1 "20pf, ceramic, 6v, 5%" H 1365 3655 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 1288 3550 50  0001 C CNN
+F 3 "" H 1250 3700 50  0001 C CNN
+F 4 "1865475" H 1250 3700 60  0001 C CNN "farnell #"
+F 5 "any/open" H -200 -1600 60  0001 C CNN "supplier"
+	1    1250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5B07FC1F
+P 1250 3100
+F 0 "C2" H 1365 3146 50  0000 L CNN
+F 1 "20pf, ceramic, 6v, 5%" H 1365 3055 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 1288 2950 50  0001 C CNN
+F 3 "" H 1250 3100 50  0001 C CNN
+F 4 "1865475" H 1250 3100 60  0001 C CNN "farnell #"
+F 5 "any/open" H -200 -1600 60  0001 C CNN "supplier"
+	1    1250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR014
+U 1 1 5B07FC26
+P 1250 3850
+F 0 "#PWR014" H 1250 3600 50  0001 C CNN
+F 1 "Earth" H 1250 3700 50  0001 C CNN
+F 2 "" H 1250 3850 50  0001 C CNN
+F 3 "~" H 1250 3850 50  0001 C CNN
+	1    1250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR015
+U 1 1 5B07FC2C
+P 1250 2950
+F 0 "#PWR015" H 1250 2700 50  0001 C CNN
+F 1 "Earth" H 1250 2800 50  0001 C CNN
+F 2 "" H 1250 2950 50  0001 C CNN
+F 3 "~" H 1250 2950 50  0001 C CNN
+	1    1250 2950
+	-1   0    0    1   
+$EndComp
+Text GLabel 2100 4350 0    60   Input ~ 0
+ufp-cc
+NoConn ~ 3100 5250
+NoConn ~ 3200 5250
+NoConn ~ 3700 5250
+NoConn ~ 3800 5250
+NoConn ~ 3900 5250
+NoConn ~ 4400 4550
+NoConn ~ 4400 3950
+NoConn ~ 4000 2900
+NoConn ~ 3900 2900
+NoConn ~ 3800 2900
+NoConn ~ 3600 2900
+NoConn ~ 2600 2900
+NoConn ~ 2500 2900
+NoConn ~ 2100 4650
+Text Label 3700 2650 1    60   ~ 0
+reset
+Text Label 3200 2900 1    60   ~ 0
+swclk
+Text Label 3100 2900 1    60   ~ 0
+swdio
+Text Label 1550 1100 0    60   ~ 0
+swclk
+Text Label 1050 1100 2    60   ~ 0
+swdio
+NoConn ~ 1050 1200
+Text Label 1050 1000 2    60   ~ 0
+reset
+$Comp
+L +3.3V #PWR020
+U 1 1 5B07FC48
+P 1550 1000
+F 0 "#PWR020" H 1550 850 50  0001 C CNN
+F 1 "+3.3V" V 1565 1128 50  0000 L CNN
+F 2 "" H 1550 1000 50  0001 C CNN
+F 3 "" H 1550 1000 50  0001 C CNN
+	1    1550 1000
+	1    0    0    -1  
+$EndComp
+Text Notes 7000 2450 0    60   ~ 0
+level translate\n
+$Comp
+L Earth #PWR023
+U 1 1 5B07FC4F
+P 8150 5950
+F 0 "#PWR023" H 8150 5700 50  0001 C CNN
+F 1 "Earth" H 8150 5800 50  0001 C CNN
+F 2 "" H 8150 5950 60  0000 C CNN
+F 3 "" H 8150 5950 60  0000 C CNN
+	1    8150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5B07FC57
+P 6350 2850
+F 0 "R2" V 6430 2850 50  0000 C CNN
+F 1 "10k, 125mW, 5%" V 6500 2900 50  0000 C CNN
+F 2 "raise_fp:R_0603" V 6280 2850 30  0001 C CNN
+F 3 "" H 6350 2850 30  0000 C CNN
+F 4 "2447230" H 6350 2850 60  0001 C CNN "farnell #"
+F 5 "any/open" H 1850 -650 60  0001 C CNN "supplier"
+	1    6350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5B07FC60
+P 6150 3100
+F 0 "R4" V 6230 3100 50  0000 C CNN
+F 1 "10k, 125mW, 5%" V 6050 3250 50  0000 C CNN
+F 2 "raise_fp:R_0603" V 6080 3100 30  0001 C CNN
+F 3 "" H 6150 3100 30  0000 C CNN
+F 4 "2447230" H 6150 3100 60  0001 C CNN "farnell #"
+F 5 "any/open" H 1650 -400 60  0001 C CNN "supplier"
+	1    6150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR024
+U 1 1 5B07FC67
+P 6150 2950
+F 0 "#PWR024" H 6150 2800 50  0001 C CNN
+F 1 "+3.3V" V 6165 3078 50  0000 L CNN
+F 2 "" H 6150 2950 50  0001 C CNN
+F 3 "" H 6150 2950 50  0001 C CNN
+	1    6150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR026
+U 1 1 5B07FC6D
+P 6350 2700
+F 0 "#PWR026" H 6350 2550 50  0001 C CNN
+F 1 "+3.3V" V 6365 2828 50  0000 L CNN
+F 2 "" H 6350 2700 50  0001 C CNN
+F 3 "" H 6350 2700 50  0001 C CNN
+	1    6350 2700
+	1    0    0    -1  
+$EndComp
+Text Label 8700 3000 0    60   ~ 0
+sda5
+Text Label 8700 3250 0    60   ~ 0
+scl5
+$Comp
+L +3.3V #PWR027
+U 1 1 5B07FC75
+P 6750 2700
+F 0 "#PWR027" H 6750 2550 50  0001 C CNN
+F 1 "+3.3V" V 6765 2828 50  0000 L CNN
+F 2 "" H 6750 2700 50  0001 C CNN
+F 3 "" H 6750 2700 50  0001 C CNN
+	1    6750 2700
+	1    0    0    -1  
+$EndComp
+Text Label -2300 1950 0    60   ~ 0
+sda5
+Text Label -2300 2150 0    60   ~ 0
+scl5
+Text Label -2250 5650 0    60   ~ 0
+scl5
+Text Label -2250 5350 0    60   ~ 0
+sda5
+Wire Wire Line
+	8150 5550 8150 5500
+Connection ~ 8150 5550
+Wire Wire Line
+	6950 5850 8150 5850
+Wire Wire Line
+	8150 5850 8150 5950
+Connection ~ 8150 5850
+Connection ~ 7900 5550
+Connection ~ 7900 5850
+Wire Wire Line
+	7850 4300 7750 4300
+Wire Wire Line
+	7750 4300 7750 4900
+Connection ~ 7750 4600
+Wire Wire Line
+	1550 1200 1600 1200
+Connection ~ -2300 1350
+Connection ~ -2300 1150
+Connection ~ -2250 4550
+Wire Wire Line
+	-2300 1950 -2300 2050
+Wire Wire Line
+	-2300 2150 -2300 2250
+Wire Wire Line
+	-2250 5350 -2250 5450
+Wire Wire Line
+	-2250 5550 -2250 5650
+Wire Wire Line
+	-2250 5150 -2250 5050
+Wire Wire Line
+	-2250 5050 -1750 5050
+Wire Wire Line
+	-2300 1750 -2300 1650
+Wire Wire Line
+	-2300 1650 -1750 1650
+Wire Wire Line
+	3300 2700 3300 2900
+Wire Wire Line
+	3400 2150 3400 2900
+Wire Wire Line
+	3500 2600 3500 2900
+Wire Wire Line
+	1950 3950 2100 3950
+Wire Wire Line
+	3000 5250 3000 5450
+Wire Wire Line
+	4650 3450 4400 3450
+Wire Wire Line
+	4400 3350 4700 3350
+Wire Wire Line
+	1900 4050 2100 4050
+Wire Wire Line
+	2900 5500 2900 5250
+Connection ~ 6950 5550
+Connection ~ 7250 5550
+Connection ~ 7550 5550
+Connection ~ 6950 5850
+Connection ~ 7550 5850
+Connection ~ 7250 5850
+Wire Wire Line
+	4400 3550 4850 3550
+Wire Wire Line
+	4400 3650 4850 3650
+Wire Wire Line
+	3700 2900 3700 2650
+Wire Wire Line
+	6000 3000 6550 3000
+Wire Wire Line
+	6000 3250 7050 3250
+Wire Wire Line
+	6950 3000 8700 3000
+Wire Wire Line
+	7450 3250 8700 3250
+Connection ~ 7850 3250
+Connection ~ 7650 3000
+Connection ~ 6350 3000
+Connection ~ 6150 3250
+Wire Wire Line
+	7250 2950 7250 2700
+Wire Wire Line
+	7250 2700 6750 2700
+Wire Notes Line
+	5850 2300 8400 2300
+Wire Notes Line
+	8900 2300 8900 3550
+Wire Notes Line
+	8400 3550 5850 3550
+Wire Notes Line
+	5850 3550 5850 2300
+Wire Wire Line
+	-2300 1150 -2300 1350
+Wire Wire Line
+	-2250 4550 -2250 4750
+Text Notes 5800 3650 0    60   ~ 0
+https://www.nxp.com/docs/en/application-note/AN10441.pdf
+$Comp
+L Q_NMOS_GSD Q3
+U 1 1 5B07FCC9
+P 6750 2900
+F 0 "Q3" V 7000 2900 50  0000 C CNN
+F 1 "Q_NMOS_GSD 1Amp" V 7091 2900 50  0000 C CNN
+F 2 "raise_fp:SOT-323_SC-70" H 6950 3000 50  0001 C CNN
+F 3 "" H 6750 2900 50  0001 C CNN
+F 4 "2061403" H 6750 2900 60  0001 C CNN "farnell #"
+F 5 "any/open" H 6750 2900 60  0001 C CNN "supplier"
+F 6 "Value" H 6750 2900 60  0001 C CNN "supplier PN"
+F 7 "Value" H 6750 2900 60  0001 C CNN "MOQ"
+F 8 "Value" H 6750 2900 60  0001 C CNN "leadtime"
+	1    6750 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NMOS_GSD Q4
+U 1 1 5B07FCD5
+P 7250 3150
+F 0 "Q4" V 7500 3150 50  0000 C CNN
+F 1 "Q_NMOS_GSD 1Amp" V 7591 3150 50  0000 C CNN
+F 2 "raise_fp:SOT-323_SC-70" H 7450 3250 50  0001 C CNN
+F 3 "" H 7250 3150 50  0001 C CNN
+F 4 "2061403" H 7250 3150 60  0001 C CNN "farnell #"
+F 5 "any/open" H 7250 3150 60  0001 C CNN "supplier"
+F 6 "Value" H 7250 3150 60  0001 C CNN "supplier PN"
+F 7 "Value" H 7250 3150 60  0001 C CNN "MOQ"
+F 8 "Value" H 7250 3150 60  0001 C CNN "leadtime"
+	1    7250 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR028
+U 1 1 5B07FCDC
+P 7850 4300
+F 0 "#PWR028" H 7850 4150 50  0001 C CNN
+F 1 "+3.3V" V 7865 4428 50  0000 L CNN
+F 2 "" H 7850 4300 50  0001 C CNN
+F 3 "" H 7850 4300 50  0001 C CNN
+	1    7850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR029
+U 1 1 5B07FCEE
+P -3150 7450
+F 0 "#PWR029" H -3150 7200 50  0001 C CNN
+F 1 "Earth" H -3150 7300 50  0001 C CNN
+F 2 "" H -3150 7450 60  0000 C CNN
+F 3 "" H -3150 7450 60  0000 C CNN
+	1    -3150 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR030
+U 1 1 5B07FCF4
+P -3100 4050
+F 0 "#PWR030" H -3100 3800 50  0001 C CNN
+F 1 "Earth" H -3100 3900 50  0001 C CNN
+F 2 "" H -3100 4050 60  0000 C CNN
+F 3 "" H -3100 4050 60  0000 C CNN
+	1    -3100 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 2300 650  0    60   ~ 0
+esd protection
+$Comp
+L Crystal Y1
+U 1 1 5B07FD00
+P 1250 3400
+F 0 "Y1" V 1204 3531 50  0000 L CNN
+F 1 "32.768khz" V 1295 3531 50  0000 L CNN
+F 2 "raise_fp:Crystal_SMD_3215-2pin_3.2x1.5mm" H 1250 3400 50  0001 C CNN
+F 3 "" H 1250 3400 50  0001 C CNN
+F 4 "2449501" H 1250 3400 60  0001 C CNN "farnell #"
+F 5 "any/open" H 1250 3400 60  0001 C CNN "supplier"
+F 6 "Value" H 1250 3400 60  0001 C CNN "supplier PN"
+F 7 "Value" H 1250 3400 60  0001 C CNN "MOQ"
+F 8 "Value" H 1250 3400 60  0001 C CNN "leadtime"
+	1    1250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP10
+U 1 1 5B07FD09
+P 2100 3550
+F 0 "TP10" V 2100 3900 50  0000 C CNN
+F 1 "TEST" V 2224 3644 50  0000 C CNN
+F 2 "raise_fp:testpoint" H 2100 3550 50  0001 C CNN
+F 3 "" H 2100 3550 50  0001 C CNN
+F 4 "dnp" H -5200 700 60  0001 C CNN "farnell #"
+F 5 "dnp" H -5200 700 60  0001 C CNN "supplier"
+	1    2100 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST TP11
+U 1 1 5B07FD12
+P 2100 3650
+F 0 "TP11" V 2100 4000 50  0000 C CNN
+F 1 "TEST" V 2224 3744 50  0000 C CNN
+F 2 "raise_fp:testpoint" H 2100 3650 50  0001 C CNN
+F 3 "" H 2100 3650 50  0001 C CNN
+F 4 "dnp" H -5200 700 60  0001 C CNN "farnell #"
+F 5 "dnp" H -5200 700 60  0001 C CNN "supplier"
+	1    2100 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USB_C_Receptacle_16pin J2
+U 1 1 5B07FD1D
+P -2900 2450
+F 0 "J2" H -2795 4017 50  0000 C CNN
+F 1 "USB_C_Receptacle_16pin" H -2795 3926 50  0000 C CNN
+F 2 "raise_fp:usb-c-16smt" H -2750 2450 50  0001 C CNN
+F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H -2750 2450 50  0001 C CNN
+F 4 "contact technology corp" H -2900 2450 60  0001 C CNN "supplier"
+F 5 "sbc-160s-202-s338" H -2900 2450 60  0001 C CNN "supplier PN"
+F 6 "Value" H -2900 2450 60  0001 C CNN "MOQ"
+F 7 "Value" H -2900 2450 60  0001 C CNN "leadtime"
+	1    -2900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_C_Receptacle_16pin J3
+U 1 1 5B07FD26
+P -2850 5850
+F 0 "J3" H -2745 7417 50  0000 C CNN
+F 1 "USB_C_Receptacle_16pin" H -2745 7326 50  0000 C CNN
+F 2 "raise_fp:usb-c-16smt" H -2700 5850 50  0001 C CNN
+F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H -2700 5850 50  0001 C CNN
+F 4 "contact technology corp" H -4100 100 60  0001 C CNN "supplier"
+F 5 "sbc-160s-202-s338" H -4100 100 60  0001 C CNN "supplier PN"
+	1    -2850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR031
+U 1 1 5B07FD2D
+P 4400 3100
+F 0 "#PWR031" H 4400 2850 50  0001 C CNN
+F 1 "Earth" H 4400 2950 50  0001 C CNN
+F 2 "" H 4400 3100 60  0000 C CNN
+F 3 "" H 4400 3100 60  0000 C CNN
+	1    4400 3100
+	0    -1   -1   0   
+$EndComp
+Text Notes 7850 5150 0    60   ~ 0
+42 ohm for G & B,  185 for R
+$Comp
+L Earth #PWR032
+U 1 1 5B07FD34
+P 3400 1850
+F 0 "#PWR032" H 3400 1600 50  0001 C CNN
+F 1 "Earth" H 3400 1700 50  0001 C CNN
+F 2 "" H 3400 1850 60  0000 C CNN
+F 3 "" H 3400 1850 60  0000 C CNN
+	1    3400 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 5B07FD3C
+P 3400 2000
+F 0 "C1" H 3515 2046 50  0000 L CNN
+F 1 "1uF, ceramic, 6v, 10%, x5r" H 3515 1955 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 3438 1850 50  0001 C CNN
+F 3 "" H 3400 2000 50  0001 C CNN
+F 4 "any/open" H 1950 -650 60  0001 C CNN "supplier"
+F 5 "1865556" H 1950 -650 60  0001 C CNN "farnell #"
+	1    3400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L samd21g U3
+U 1 1 5B07FD48
+P 3200 4000
+F 0 "U3" H 3200 4200 60  0000 C CNN
+F 1 "samd21g" H 3200 4400 60  0000 C CNN
+F 2 "raise_fp:QFN-48-1EP_7x7mm_Pitch0.5mm" H 3200 4000 60  0001 C CNN
+F 3 "" H 3200 4000 60  0001 C CNN
+F 4 "2409249" H 3200 4000 60  0001 C CNN "farnell #"
+F 5 "Microchip" H 3200 4000 60  0001 C CNN "supplier"
+F 6 "ATSAMD21G18A-MU " H 3200 4000 60  0001 C CNN "supplier PN"
+F 7 "Value" H 3200 4000 60  0001 C CNN "MOQ"
+F 8 "Value" H 3200 4000 60  0001 C CNN "leadtime"
+	1    3200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR033
+U 1 1 5B07FD4F
+P -300 900
+F 0 "#PWR033" H -300 750 50  0001 C CNN
+F 1 "+5V" V -285 1028 50  0000 L CNN
+F 2 "" H -300 900 50  0000 C CNN
+F 3 "" H -300 900 50  0000 C CNN
+	1    -300 900 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	-1200 1200 -1200 1300
+Connection ~ -300 900 
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5B07FD57
+P -2300 1350
+F 0 "#FLG04" H -2300 1445 50  0001 C CNN
+F 1 "PWR_FLAG" H -2300 1573 50  0000 C CNN
+F 2 "" H -2300 1350 50  0000 C CNN
+F 3 "" H -2300 1350 50  0000 C CNN
+	1    -2300 1350
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 5B07FD62
+P -1200 1000
+F 0 "Q1" V -857 1000 50  0000 C CNN
+F 1 "Q_PMOS_GSD 2A" V -948 1000 50  0000 C CNN
+F 2 "raise_fp:SOT-23" H -1000 1100 50  0001 C CNN
+F 3 "" H -1200 1000 50  0001 C CNN
+F 4 "2061419" H -1200 1000 60  0001 C CNN "farnell #"
+F 5 "diodes inc" H -4300 -5700 60  0001 C CNN "supplier"
+F 6 "DMP2035U" H -4300 -5700 60  0001 C CNN "supplier PN"
+F 7 "Value" H -1200 1000 60  0001 C CNN "MOQ"
+F 8 "Value" H -1200 1000 60  0001 C CNN "leadtime"
+	1    -1200 1000
+	0    -1   -1   0   
+$EndComp
+Text Notes -1000 900  2    60   ~ 0
+S
+Text Notes -1350 900  2    60   ~ 0
+D
+Wire Wire Line
+	-1000 900  -300 900 
+Wire Wire Line
+	-1950 900  -1400 900 
+$Comp
+L R R1
+U 1 1 5B07FD6F
+P -850 1100
+F 0 "R1" V -770 1100 50  0000 C CNN
+F 1 "10k, 125mW, 5%" V -700 1150 50  0000 C CNN
+F 2 "raise_fp:R_0603" V -920 1100 30  0001 C CNN
+F 3 "" H -850 1100 30  0000 C CNN
+F 4 "2447230" H -850 1100 60  0001 C CNN "farnell #"
+F 5 "any/open" H -5350 -2400 60  0001 C CNN "supplier"
+	1    -850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-850 950  -850 900 
+Connection ~ -850 900 
+Wire Wire Line
+	-850 1250 -1200 1250
+Connection ~ -1200 1250
+$Comp
+L +5V #PWR034
+U 1 1 5B07FD7A
+P -150 3900
+F 0 "#PWR034" H -150 3750 50  0001 C CNN
+F 1 "+5V" V -135 4028 50  0000 L CNN
+F 2 "" H -150 3900 50  0000 C CNN
+F 3 "" H -150 3900 50  0000 C CNN
+	1    -150 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	-1050 4200 -1050 4300
+Connection ~ -150 3900
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5B07FD82
+P -2250 4750
+F 0 "#FLG06" H -2250 4845 50  0001 C CNN
+F 1 "PWR_FLAG" H -2250 4973 50  0000 C CNN
+F 2 "" H -2250 4750 50  0000 C CNN
+F 3 "" H -2250 4750 50  0000 C CNN
+	1    -2250 4750
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q5
+U 1 1 5B07FD8D
+P -1050 4000
+F 0 "Q5" V -707 4000 50  0000 C CNN
+F 1 "Q_PMOS_GSD 2A" V -798 4000 50  0000 C CNN
+F 2 "raise_fp:SOT-23" H -850 4100 50  0001 C CNN
+F 3 "" H -1050 4000 50  0001 C CNN
+F 4 "2061419" H -1050 4000 60  0001 C CNN "farnell #"
+F 5 "diodes inc" H -4150 -2700 60  0001 C CNN "supplier"
+F 6 "DMP2035U" H -4150 -2700 60  0001 C CNN "supplier PN"
+F 7 "Value" H -1050 4000 60  0001 C CNN "MOQ"
+F 8 "Value" H -1050 4000 60  0001 C CNN "leadtime"
+	1    -1050 4000
+	0    -1   -1   0   
+$EndComp
+Text Notes -850 3900 2    60   ~ 0
+S
+Text Notes -1200 3900 2    60   ~ 0
+D
+Wire Wire Line
+	-850 3900 -150 3900
+Wire Wire Line
+	-1800 3900 -1250 3900
+Wire Wire Line
+	-1800 4150 -1800 3900
+$Comp
+L R R7
+U 1 1 5B07FD9B
+P -700 4100
+F 0 "R7" V -620 4100 50  0000 C CNN
+F 1 "10k, 125mW, 5%" V -500 4200 50  0000 C CNN
+F 2 "raise_fp:R_0603" V -770 4100 30  0001 C CNN
+F 3 "" H -700 4100 30  0000 C CNN
+F 4 "2447230" H -700 4100 60  0001 C CNN "farnell #"
+F 5 "any/open" H -5200 600 60  0001 C CNN "supplier"
+	1    -700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-700 3950 -700 3900
+Connection ~ -700 3900
+Wire Wire Line
+	-700 4250 -1050 4250
+Connection ~ -1050 4250
+Wire Wire Line
+	-2250 4550 -1800 4550
+$Comp
+L C C6
+U 1 1 5B07FDA9
+P 7550 5700
+F 0 "C6" H 7665 5746 50  0000 L CNN
+F 1 "1uF, ceramic, 6v, 10%, x5r" H 6900 5250 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 7588 5550 50  0001 C CNN
+F 3 "" H 7550 5700 50  0001 C CNN
+F 4 "any/open" H 6100 3050 60  0001 C CNN "supplier"
+F 5 "1865556" H 6100 3050 60  0001 C CNN "farnell #"
+	1    7550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5B07FDB2
+P 7250 5700
+F 0 "C5" H 7365 5746 50  0000 L CNN
+F 1 "1uF, ceramic, 6v, 10%, x5r" H 6900 5450 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 7288 5550 50  0001 C CNN
+F 3 "" H 7250 5700 50  0001 C CNN
+F 4 "any/open" H 5800 3050 60  0001 C CNN "supplier"
+F 5 "1865556" H 5800 3050 60  0001 C CNN "farnell #"
+	1    7250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5B07FDBB
+P 6950 5700
+F 0 "C4" H 7065 5746 50  0000 L CNN
+F 1 "1uF, ceramic, 6v, 10%, x5r" H 6900 5350 50  0000 L CNN
+F 2 "raise_fp:C_0603" H 6988 5550 50  0001 C CNN
+F 3 "" H 6950 5700 50  0001 C CNN
+F 4 "any/open" H 5500 3050 60  0001 C CNN "supplier"
+F 5 "1865556" H 5500 3050 60  0001 C CNN "farnell #"
+	1    6950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5550 8150 5550
+$Comp
+L Earth #PWR035
+U 1 1 5B07FDC3
+P -3200 4050
+F 0 "#PWR035" H -3200 3800 50  0001 C CNN
+F 1 "Earth" H -3200 3900 50  0001 C CNN
+F 2 "" H -3200 4050 60  0000 C CNN
+F 3 "" H -3200 4050 60  0000 C CNN
+	1    -3200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR036
+U 1 1 5B07FDC9
+P -3000 4050
+F 0 "#PWR036" H -3000 3800 50  0001 C CNN
+F 1 "Earth" H -3000 3900 50  0001 C CNN
+F 2 "" H -3000 4050 60  0000 C CNN
+F 3 "" H -3000 4050 60  0000 C CNN
+	1    -3000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR037
+U 1 1 5B07FDCF
+P -3050 7450
+F 0 "#PWR037" H -3050 7200 50  0001 C CNN
+F 1 "Earth" H -3050 7300 50  0001 C CNN
+F 2 "" H -3050 7450 60  0000 C CNN
+F 3 "" H -3050 7450 60  0000 C CNN
+	1    -3050 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR038
+U 1 1 5B07FDD5
+P -2950 7450
+F 0 "#PWR038" H -2950 7200 50  0001 C CNN
+F 1 "Earth" H -2950 7300 50  0001 C CNN
+F 2 "" H -2950 7450 60  0000 C CNN
+F 3 "" H -2950 7450 60  0000 C CNN
+	1    -2950 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ferrite_Bead L1
+U 1 1 5B07FDE0
+P -1950 1050
+F 0 "L1" H -2050 1250 50  0000 L CNN
+F 1 "470R at 100M, 1A" H -2150 750 50  0000 L CNN
+F 2 "raise_fp:R_0603" V -2020 1050 50  0001 C CNN
+F 3 "" H -1950 1050 50  0001 C CNN
+F 4 "1515745" H -1950 1050 60  0001 C CNN "farnell #"
+F 5 "any/open" H -1950 1050 60  0001 C CNN "supplier"
+F 6 "Value" H -1950 1050 60  0001 C CNN "supplier PN"
+F 7 "Value" H -1950 1050 60  0001 C CNN "MOQ"
+F 8 "Value" H -1950 1050 60  0001 C CNN "leadtime"
+	1    -1950 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1950 1200 -2300 1200
+Connection ~ -2300 1200
+$Comp
+L Ferrite_Bead L3
+U 1 1 5B07FDEE
+P -1800 4300
+F 0 "L3" H -2050 4400 50  0000 L CNN
+F 1 "470R at 100M, 1A" H -1550 4200 50  0000 L CNN
+F 2 "raise_fp:R_0603" V -1870 4300 50  0001 C CNN
+F 3 "" H -1800 4300 50  0001 C CNN
+F 4 "1515745" H -1800 4300 60  0001 C CNN "farnell #"
+F 5 "any/open" H -1800 4300 60  0001 C CNN "supplier"
+F 6 "Value" H -1800 4300 60  0001 C CNN "supplier PN"
+F 7 "Value" H -1800 4300 60  0001 C CNN "MOQ"
+F 8 "Value" H -1800 4300 60  0001 C CNN "leadtime"
+	1    -1800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1800 4550 -1800 4450
+$Comp
+L Earth #PWR039
+U 1 1 5B07FDF6
+P -2900 4050
+F 0 "#PWR039" H -2900 3800 50  0001 C CNN
+F 1 "Earth" H -2900 3900 50  0001 C CNN
+F 2 "" H -2900 4050 60  0000 C CNN
+F 3 "" H -2900 4050 60  0000 C CNN
+	1    -2900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR040
+U 1 1 5B07FDFC
+P -2800 4050
+F 0 "#PWR040" H -2800 3800 50  0001 C CNN
+F 1 "Earth" H -2800 3900 50  0001 C CNN
+F 2 "" H -2800 4050 60  0000 C CNN
+F 3 "" H -2800 4050 60  0000 C CNN
+	1    -2800 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR041
+U 1 1 5B07FE02
+P -2700 4050
+F 0 "#PWR041" H -2700 3800 50  0001 C CNN
+F 1 "Earth" H -2700 3900 50  0001 C CNN
+F 2 "" H -2700 4050 60  0000 C CNN
+F 3 "" H -2700 4050 60  0000 C CNN
+	1    -2700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR042
+U 1 1 5B07FE08
+P -2850 7450
+F 0 "#PWR042" H -2850 7200 50  0001 C CNN
+F 1 "Earth" H -2850 7300 50  0001 C CNN
+F 2 "" H -2850 7450 60  0000 C CNN
+F 3 "" H -2850 7450 60  0000 C CNN
+	1    -2850 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR043
+U 1 1 5B07FE0E
+P -2750 7450
+F 0 "#PWR043" H -2750 7200 50  0001 C CNN
+F 1 "Earth" H -2750 7300 50  0001 C CNN
+F 2 "" H -2750 7450 60  0000 C CNN
+F 3 "" H -2750 7450 60  0000 C CNN
+	1    -2750 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR044
+U 1 1 5B07FE14
+P -2650 7450
+F 0 "#PWR044" H -2650 7200 50  0001 C CNN
+F 1 "Earth" H -2650 7300 50  0001 C CNN
+F 2 "" H -2650 7450 60  0000 C CNN
+F 3 "" H -2650 7450 60  0000 C CNN
+	1    -2650 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP1
+U 1 1 5B07FE1C
+P -2300 1150
+F 0 "TP1" H -2222 1290 50  0000 L CNN
+F 1 "TEST" H -2222 1199 50  0000 L CNN
+F 2 "raise_fp:testpoint" H -2300 1150 50  0001 C CNN
+F 3 "" H -2300 1150 50  0001 C CNN
+F 4 "dnp" H -4100 100 60  0001 C CNN "farnell #"
+F 5 "dnp" H -4100 100 60  0001 C CNN "supplier"
+	1    -2300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP12
+U 1 1 5B07FE25
+P -2250 4550
+F 0 "TP12" H -2172 4690 50  0000 L CNN
+F 1 "TEST" H -2172 4599 50  0000 L CNN
+F 2 "raise_fp:testpoint" H -2250 4550 50  0001 C CNN
+F 3 "" H -2250 4550 50  0001 C CNN
+F 4 "dnp" H -4100 100 60  0001 C CNN "farnell #"
+F 5 "dnp" H -4100 100 60  0001 C CNN "supplier"
+	1    -2250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP2
+U 1 1 5B07FE2E
+P 8150 3000
+F 0 "TP2" H 8228 3140 50  0000 L CNN
+F 1 "TEST" H 8228 3049 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 8150 3000 50  0001 C CNN
+F 3 "" H 8150 3000 50  0001 C CNN
+F 4 "dnp" H 2200 -2000 60  0001 C CNN "farnell #"
+F 5 "dnp" H 2200 -2000 60  0001 C CNN "supplier"
+	1    8150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP9
+U 1 1 5B07FE37
+P 8150 3250
+F 0 "TP9" H 8228 3390 50  0000 L CNN
+F 1 "TEST" H 8228 3299 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 8150 3250 50  0001 C CNN
+F 3 "" H 8150 3250 50  0001 C CNN
+F 4 "dnp" H 2200 -2000 60  0001 C CNN "farnell #"
+F 5 "dnp" H 2200 -2000 60  0001 C CNN "supplier"
+	1    8150 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 3000
+Connection ~ 8150 3250
+Text Notes -1900 2100 0    60   ~ 0
+sda is d-\nscl is d+
+$Comp
+L usblc6-4 U1
+U 1 1 5B07FE42
+P 2600 1150
+F 0 "U1" H 2600 1497 60  0000 C CNN
+F 1 "usblc6-4" H 2600 1391 60  0000 C CNN
+F 2 "raise_fp:SOT-23-6" H 2600 1150 60  0001 C CNN
+F 3 "" H 2600 1150 60  0001 C CNN
+F 4 "1295311" H -1600 -850 60  0001 C CNN "farnell #"
+	1    2600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR045
+U 1 1 5B07FE49
+P 3550 1100
+F 0 "#PWR045" H 3550 950 50  0001 C CNN
+F 1 "+5V" H 3550 1240 50  0000 C CNN
+F 2 "" H 3550 1100 60  0000 C CNN
+F 3 "" H 3550 1100 60  0000 C CNN
+	1    3550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1150 3550 1150
+$Comp
+L Earth #PWR046
+U 1 1 5B07FE50
+P 1950 1150
+F 0 "#PWR046" H 1950 900 50  0001 C CNN
+F 1 "Earth" H 1950 1000 50  0001 C CNN
+F 2 "" H 1950 1150 50  0001 C CNN
+F 3 "~" H 1950 1150 50  0001 C CNN
+	1    1950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1150 2250 1150
+Text Label 2250 1050 2    60   ~ 0
+sda5
+Text Label 2250 1250 2    60   ~ 0
+scl5
+Text Label 2950 1050 0    60   ~ 0
+dfp-r-cc
+Text Label 2950 1250 0    60   ~ 0
+dfp-l-cc
+Wire Wire Line
+	3550 1150 3550 1100
+Wire Notes Line
+	1850 650  3650 650 
+Wire Notes Line
+	3650 650  3650 1600
+Wire Notes Line
+	3650 1600 1850 1600
+Wire Notes Line
+	1850 1600 1850 650 
+$Comp
+L Q_NMOS_GSD Q2
+U 1 1 5B07FE65
+P -1100 1450
+F 0 "Q2" V -850 1450 50  0000 C CNN
+F 1 "Q_NMOS_GSD 1Amp" V -759 1450 50  0000 C CNN
+F 2 "raise_fp:SOT-323_SC-70" H -900 1550 50  0001 C CNN
+F 3 "" H -1100 1450 50  0001 C CNN
+F 4 "2061403" H -1100 1450 60  0001 C CNN "farnell #"
+F 5 "any/open" H -1100 1450 60  0001 C CNN "supplier"
+F 6 "Value" H -1100 1450 60  0001 C CNN "supplier PN"
+F 7 "Value" H -1100 1450 60  0001 C CNN "MOQ"
+F 8 "Value" H -1100 1450 60  0001 C CNN "leadtime"
+	1    -1100 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR047
+U 1 1 5B07FE6C
+P -1200 1650
+F 0 "#PWR047" H -1200 1400 50  0001 C CNN
+F 1 "Earth" H -1200 1500 50  0001 C CNN
+F 2 "" H -1200 1650 60  0000 C CNN
+F 3 "" H -1200 1650 60  0000 C CNN
+	1    -1200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q6
+U 1 1 5B07FE77
+P -950 4450
+F 0 "Q6" V -700 4450 50  0000 C CNN
+F 1 "Q_NMOS_GSD 1Amp" V -609 4450 50  0000 C CNN
+F 2 "raise_fp:SOT-323_SC-70" H -750 4550 50  0001 C CNN
+F 3 "" H -950 4450 50  0001 C CNN
+F 4 "2061403" H -950 4450 60  0001 C CNN "farnell #"
+F 5 "any/open" H -950 4450 60  0001 C CNN "supplier"
+F 6 "Value" H -950 4450 60  0001 C CNN "supplier PN"
+F 7 "Value" H -950 4450 60  0001 C CNN "MOQ"
+F 8 "Value" H -950 4450 60  0001 C CNN "leadtime"
+	1    -950 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR048
+U 1 1 5B07FE7E
+P -1050 4650
+F 0 "#PWR048" H -1050 4400 50  0001 C CNN
+F 1 "Earth" H -1050 4500 50  0001 C CNN
+F 2 "" H -1050 4650 60  0000 C CNN
+F 3 "" H -1050 4650 60  0000 C CNN
+	1    -1050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3250 1800 3250
+Wire Wire Line
+	1800 3250 1800 3350
+Wire Wire Line
+	1800 3350 2100 3350
+Wire Wire Line
+	2100 3450 1800 3450
+Wire Wire Line
+	1800 3450 1800 3550
+Wire Wire Line
+	1800 3550 1250 3550
 $EndSCHEMATC

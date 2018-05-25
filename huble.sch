@@ -1,36 +1,6 @@
 EESchema Schematic File Version 3
 LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:rgbled
-LIBS:sled1735
-LIBS:usb_c_16pin
 LIBS:usb-hub-cache
 EELAYER 26 0
 EELAYER END
@@ -228,9 +198,9 @@ NoConn ~ 1800 3550
 NoConn ~ 1800 3650
 NoConn ~ 1850 6950
 NoConn ~ 1850 7050
-Text Label 2900 1200 2    60   ~ 0
+Text Label 3200 1350 0    60   ~ 0
 left-switch
-Text Label 3050 4200 2    60   ~ 0
+Text Label 3350 4350 0    60   ~ 0
 right-switch
 Text Label 7900 4550 3    60   ~ 0
 left-switch
@@ -1425,4 +1395,58 @@ Wire Notes Line
 	5250 2450 3450 2450
 Wire Notes Line
 	3450 2450 3450 1500
+$Comp
+L Q_NMOS_GSD Q5
+U 1 1 5B07E845
+P 3000 1350
+F 0 "Q5" V 3250 1350 50  0000 C CNN
+F 1 "Q_NMOS_GSD 1Amp" V 3341 1350 50  0000 C CNN
+F 2 "raise_fp:SOT-323_SC-70" H 3200 1450 50  0001 C CNN
+F 3 "" H 3000 1350 50  0001 C CNN
+F 4 "2061403" H 3000 1350 60  0001 C CNN "farnell #"
+F 5 "any/open" H 3000 1350 60  0001 C CNN "supplier"
+F 6 "Value" H 3000 1350 60  0001 C CNN "supplier PN"
+F 7 "Value" H 3000 1350 60  0001 C CNN "MOQ"
+F 8 "Value" H 3000 1350 60  0001 C CNN "leadtime"
+	1    3000 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR069
+U 1 1 5B07EAE0
+P 2900 1550
+F 0 "#PWR069" H 2900 1300 50  0001 C CNN
+F 1 "Earth" H 2900 1400 50  0001 C CNN
+F 2 "" H 2900 1550 60  0000 C CNN
+F 3 "" H 2900 1550 60  0000 C CNN
+	1    2900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q6
+U 1 1 5B07EB74
+P 3150 4350
+F 0 "Q6" V 3400 4350 50  0000 C CNN
+F 1 "Q_NMOS_GSD 1Amp" V 3491 4350 50  0000 C CNN
+F 2 "raise_fp:SOT-323_SC-70" H 3350 4450 50  0001 C CNN
+F 3 "" H 3150 4350 50  0001 C CNN
+F 4 "2061403" H 3150 4350 60  0001 C CNN "farnell #"
+F 5 "any/open" H 3150 4350 60  0001 C CNN "supplier"
+F 6 "Value" H 3150 4350 60  0001 C CNN "supplier PN"
+F 7 "Value" H 3150 4350 60  0001 C CNN "MOQ"
+F 8 "Value" H 3150 4350 60  0001 C CNN "leadtime"
+	1    3150 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR070
+U 1 1 5B07ECFA
+P 3050 4550
+F 0 "#PWR070" H 3050 4300 50  0001 C CNN
+F 1 "Earth" H 3050 4400 50  0001 C CNN
+F 2 "" H 3050 4550 60  0000 C CNN
+F 3 "" H 3050 4550 60  0000 C CNN
+	1    3050 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
