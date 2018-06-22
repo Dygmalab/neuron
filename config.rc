@@ -8,4 +8,7 @@ layers = 4
 copper = 35um
 
 [logo]
-logo = ../Dygma_logo_color.png
+logo = /home/matt/matt@dygma.com/Dygma/Media/Logos/Dygma_logo_color.png
+
+[meta]
+name = raise-huble-pcb
