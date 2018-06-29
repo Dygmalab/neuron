@@ -2,186 +2,6 @@ EESchema Schematic File Version 3
 LIBS:rgbled
 LIBS:sled1735
 LIBS:usb_c_16pin
-LIBS:4xxx
-LIBS:4xxx_IEEE
-LIBS:74xGxx
-LIBS:74xx
-LIBS:74xx_IEEE
-LIBS:Amplifier_Audio
-LIBS:Amplifier_Buffer
-LIBS:Amplifier_Current
-LIBS:Amplifier_Difference
-LIBS:Amplifier_Instrumentation
-LIBS:Amplifier_Operational
-LIBS:Amplifier_Video
-LIBS:Analog
-LIBS:Analog_ADC
-LIBS:Analog_DAC
-LIBS:Analog_Switch
-LIBS:Audio
-LIBS:Battery_Management
-LIBS:Comparator
-LIBS:Connector
-LIBS:Connector_Generic
-LIBS:Connector_Generic_MountingPin
-LIBS:Connector_Generic_Shielded
-LIBS:Converter_ACDC
-LIBS:Converter_DCDC
-LIBS:CPLD_Altera
-LIBS:CPLD_Xilinx
-LIBS:CPU
-LIBS:CPU_NXP_6800
-LIBS:CPU_NXP_68000
-LIBS:CPU_PowerPC
-LIBS:Device
-LIBS:Diode
-LIBS:Diode_Bridge
-LIBS:Diode_Laser
-LIBS:Display_Character
-LIBS:Display_Graphic
-LIBS:Driver_Display
-LIBS:Driver_FET
-LIBS:Driver_LED
-LIBS:Driver_Motor
-LIBS:Driver_Relay
-LIBS:DSP_Freescale
-LIBS:DSP_Microchip_DSPIC33
-LIBS:DSP_Motorola
-LIBS:DSP_Texas
-LIBS:Filter
-LIBS:FPGA_Microsemi
-LIBS:FPGA_Xilinx
-LIBS:FPGA_Xilinx_Artix7
-LIBS:FPGA_Xilinx_Kintex7
-LIBS:FPGA_Xilinx_Spartan6
-LIBS:FPGA_Xilinx_Virtex5
-LIBS:FPGA_Xilinx_Virtex6
-LIBS:FPGA_Xilinx_Virtex7
-LIBS:GPU
-LIBS:Graphic
-LIBS:Interface
-LIBS:Interface_CAN_LIN
-LIBS:Interface_CurrentLoop
-LIBS:Interface_Ethernet
-LIBS:Interface_Expansion
-LIBS:Interface_HID
-LIBS:Interface_LineDriver
-LIBS:Interface_Optical
-LIBS:Interface_Telecom
-LIBS:Interface_UART
-LIBS:Interface_USB
-LIBS:Isolator
-LIBS:Isolator_Analog
-LIBS:Jumper
-LIBS:LED
-LIBS:Logic_LevelTranslator
-LIBS:Logic_Programmable
-LIBS:MCU_AnalogDevices
-LIBS:MCU_Cypress
-LIBS:MCU_Espressif
-LIBS:MCU_Intel
-LIBS:MCU_Microchip_8051
-LIBS:MCU_Microchip_ATmega
-LIBS:MCU_Microchip_ATtiny
-LIBS:MCU_Microchip_AVR
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_Microchip_SAME
-LIBS:MCU_Microchip_SAML
-LIBS:MCU_Module
-LIBS:MCU_Nordic
-LIBS:MCU_NXP_ColdFire
-LIBS:MCU_NXP_HC11
-LIBS:MCU_NXP_HC12
-LIBS:MCU_NXP_HCS12
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_MAC7100
-LIBS:MCU_NXP_MCore
-LIBS:MCU_NXP_S08
-LIBS:MCU_Parallax
-LIBS:MCU_SiFive
-LIBS:MCU_SiliconLabs
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32F0
-LIBS:MCU_ST_STM32F1
-LIBS:MCU_ST_STM32F2
-LIBS:MCU_ST_STM32F3
-LIBS:MCU_ST_STM32F4
-LIBS:MCU_ST_STM32F7
-LIBS:MCU_ST_STM32H7
-LIBS:MCU_ST_STM32L0
-LIBS:MCU_ST_STM32L1
-LIBS:MCU_ST_STM32L4
-LIBS:MCU_ST_STM32L4+
-LIBS:MCU_Texas
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
-LIBS:Memory_Controller
-LIBS:Memory_EEPROM
-LIBS:Memory_EPROM
-LIBS:Memory_Flash
-LIBS:Memory_NVRAM
-LIBS:Memory_RAM
-LIBS:Memory_ROM
-LIBS:Memory_UniqueID
-LIBS:Motor
-LIBS:Oscillator
-LIBS:Potentiometer_Digital
-LIBS:power
-LIBS:Power_Management
-LIBS:Power_Protection
-LIBS:Power_Supervisor
-LIBS:pspice
-LIBS:Reference_Current
-LIBS:Reference_Voltage
-LIBS:Regulator_Controller
-LIBS:Regulator_Current
-LIBS:Regulator_Linear
-LIBS:Regulator_SwitchedCapacitor
-LIBS:Regulator_Switching
-LIBS:Relay
-LIBS:Relay_SolidState
-LIBS:RF
-LIBS:RF_AM_FM
-LIBS:RF_Amplifier
-LIBS:RF_Bluetooth
-LIBS:RF_GPS
-LIBS:RF_Mixer
-LIBS:RF_Module
-LIBS:RF_RFID
-LIBS:RF_Switch
-LIBS:RF_WiFi
-LIBS:RF_ZigBee
-LIBS:Sensor
-LIBS:Sensor_Audio
-LIBS:Sensor_Current
-LIBS:Sensor_Gas
-LIBS:Sensor_Humidity
-LIBS:Sensor_Magnetic
-LIBS:Sensor_Motion
-LIBS:Sensor_Optical
-LIBS:Sensor_Pressure
-LIBS:Sensor_Proximity
-LIBS:Sensor_Temperature
-LIBS:Sensor_Touch
-LIBS:Sensor_Voltage
-LIBS:Switch
-LIBS:Timer
-LIBS:Timer_PLL
-LIBS:Timer_RTC
-LIBS:Transformer
-LIBS:Transistor_Array
-LIBS:Transistor_BJT
-LIBS:Transistor_FET
-LIBS:Transistor_IGBT
-LIBS:Triac_Thyristor
-LIBS:Valve
-LIBS:Video
 LIBS:regulator
 LIBS:usb-hub-cache
 EELAYER 26 0
@@ -428,8 +248,8 @@ F 1 "470R at 100M, 1A" H 10600 1100 50  0000 C CNN
 F 2 "raise_fp:R_0603" V 10580 1550 50  0001 C CNN
 F 3 "" H 10650 1550 50  0001 C CNN
 F 4 "1515745" H 10650 1550 60  0001 C CNN "farnell #"
-F 5 "any/open" H 10650 1550 60  0001 C CNN "supplier"
-F 6 "Value" H 10650 1550 60  0001 C CNN "supplier PN"
+F 5 "Murata" H 10650 1550 60  0001 C CNN "supplier"
+F 6 "BLM18PG471SN1D" H 10650 1550 60  0001 C CNN "supplier PN"
 F 7 "Value" H 10650 1550 60  0001 C CNN "MOQ"
 F 8 "Value" H 10650 1550 60  0001 C CNN "leadtime"
 	1    10650 1550
@@ -631,7 +451,7 @@ L rgbled U4
 U 1 1 5B07FB4E
 P 5650 6750
 F 0 "U4" H 5482 6889 60  0000 R CNN
-F 1 "4 pin RGB led, com anode, red: 500mcd 620nm. Green: 1000mcd 520nm. Blue: 500mcd 460nm." H 5482 6783 60  0001 R CNN
+F 1 "4 pin RGB led, com anode" H 5482 6783 60  0001 R CNN
 F 2 "raise_fp:3528-4p" V 5650 6800 60  0001 C CNN
 F 3 "" V 5650 6800 60  0001 C CNN
 F 4 "any/open" H -3050 850 60  0001 C CNN "supplier"
@@ -1160,7 +980,7 @@ L Q_PMOS_GSD Q1
 U 1 1 5B07FD62
 P 4850 4450
 F 0 "Q1" V 5193 4450 50  0000 C CNN
-F 1 "Q_PMOS_GSD 2A" V 5102 4450 50  0000 C CNN
+F 1 "PMOS, -3.6A, 0.02R" V 5102 4450 50  0000 C CNN
 F 2 "raise_fp:SOT-23" H 5050 4550 50  0001 C CNN
 F 3 "" H 4850 4450 50  0001 C CNN
 F 4 "2061419" H 4850 4450 60  0001 C CNN "farnell #"
@@ -1305,8 +1125,8 @@ F 1 "470R at 100M, 1A" H 3900 4200 50  0000 L CNN
 F 2 "raise_fp:R_0603" V 4030 4500 50  0001 C CNN
 F 3 "" H 4100 4500 50  0001 C CNN
 F 4 "1515745" H 4100 4500 60  0001 C CNN "farnell #"
-F 5 "any/open" H 4100 4500 60  0001 C CNN "supplier"
-F 6 "Value" H 4100 4500 60  0001 C CNN "supplier PN"
+F 5 "Murata" H 4100 4500 60  0001 C CNN "supplier"
+F 6 "BLM18PG471SN1D" H 4100 4500 60  0001 C CNN "supplier PN"
 F 7 "Value" H 4100 4500 60  0001 C CNN "MOQ"
 F 8 "Value" H 4100 4500 60  0001 C CNN "leadtime"
 	1    4100 4500
@@ -1452,8 +1272,8 @@ F 1 "Q_NMOS_GSD 1Amp" V 5291 4950 50  0000 C CNN
 F 2 "raise_fp:SOT-323_SC-70" H 5150 5050 50  0001 C CNN
 F 3 "" H 4950 4950 50  0001 C CNN
 F 4 "2061403" H 4950 4950 60  0001 C CNN "farnell #"
-F 5 "any/open" H 4950 4950 60  0001 C CNN "supplier"
-F 6 "Value" H 4950 4950 60  0001 C CNN "supplier PN"
+F 5 "Diodes Inc." H 4950 4950 60  0001 C CNN "supplier"
+F 6 "DMG1012UW" H 4950 4950 60  0001 C CNN "supplier PN"
 F 7 "Value" H 4950 4950 60  0001 C CNN "MOQ"
 F 8 "Value" H 4950 4950 60  0001 C CNN "leadtime"
 	1    4950 4950
@@ -1509,6 +1329,10 @@ F 0 "SW1" H 4900 1485 50  0000 C CNN
 F 1 "SW_Push" H 4900 1394 50  0000 C CNN
 F 2 "raise_fp:reset-button" H 4900 1400 50  0001 C CNN
 F 3 "" H 4900 1400 50  0001 C CNN
+F 4 "DONGGUAN WEIKAI ELECTRONIC CO.,LTD" H 4900 1200 60  0001 C CNN "supplier"
+F 5 "TS20AB65A20B011" H 4900 1200 60  0001 C CNN "supplier PN"
+F 6 "Value" H 4900 1200 60  0001 C CNN "MOQ"
+F 7 "Value" H 4900 1200 60  0001 C CNN "leadtime"
 	1    4900 1200
 	1    0    0    -1  
 $EndComp
@@ -1843,51 +1667,68 @@ dfp pull up/down
 $Comp
 L Conn_01x01_Female J5
 U 1 1 5B310461
-P 8850 2150
-F 0 "J5" H 8877 2176 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 8877 2085 50  0000 L CNN
-F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8850 2150 50  0001 C CNN
-F 3 "~" H 8850 2150 50  0001 C CNN
-	1    8850 2150
+P 8600 2050
+F 0 "J5" H 8627 2076 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8800 2050 50  0000 L CNN
+F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8600 2050 50  0001 C CNN
+F 3 "~" H 8600 2050 50  0001 C CNN
+F 4 "dnp" H 8600 2050 60  0001 C CNN "supplier"
+F 5 "dnp" H 8600 2050 60  0001 C CNN "supplier PN"
+F 6 "Value" H 8600 2050 60  0001 C CNN "MOQ"
+F 7 "Value" H 8600 2050 60  0001 C CNN "leadtime"
+	1    8600 2050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8650 2150
+NoConn ~ 8400 2050
 $Comp
 L Conn_01x01_Female J4
 U 1 1 5B310711
-P 8850 2050
-F 0 "J4" H 8877 2076 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 8877 1985 50  0000 L CNN
-F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8850 2050 50  0001 C CNN
-F 3 "~" H 8850 2050 50  0001 C CNN
-	1    8850 2050
+P 8600 1950
+F 0 "J4" H 8627 1976 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8800 1950 50  0000 L CNN
+F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8600 1950 50  0001 C CNN
+F 3 "~" H 8600 1950 50  0001 C CNN
+F 4 "dnp" H 8600 1950 60  0001 C CNN "supplier"
+F 5 "Value" H 8600 1950 60  0001 C CNN "supplier PN"
+F 6 "Value" H 8600 1950 60  0001 C CNN "MOQ"
+F 7 "Value" H 8600 1950 60  0001 C CNN "leadtime"
+F 8 "dnp" H 8600 1950 60  0001 C CNN "dnp"
+	1    8600 1950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8650 2050
+NoConn ~ 8400 1950
 $Comp
 L Conn_01x01_Female J7
 U 1 1 5B3107E3
-P 8850 2350
-F 0 "J7" H 8877 2376 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 8877 2285 50  0000 L CNN
-F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8850 2350 50  0001 C CNN
-F 3 "~" H 8850 2350 50  0001 C CNN
-	1    8850 2350
+P 8600 2250
+F 0 "J7" H 8627 2276 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8800 2250 50  0000 L CNN
+F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8600 2250 50  0001 C CNN
+F 3 "~" H 8600 2250 50  0001 C CNN
+F 4 "dnp" H 8600 2250 60  0001 C CNN "supplier"
+F 5 "dnp" H 8600 2250 60  0001 C CNN "supplier PN"
+F 6 "Value" H 8600 2250 60  0001 C CNN "MOQ"
+F 7 "Value" H 8600 2250 60  0001 C CNN "leadtime"
+	1    8600 2250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8650 2350
+NoConn ~ 8400 2250
 $Comp
 L Conn_01x01_Female J6
 U 1 1 5B3107EA
-P 8850 2250
-F 0 "J6" H 8877 2276 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 8877 2185 50  0000 L CNN
-F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8850 2250 50  0001 C CNN
-F 3 "~" H 8850 2250 50  0001 C CNN
-	1    8850 2250
+P 8600 2150
+F 0 "J6" H 8627 2176 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8800 2150 50  0000 L CNN
+F 2 "raise_fp:Fiducial_0.5mm_Dia_1mm_Outer" H 8600 2150 50  0001 C CNN
+F 3 "~" H 8600 2150 50  0001 C CNN
+F 4 "dnp" H 8600 2150 60  0001 C CNN "supplier"
+F 5 "dnp" H 8600 2150 60  0001 C CNN "supplier PN"
+F 6 "Value" H 8600 2150 60  0001 C CNN "MOQ"
+F 7 "Value" H 8600 2150 60  0001 C CNN "leadtime"
+	1    8600 2150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8650 2250
+NoConn ~ 8400 2150
 Text Notes 8600 1850 0    60   ~ 0
 fiducials
 $EndSCHEMATC
