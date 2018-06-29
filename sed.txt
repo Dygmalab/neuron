@@ -1,0 +1,13 @@
+s/FCC_header/USB-HUB-FCC_header/g
+s/KaihlSocket/USB-HUB-KaihlSocket/g
+s/LED_RGB_3528-4RGB/USB-HUB-LED_RGB_3528-4RGB/g
+s/Pcb/USB-HUB-Pcb/g
+s/sled1735/USB-HUB-sled1735/g
+s/USB_C_Daye/USB-HUB-USB_C_Daye/g
+s/KaihlSocket_LowProfile/USB-HUB-KaihlSocket_LowProfile/g
+s/D_SOD_123/USB-HUB-D_SOD_123/g
+s/SOT_23/USB-HUB-SOT_23/g
+s/R_0603_1608/USB-HUB-R_0603_1608/g
+s/C_1206/USB-HUB-C_1206/g
+s/C_0603_1608/USB-HUB-C_0603_1608/g
+s/TQFP_32/USB-HUB-TQFP_32/g
