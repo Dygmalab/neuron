@@ -1,7 +1,7 @@
 ; pcb config
 [board]
-mask_color = black
-silk_color = white
+mask_color = white
+silk_color = black
 material = FR4
 thickness = 0.8
 layers = 4
