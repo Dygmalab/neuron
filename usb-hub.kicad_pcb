@@ -26,8 +26,8 @@
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user)
-    (37 F.SilkS user)
+    (36 B.SilkS user hide)
+    (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user hide)
@@ -38,7 +38,7 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user hide)
+    (48 B.Fab user)
     (49 F.Fab user hide)
   )
 
@@ -68,7 +68,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements FFFF7F7F)
+    (visible_elements FFFF7D7F)
     (pcbplotparams
       (layerselection 0x000c0_7ffffffe)
       (usegerberextensions false)
@@ -241,7 +241,7 @@
     (add_net "Net-(L1-Pad1)")
   )
 
-  (module raise_fp:Crystal_SMD_3215-2pin_3.2x1.5mm (layer B.Cu) (tedit 5B361448) (tstamp 5B07E8CE)
+  (module raise_fp:Crystal_SMD_3215-2pin_3.2x1.5mm (layer B.Cu) (tedit 5B485F86) (tstamp 5B07E8CE)
     (at 143.49 112.42)
     (descr "SMD Crystal FC-135 https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135R_en.pdf")
     (tags "SMD SMT Crystal")
@@ -250,7 +250,7 @@
     (fp_text reference Y1 (at 0.06 -0.1 -90) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value 32.768khz (at 0 -2) (layer B.Fab)
+    (fp_text value e32.768khz (at 0 -2) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 2 1.15) (end 2 -1.15) (layer B.CrtYd) (width 0.05))
@@ -263,7 +263,7 @@
     (fp_line (start -0.675 -0.875) (end 0.675 -0.875) (layer B.SilkS) (width 0.12))
     (fp_line (start -1.6 0.75) (end -1.6 -0.75) (layer B.Fab) (width 0.1))
     (fp_line (start -2 1.15) (end 2 1.15) (layer B.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 2) (layer B.Fab)
+    (fp_text user %R (at 0.01 0.05) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 2 smd rect (at -1.25 0) (size 1 1.8) (layers B.Cu B.Paste B.Mask)
@@ -277,14 +277,14 @@
     )
   )
 
-  (module raise_fp:reset-button (layer B.Cu) (tedit 5B361465) (tstamp 5B5D1AE4)
+  (module raise_fp:reset-button (layer B.Cu) (tedit 5B485FB6) (tstamp 5B5D1AE4)
     (at 141.98 97.24)
     (path /5B164989)
     (fp_text reference SW1 (at -3.16 -1.01) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value SW_Push (at -0.3 7.05) (layer B.Fab)
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (fp_text value SW_Push (at -0.04 0.03) (layer B.Fab)
+      (effects (font (size 0.4 0.4) (thickness 0.1)) (justify mirror))
     )
     (fp_line (start -1.6 -1.1) (end -1.6 1.1) (layer B.SilkS) (width 0.1))
     (fp_line (start 1.6 -1.1) (end -1.6 -1.1) (layer B.SilkS) (width 0.1))
@@ -303,7 +303,7 @@
     )
   )
 
-  (module raise_fp:SOT-323_SC-70 (layer F.Cu) (tedit 5B338D4F) (tstamp 5B07E81A)
+  (module raise_fp:SOT-323_SC-70 (layer F.Cu) (tedit 5B485EBC) (tstamp 5B07E81A)
     (at 139.1 109.19 180)
     (descr "SOT-323, SC-70")
     (tags "SOT-323 SC-70")
@@ -312,7 +312,7 @@
     (fp_text reference Q2 (at 0.03 0.01 270) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "Q_NMOS_GSD 1Amp" (at -0.05 2.05 180) (layer F.Fab)
+    (fp_text value "Q_NMOS_GSD 1Amp" (at -0.05 2.05 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.18 -1.1) (end -0.68 -0.6) (layer F.Fab) (width 0.1))
@@ -344,7 +344,7 @@
     )
   )
 
-  (module raise_fp:Tag-Connect_TC2030-IDC-NL (layer B.Cu) (tedit 5B2D0257) (tstamp 5B07E819)
+  (module raise_fp:Tag-Connect_TC2030-IDC-NL (layer B.Cu) (tedit 5B485F58) (tstamp 5B07E819)
     (at 147.01 104.55 285)
     (descr "Tag-Connect programming header; http://www.tag-connect.com/Materials/TC2030-IDC-NL.pdf")
     (tags "tag connect programming header pogo pins")
@@ -353,10 +353,10 @@
     (fp_text reference P1 (at 0 -2.7 285) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value CONN_02X03 (at 0 2.3 285) (layer B.Fab)
+    (fp_text value CONN_02X03 (at 0 2.3 285) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 285) (layer B.Fab)
+    (fp_text user %R (at 0 0 285) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -3.5 2) (end 3.5 2) (layer B.CrtYd) (width 0.05))
@@ -382,7 +382,7 @@
     (pad "" np_thru_hole circle (at 2.54 1.016 285) (size 0.9906 0.9906) (drill 0.9906) (layers *.Cu *.Mask))
   )
 
-  (module raise_fp:SOT-23 (layer F.Cu) (tedit 5B07F279) (tstamp 5B031D9E)
+  (module raise_fp:SOT-23 (layer F.Cu) (tedit 5B485ED1) (tstamp 5B031D9E)
     (at 146.16 109.71 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -391,7 +391,7 @@
     (fp_text reference Q1 (at -2.02 -1.76) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "Q_PMOS_GSD 2A" (at 0 2.5 270) (layer F.Fab)
+    (fp_text value "Q_PMOS_GSD 2A" (at 0 2.5 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0) (layer F.Fab)
@@ -423,7 +423,7 @@
     )
   )
 
-  (module raise_fp:SOT-23-6 (layer F.Cu) (tedit 5B07F29A) (tstamp 5B338933)
+  (module raise_fp:SOT-23-6 (layer F.Cu) (tedit 5B485ECB) (tstamp 5B338933)
     (at 142.38 110.86 90)
     (descr "6-pin SOT-23 package")
     (tags SOT-23-6)
@@ -432,7 +432,7 @@
     (fp_text reference U1 (at -1.19 2.11 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value usblc6-4 (at 0 2.9 90) (layer F.Fab)
+    (fp_text value usblc6-4 (at 0 2.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.9 -1.55) (end 0.9 1.55) (layer F.Fab) (width 0.1))
@@ -468,7 +468,7 @@
     )
   )
 
-  (module raise_fp:QFN-48-1EP_7x7mm_Pitch0.5mm (layer B.Cu) (tedit 5B339702) (tstamp 5B07E86D)
+  (module raise_fp:QFN-48-1EP_7x7mm_Pitch0.5mm (layer B.Cu) (tedit 5B485F29) (tstamp 5B07E86D)
     (at 141.31 106.34 90)
     (descr "UK Package; 48-Lead Plastic QFN (7mm x 7mm); (see Linear Technology QFN_48_05-08-1704.pdf)")
     (tags "QFN 0.5")
@@ -477,7 +477,7 @@
     (fp_text reference U3 (at -4.51 3.4 180) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value samd21g (at 0 -4.75 90) (layer B.Fab)
+    (fp_text value samd21g (at 0 -4.75 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 3.625 3.625) (end 3.1 3.625) (layer B.SilkS) (width 0.15))
@@ -631,13 +631,14 @@
     )
   )
 
-  (module raise_fp:usb-c-16smt locked (layer F.Cu) (tedit 5B2D01DA) (tstamp 5B1540F5)
+  (module raise_fp:usb-c-16smt locked (layer F.Cu) (tedit 5B485E71) (tstamp 5B1540F5)
     (at 141.99 98.12 180)
     (path /5AA283CC)
+    (attr smd)
     (fp_text reference J1 (at -6.75 1.48 90) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value USB_C_Receptacle_16pin (at 0.1 -5.6 180) (layer F.Fab)
+    (fp_text value USB_C_Receptacle_16pin (at 0.1 -5.6 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 6.3) (end 0 1.5) (layer F.SilkS) (width 0.15))
@@ -692,13 +693,14 @@
     )
   )
 
-  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5B2D01C7) (tstamp 5B031D10)
+  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5B485EBA) (tstamp 5B031D10)
     (at 136.92 113.21 338)
     (path /5B07FD1D)
+    (attr smd)
     (fp_text reference J2 (at 14.697943 -7.480659 248) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value USB_C_Receptacle_16pin (at 0.1 -5.6 338) (layer F.Fab)
+    (fp_text value USB_C_Receptacle_16pin (at 0.1 -5.6 338) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 6.3) (end 0 1.5) (layer F.SilkS) (width 0.15))
@@ -753,13 +755,14 @@
     )
   )
 
-  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5B2D01CA) (tstamp 5B031D2F)
+  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5B485E76) (tstamp 5B031D2F)
     (at 147.04 113.2 22)
     (path /5B07FD26)
+    (attr smd)
     (fp_text reference J3 (at 6.302037 2.28734 112) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value USB_C_Receptacle_16pin (at 0.099999 -5.6 22) (layer F.Fab)
+    (fp_text value USB_C_Receptacle_16pin (at 0.099999 -5.6 22) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 6.3) (end 0 1.5) (layer F.SilkS) (width 0.15))
@@ -814,7 +817,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B07F240) (tstamp 5B031D6E)
+  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B485EB5) (tstamp 5B031D6E)
     (at 138.85 100.3 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -823,7 +826,7 @@
     (fp_text reference L2 (at -1.96 -0.09) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "470R at 100M, 1A" (at 0 1.5 180) (layer F.Fab)
+    (fp_text value "470R at 100M, 1A" (at 0 1.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab)
@@ -850,7 +853,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B07F240) (tstamp 5B031D5E)
+  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B485ECC) (tstamp 5B031D5E)
     (at 139.2 111.23)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -859,7 +862,7 @@
     (fp_text reference L1 (at 0.71 1.24 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "470R at 100M, 1A" (at 0 1.5) (layer F.Fab)
+    (fp_text value "470R at 100M, 1A" (at 0 1.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0) (layer F.Fab)
@@ -886,7 +889,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B07F240) (tstamp 5B031E7E)
+  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B485EC5) (tstamp 5B031E7E)
     (at 138.79 106.68 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -895,7 +898,7 @@
     (fp_text reference R10 (at -0.88 -1.76 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "42.2R, 125mW, 5%" (at 0 1.5 90) (layer F.Fab)
+    (fp_text value "42.2R, 125mW, 5%" (at 0 1.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 90) (layer F.Fab)
@@ -922,7 +925,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B07F240) (tstamp 5B031E5E)
+  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B485E7D) (tstamp 5B031E5E)
     (at 142.65 102.76 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -931,7 +934,7 @@
     (fp_text reference R8 (at -1.87 0.23) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "180R, 125mW, 5%" (at 0 1.5 180) (layer F.Fab)
+    (fp_text value "180R, 125mW, 5%" (at 0 1.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab)
@@ -958,7 +961,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B07F240) (tstamp 5B031E3E)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F24) (tstamp 5B031E3E)
     (at 138.92 100.55 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -967,7 +970,7 @@
     (fp_text reference R6 (at 1.92 -0.05 90) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "5.1k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab)
+    (fp_text value "5.1k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 180) (layer B.Fab)
@@ -994,7 +997,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B07F240) (tstamp 5B031E6E)
+  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B485EAF) (tstamp 5B031E6E)
     (at 142.62 104.35 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1003,7 +1006,7 @@
     (fp_text reference R9 (at -1.78 -0.44 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "42.2R, 125mW, 5%" (at 0 1.5 180) (layer F.Fab)
+    (fp_text value "42.2R, 125mW, 5%" (at 0 1.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab)
@@ -1030,7 +1033,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B07F240) (tstamp 5B031DEE)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F50) (tstamp 5B031DEE)
     (at 135.83 113.24)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1039,7 +1042,7 @@
     (fp_text reference R1 (at 1.87 0.02) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "10k, 125mW, 5%" (at 0 -1.5) (layer B.Fab)
+    (fp_text value "10k, 125mW, 5%" (at 0 -1.5) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0) (layer B.Fab)
@@ -1066,7 +1069,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer B.Cu) (tedit 5B07F0E9) (tstamp 5B031C41)
+  (module raise_fp:C_0603 (layer B.Cu) (tedit 5B485F3C) (tstamp 5B031C41)
     (at 139.88 112.5 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1075,7 +1078,7 @@
     (fp_text reference C3 (at 0.05 1.15 180) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "20pf, ceramic, 6v, 5%" (at 0 -1.5 180) (layer B.Fab)
+    (fp_text value "20pf, ceramic, 6v, 5%" (at 0 -1.5 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 180) (layer B.Fab)
@@ -1102,7 +1105,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer B.Cu) (tedit 5B07F0E9) (tstamp 5B031CA1)
+  (module raise_fp:C_0603 (layer B.Cu) (tedit 5B485F15) (tstamp 5B031CA1)
     (at 136.18 106.65 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1111,7 +1114,7 @@
     (fp_text reference C9 (at 2.18 0.25 90) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "10uF, ceramic, 6v, 10%, x5r" (at 0 -1.5 90) (layer B.Fab)
+    (fp_text value "10uF, ceramic, 6v, 10%, x5r" (at 0 -1.5 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 90) (layer B.Fab)
@@ -1138,7 +1141,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B07F0E9) (tstamp 5B031C91)
+  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B485EB8) (tstamp 5B031C91)
     (at 136.61 105.07 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1147,7 +1150,7 @@
     (fp_text reference C8 (at 0.65 1.48 -90) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "10uF, ceramic, 6v, 10%, x5r" (at 0 1.5 180) (layer F.Fab)
+    (fp_text value "10uF, ceramic, 6v, 10%, x5r" (at 0 1.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab)
@@ -1174,7 +1177,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B07F0E9) (tstamp 5B031C51)
+  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B485E57) (tstamp 5B031C51)
     (at 145.71 100.35)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1183,7 +1186,7 @@
     (fp_text reference C4 (at -2.34 0.11) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "1uF, ceramic, 6v, 10%, x5r" (at 0 1.5) (layer F.Fab)
+    (fp_text value "1uF, ceramic, 6v, 10%, x5r" (at 0 1.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0) (layer F.Fab)
@@ -1210,7 +1213,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B07F0E9) (tstamp 5B031C81)
+  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B485EB1) (tstamp 5B031C81)
     (at 139.65 104.31)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1219,7 +1222,7 @@
     (fp_text reference C7 (at 0.92 -1.1) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "10uF, ceramic, 6v, 10%, x5r" (at 0 1.5) (layer F.Fab)
+    (fp_text value "10uF, ceramic, 6v, 10%, x5r" (at 0 1.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0) (layer F.Fab)
@@ -1246,7 +1249,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer B.Cu) (tedit 5B07F0E9) (tstamp 5B031C31)
+  (module raise_fp:C_0603 (layer B.Cu) (tedit 5B485F37) (tstamp 5B031C31)
     (at 147.22 112.53 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1255,7 +1258,7 @@
     (fp_text reference C2 (at -1.25 1.1 180) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "20pf, ceramic, 6v, 5%" (at 0 -1.5 180) (layer B.Fab)
+    (fp_text value "20pf, ceramic, 6v, 5%" (at 0 -1.5 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 180) (layer B.Fab)
@@ -1282,7 +1285,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B07F0E9) (tstamp 5B031C21)
+  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B485EB2) (tstamp 5B031C21)
     (at 147.24 105.2 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1291,8 +1294,8 @@
     (fp_text reference C1 (at -0.11 -1.17 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "1uF, ceramic, 6v, 10%, x5r" (at 0 1.5 180) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "e1uF, ceramic, 6v, 10%, x5r" (at 0 1.5 180) (layer F.Fab) hide
+      (effects (font (size 0.127 1) (thickness 0.03175)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab)
       (effects (font (size 0.3 0.3) (thickness 0.075)))
@@ -1318,7 +1321,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B07F0E9) (tstamp 5B031C71)
+  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B485EB9) (tstamp 5B031C71)
     (at 136.4 106.5 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1327,7 +1330,7 @@
     (fp_text reference C6 (at 1.72 -0.25 270) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "1uF, ceramic, 6v, 10%, x5r" (at 0 1.5 180) (layer F.Fab)
+    (fp_text value "1uF, ceramic, 6v, 10%, x5r" (at 0 1.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab)
@@ -1354,7 +1357,7 @@
     )
   )
 
-  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B07F0E9) (tstamp 5B031C61)
+  (module raise_fp:C_0603 (layer F.Cu) (tedit 5B485E6D) (tstamp 5B031C61)
     (at 145.83 103.56)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -1363,7 +1366,7 @@
     (fp_text reference C5 (at 1.97 0.04 90) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "1uF, ceramic, 6v, 10%, x5r" (at 0 1.5) (layer F.Fab)
+    (fp_text value "1uF, ceramic, 6v, 10%, x5r" (at 0 1.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0) (layer F.Fab)
@@ -1390,7 +1393,7 @@
     )
   )
 
-  (module raise_fp:SOT-23 (layer F.Cu) (tedit 5B3396C9) (tstamp 5B031FB1)
+  (module raise_fp:SOT-23 (layer F.Cu) (tedit 5B485EC8) (tstamp 5B031FB1)
     (at 138.25 102.75)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -1399,7 +1402,7 @@
     (fp_text reference U2 (at -1.14 -2.39 90) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value LY2508 (at 0 2.5) (layer F.Fab)
+    (fp_text value LY2508 (at 0 2.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 -270) (layer F.Fab)
@@ -1431,105 +1434,105 @@
     )
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B031F56)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F1B) (tstamp 5B031F56)
     (at 140 95 90)
     (path /5AD6FF9C)
     (fp_text reference TP3 (at 0 -1.27 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27 90) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0 90) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 11 /usb-up_N))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B031F5A)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F22) (tstamp 5B031F5A)
     (at 144 95 90)
     (path /5AD7005A)
     (fp_text reference TP4 (at 0 -1.27 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27 90) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0 90) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 12 /usb-up_P))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B031F7E)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F1F) (tstamp 5B031F7E)
     (at 142 95)
     (path /5AD7201A)
     (fp_text reference TP13 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 3 +3V3))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B031F6A)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F1D) (tstamp 5B031F6A)
     (at 144 93.2)
     (path /5AD70C92)
     (fp_text reference TP8 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 1 Earth))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B031F72)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F41) (tstamp 5B031F72)
     (at 148.2 117)
     (path /5B07FD09)
     (fp_text reference TP10 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 31 "Net-(TP10-Pad1)"))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B031F76)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F3F) (tstamp 5B031F76)
     (at 146.4 117.8 90)
     (path /5B07FD12)
     (fp_text reference TP11 (at 0 -1.27 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27 90) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0 90) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 32 "Net-(TP11-Pad1)"))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B031F5E)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F17) (tstamp 5B031F5E)
     (at 140 93.2)
     (path /5AD7092D)
     (fp_text reference TP5 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 4 +5V))
   )
 
-  (module raise_fp:3528-4p (layer F.Cu) (tedit 5B2D01BE) (tstamp 5B07E8C0)
+  (module raise_fp:3528-4p (layer F.Cu) (tedit 5B485E66) (tstamp 5B07E8C0)
     (at 142 106.7)
     (path /5B07FB4E)
     (attr smd)
     (fp_text reference U4 (at 2.94 0.05 90) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.1)))
     )
-    (fp_text value "4 pin RGB led, com anode, red: 500mcd 620nm. Green: 1000mcd 520nm. Blue: 500mcd 460nm." (at 0.1 -3) (layer F.Fab)
+    (fp_text value "4 pin RGB led, com anode, red: 500mcd 620nm. Green: 1000mcd 520nm. Blue: 500mcd 460nm." (at 0.1 -3) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.6 -1.4) (end 1.6 1.4) (layer F.SilkS) (width 0.15))
@@ -1554,7 +1557,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B2D04DE) (tstamp 5B2CBBA0)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F14) (tstamp 5B2CBBA0)
     (at 145.73 100.27 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1563,7 +1566,7 @@
     (fp_text reference R7 (at 1.97 -0.18) (layer B.SilkS)
       (effects (font (size 0.6 0.6) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "10k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab)
+    (fp_text value "10k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 1.25 -0.7) (end -1.25 -0.7) (layer B.CrtYd) (width 0.05))
@@ -1590,7 +1593,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B2D0202) (tstamp 5B2213BE)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F3A) (tstamp 5B2213BE)
     (at 150 114.75)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1599,7 +1602,7 @@
     (fp_text reference R11 (at -0.1 -1.15) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "1M, 125mW, 5%" (at 0 -1.5) (layer B.Fab)
+    (fp_text value "1M, 125mW, 5%" (at 0 -1.5) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 1.25 -0.7) (end -1.25 -0.7) (layer B.CrtYd) (width 0.05))
@@ -1626,7 +1629,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B2D0211) (tstamp 5B2213CF)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F4E) (tstamp 5B2213CF)
     (at 133.4 115.7 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1635,7 +1638,7 @@
     (fp_text reference R12 (at 1.74 0.23 180) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "1M, 125mW, 5%" (at 0 -1.5 90) (layer B.Fab)
+    (fp_text value "1M, 125mW, 5%" (at 0 -1.5 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 90) (layer B.Fab)
@@ -1662,59 +1665,59 @@
     )
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B2D078E)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F20) (tstamp 5B2D078E)
     (at 142 93.2)
     (path /5B20E2BA)
     (fp_text reference TP1 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 56 /ufp-cc))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B20DCA2)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F42) (tstamp 5B20DCA2)
     (at 150 116.4)
     (path /5B20E36A)
     (fp_text reference TP2 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 17 /dfp-r-cc))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B20DCA7)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F4C) (tstamp 5B20DCA7)
     (at 137.2 117.2)
     (path /5B20E3D6)
     (fp_text reference TP6 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 16 /dfp-l-cc))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5AD8977A) (tstamp 5B3E4738)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F4A) (tstamp 5B3E4738)
     (at 135.4 116.6)
     (path /5B27E713)
     (fp_text reference TP7 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 47 /side-power))
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B2D021F) (tstamp 5B2C1257)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F52) (tstamp 5B2C1257)
     (at 135.84 111.63 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1723,7 +1726,7 @@
     (fp_text reference R2 (at -1.9 -0.18 180) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "10k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab)
+    (fp_text value "10k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 1.25 -0.7) (end -1.25 -0.7) (layer B.CrtYd) (width 0.05))
@@ -1750,7 +1753,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B2D01B8) (tstamp 5B2CE3F2)
+  (module raise_fp:R_0603 (layer F.Cu) (tedit 5B485ECE) (tstamp 5B2CE3F2)
     (at 141.975 117.125 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1759,7 +1762,7 @@
     (fp_text reference R3 (at -0.255 -1.215 90) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.1)))
     )
-    (fp_text value "4.7k, 125mW, 5%" (at 0 1.5 90) (layer F.Fab)
+    (fp_text value "4.7k, 125mW, 5%" (at 0 1.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 90) (layer F.Fab)
@@ -1786,7 +1789,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B2D020A) (tstamp 5B2CE403)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F46) (tstamp 5B2CE403)
     (at 141.925 117.125 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1795,7 +1798,7 @@
     (fp_text reference R4 (at 0 1.45 90) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "4.7k, 125mW, 5%" (at 0 -1.5 90) (layer B.Fab)
+    (fp_text value "4.7k, 125mW, 5%" (at 0 -1.5 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 1.25 -0.7) (end -1.25 -0.7) (layer B.CrtYd) (width 0.05))
@@ -1822,7 +1825,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B30E43E) (tstamp 5B30E3EC)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F3E) (tstamp 5B30E3EC)
     (at 147.2 114.8)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1831,7 +1834,7 @@
     (fp_text reference R5 (at 0.1 -1.1) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "36k, 125mW, 5%" (at 0 -1.5) (layer B.Fab)
+    (fp_text value "36k, 125mW, 5%" (at 0 -1.5) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0) (layer B.Fab)
@@ -1858,7 +1861,7 @@
     )
   )
 
-  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B30E420) (tstamp 5B30E3FD)
+  (module raise_fp:R_0603 (layer B.Cu) (tedit 5B485F48) (tstamp 5B30E3FD)
     (at 135.7 114.9 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -1867,7 +1870,7 @@
     (fp_text reference R13 (at -2.26 0.01 180) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "36k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab)
+    (fp_text value "36k, 125mW, 5%" (at 0 -1.5 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 1.25 -0.7) (end -1.25 -0.7) (layer B.CrtYd) (width 0.05))
@@ -1894,7 +1897,7 @@
     )
   )
 
-  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer B.Cu) (tedit 5B1E7776) (tstamp 5B525C83)
+  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer B.Cu) (tedit 5B485F12) (tstamp 5B525C83)
     (at 146.13 95.83)
     (descr "Circular Fiducial, 0.5mm bare copper top; 1mm keepout (Level C)")
     (tags marker)
@@ -1903,7 +1906,7 @@
     (fp_text reference J4 (at 0 1.5) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value Conn_01x01_Female (at 0 -1.5) (layer B.Fab)
+    (fp_text value Conn_01x01_Female (at 0 -1.5) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_circle (center 0 0) (end 0.5 0) (layer B.Fab) (width 0.1))
@@ -1915,7 +1918,7 @@
       (solder_mask_margin 0.25) (clearance 0.25))
   )
 
-  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer F.Cu) (tedit 5B1E7776) (tstamp 5B525C8B)
+  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer F.Cu) (tedit 5B485EB6) (tstamp 5B525C8B)
     (at 139.5 93)
     (descr "Circular Fiducial, 0.5mm bare copper top; 1mm keepout (Level C)")
     (tags marker)
@@ -1924,7 +1927,7 @@
     (fp_text reference J5 (at 0 -1.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x01_Female (at 0 1.5) (layer F.Fab)
+    (fp_text value Conn_01x01_Female (at 0 1.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 0.5 0) (layer F.Fab) (width 0.1))
@@ -1936,7 +1939,7 @@
       (solder_mask_margin 0.25) (clearance 0.25))
   )
 
-  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer B.Cu) (tedit 5B1E7776) (tstamp 5B525C93)
+  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer B.Cu) (tedit 5B485F4F) (tstamp 5B525C93)
     (at 132.3 113.6)
     (descr "Circular Fiducial, 0.5mm bare copper top; 1mm keepout (Level C)")
     (tags marker)
@@ -1945,7 +1948,7 @@
     (fp_text reference J6 (at 0 1.5) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value Conn_01x01_Female (at 0 -1.5) (layer B.Fab)
+    (fp_text value Conn_01x01_Female (at 0 -1.5) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_circle (center 0 0) (end 0.75 0) (layer B.CrtYd) (width 0.05))
@@ -1957,7 +1960,7 @@
       (solder_mask_margin 0.25) (clearance 0.25))
   )
 
-  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer F.Cu) (tedit 5B1E7776) (tstamp 5B525C9B)
+  (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer F.Cu) (tedit 5B485E50) (tstamp 5B525C9B)
     (at 151 116.6)
     (descr "Circular Fiducial, 0.5mm bare copper top; 1mm keepout (Level C)")
     (tags marker)
@@ -1966,7 +1969,7 @@
     (fp_text reference J7 (at 0 -1.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x01_Female (at 0 1.5) (layer F.Fab)
+    (fp_text value Conn_01x01_Female (at 0 1.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 0.75 0) (layer F.CrtYd) (width 0.05))
