@@ -9,10 +9,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Huble"
+Date "2018-07-25"
+Rev "v3.1"
+Comp "Dygma"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1608,62 +1608,8 @@ Text Label 6950 4350 3    60   ~ 0
 sda
 Text Label 7200 4350 3    60   ~ 0
 scl
-$Comp
-L R R5
-U 1 1 5B30E926
-P 8200 4100
-F 0 "R5" V 8280 4100 50  0000 C CNN
-F 1 "36k, 125mW, 5%" V 8350 4150 50  0000 C CNN
-F 2 "raise_fp:R_0603" V 8130 4100 30  0001 C CNN
-F 3 "" H 8200 4100 30  0000 C CNN
-F 4 "2447349" H 8200 4100 60  0001 C CNN "farnell #"
-F 5 "any/open" H 3700 600 60  0001 C CNN "supplier"
-F 6 "Value" H 8200 4100 60  0001 C CNN "supplier PN"
-F 7 "Value" H 8200 4100 60  0001 C CNN "MOQ"
-F 8 "Value" H 8200 4100 60  0001 C CNN "leadtime"
-	1    8200 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R13
-U 1 1 5B30E9DE
-P 8750 4100
-F 0 "R13" V 8830 4100 50  0000 C CNN
-F 1 "36k, 125mW, 5%" V 8900 4150 50  0000 C CNN
-F 2 "raise_fp:R_0603" V 8680 4100 30  0001 C CNN
-F 3 "" H 8750 4100 30  0000 C CNN
-F 4 "2447349" H 8750 4100 60  0001 C CNN "farnell #"
-F 5 "any/open" H 4250 600 60  0001 C CNN "supplier"
-F 6 "Value" H 8750 4100 60  0001 C CNN "supplier PN"
-F 7 "Value" H 8750 4100 60  0001 C CNN "MOQ"
-F 8 "Value" H 8750 4100 60  0001 C CNN "leadtime"
-	1    8750 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR026
-U 1 1 5B30ED4A
-P 8750 3950
-F 0 "#PWR026" H 8750 3800 50  0001 C CNN
-F 1 "+3.3V" V 8765 4078 50  0000 L CNN
-F 2 "" H 8750 3950 50  0001 C CNN
-F 3 "" H 8750 3950 50  0001 C CNN
-	1    8750 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR027
-U 1 1 5B30EDE2
-P 8200 3950
-F 0 "#PWR027" H 8200 3800 50  0001 C CNN
-F 1 "+3.3V" V 8215 4078 50  0000 L CNN
-F 2 "" H 8200 3950 50  0001 C CNN
-F 3 "" H 8200 3950 50  0001 C CNN
-	1    8200 3950
-	1    0    0    -1  
-$EndComp
-Text Notes 8100 3500 0    60   ~ 0
-dfp pull up/down
+Text Notes 8200 3900 0    60   ~ 0
+dfp pull down
 $Comp
 L Conn_01x01_Female J5
 U 1 1 5B310461
@@ -1731,4 +1677,64 @@ $EndComp
 NoConn ~ 8400 2150
 Text Notes 8600 1850 0    60   ~ 0
 fiducials
+Text Label 9650 6150 0    60   ~ 0
+sda
+Text Label 9650 6250 0    60   ~ 0
+scl
+$Comp
+L TEST TP12
+U 1 1 5B585703
+P 9650 6250
+F 0 "TP12" H 9728 6390 50  0000 L CNN
+F 1 "TEST" H 9750 6250 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 9650 6250 50  0001 C CNN
+F 3 "" H 9650 6250 50  0001 C CNN
+F 4 "dnp" H 3350 1750 60  0001 C CNN "farnell #"
+F 5 "dnp" H 3350 1750 60  0001 C CNN "supplier"
+	1    9650 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST TP9
+U 1 1 5B58578D
+P 9650 6150
+F 0 "TP9" H 9728 6290 50  0000 L CNN
+F 1 "TEST" H 9750 6150 50  0000 L CNN
+F 2 "raise_fp:testpoint" H 9650 6150 50  0001 C CNN
+F 3 "" H 9650 6150 50  0001 C CNN
+F 4 "dnp" H 3350 1650 60  0001 C CNN "farnell #"
+F 5 "dnp" H 3350 1650 60  0001 C CNN "supplier"
+	1    9650 6150
+	0    -1   -1   0   
+$EndComp
+Text Notes 6850 3650 0    60   ~ 0
+i2c pullups
+Wire Notes Line
+	6650 3450 7550 3450
+Wire Notes Line
+	7550 3450 7550 4850
+Wire Notes Line
+	7550 4850 6600 4850
+Wire Notes Line
+	6600 4850 6600 3450
+Wire Notes Line
+	6600 3450 6700 3450
+Wire Notes Line
+	7700 3450 9100 3450
+Wire Notes Line
+	9100 3450 9100 4850
+Wire Notes Line
+	9100 4850 7700 4850
+Wire Notes Line
+	7700 4850 7700 3450
+Wire Notes Line
+	5000 2250 6200 2250
+Wire Notes Line
+	6200 2250 6200 3350
+Wire Notes Line
+	6200 3350 4850 3350
+Wire Notes Line
+	4850 3350 4850 2250
+Wire Notes Line
+	4850 2250 5050 2250
 $EndSCHEMATC
