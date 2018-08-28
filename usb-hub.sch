@@ -403,22 +403,6 @@ F 5 "dnp" H 3200 1200 60  0001 C CNN "supplier"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C9
-U 1 1 5B07FB05
-P 7900 5700
-F 0 "C9" H 7925 5800 50  0000 L CNN
-F 1 "10uF, ceramic, 6v, 10%, x5r" H 6900 5150 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 7938 5550 30  0001 C CNN
-F 3 "" H 7900 5700 60  0000 C CNN
-F 4 "1288201" H 7900 5700 60  0001 C CNN "farnell #"
-F 5 "any/open" H 1900 4400 60  0001 C CNN "supplier"
-F 6 "Value" H 7900 5700 60  0001 C CNN "supplier PN"
-F 7 "Value" H 7900 5700 60  0001 C CNN "MOQ"
-F 8 "Value" H 7900 5700 60  0001 C CNN "leadtime"
-	1    7900 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Earth #PWR01
 U 1 1 5B07FB0C
 P 5200 2950
@@ -687,7 +671,6 @@ NoConn ~ 3650 1350
 NoConn ~ 3550 1350
 NoConn ~ 3450 1350
 NoConn ~ 3250 1350
-NoConn ~ 2250 1350
 NoConn ~ 2150 1350
 NoConn ~ 1750 3100
 Text Label 3350 1250 0    60   ~ 0
@@ -857,28 +840,15 @@ $EndComp
 $Comp
 L TEST TP10
 U 1 1 5B07FD09
-P 1750 2000
-F 0 "TP10" V 1750 2350 50  0000 C CNN
-F 1 "TEST" V 1874 2094 50  0000 C CNN
-F 2 "raise_fp:testpoint" H 1750 2000 50  0001 C CNN
-F 3 "" H 1750 2000 50  0001 C CNN
-F 4 "dnp" H -5550 -850 60  0001 C CNN "farnell #"
-F 5 "dnp" H -5550 -850 60  0001 C CNN "supplier"
-	1    1750 2000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TEST TP11
-U 1 1 5B07FD12
-P 1750 2100
-F 0 "TP11" V 1750 2450 50  0000 C CNN
-F 1 "TEST" V 1874 2194 50  0000 C CNN
-F 2 "raise_fp:testpoint" H 1750 2100 50  0001 C CNN
-F 3 "" H 1750 2100 50  0001 C CNN
-F 4 "dnp" H -5550 -850 60  0001 C CNN "farnell #"
-F 5 "dnp" H -5550 -850 60  0001 C CNN "supplier"
-	1    1750 2100
-	0    -1   -1   0   
+P 2250 1350
+F 0 "TP10" V 2250 1700 50  0000 C CNN
+F 1 "TEST" V 2374 1444 50  0000 C CNN
+F 2 "raise_fp:testpoint" H 2250 1350 50  0001 C CNN
+F 3 "" H 2250 1350 50  0001 C CNN
+F 4 "dnp" H -5050 -1500 60  0001 C CNN "farnell #"
+F 5 "dnp" H -5050 -1500 60  0001 C CNN "supplier"
+	1    2250 1350
+	1    0    0    -1  
 $EndComp
 $Comp
 L USB_C_Receptacle_16pin J2
@@ -1737,4 +1707,9 @@ Wire Notes Line
 	4850 3350 4850 2250
 Wire Notes Line
 	4850 2250 5050 2250
+NoConn ~ 1750 2100
+NoConn ~ 1750 2000
+NoConn ~ 3800 3000
+Text Notes 1650 750  0    60   ~ 0
+pb02 is Arduino pin A5
 $EndSCHEMATC
