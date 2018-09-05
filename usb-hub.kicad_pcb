@@ -3,7 +3,7 @@
   (general
     (thickness 0.8)
     (drawings 111)
-    (tracks 700)
+    (tracks 702)
     (zones 0)
     (modules 51)
     (nets 57)
@@ -19,8 +19,8 @@
 
   (layers
     (0 F.Cu signal)
-    (1 In1.Cu power)
-    (2 In2.Cu power hide)
+    (1 In1.Cu power hide)
+    (2 In2.Cu power)
     (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
@@ -239,8 +239,34 @@
     (add_net "Net-(L1-Pad1)")
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5B8E99D6) (tstamp 5B8D1EA7)
-    (at 147.275 103.1)
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B8FDE55) (tstamp 5B031F72)
+    (at 147.175 108.8)
+    (path /5B07FD09)
+    (fp_text reference TP10 (at 0 -1.27) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
+      (net 31 "Net-(TP10-Pad1)"))
+  )
+
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B8FDE14) (tstamp 5B8D1E9D)
+    (at 147.175 106.9)
+    (path /5B8D26E4)
+    (fp_text reference TP11 (at 0 -1.27) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value TEST (at 0 1.27) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
+      (net 19 /swclk))
+  )
+
+  (module raise_fp:testpoint (layer B.Cu) (tedit 5B8FDDE4) (tstamp 5B8FDE13)
+    (at 147.175 103.1)
     (path /5B8D3936)
     (fp_text reference TP15 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -248,7 +274,7 @@
     (fp_text value TEST (at 0 1.27) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (pad 1 smd circle (at -0.1 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
+    (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 21 /reset))
   )
 
@@ -1424,19 +1450,6 @@
       (net 1 Earth))
   )
 
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5B8E9B46) (tstamp 5B031F72)
-    (at 147.425 108.35)
-    (path /5B07FD09)
-    (fp_text reference TP10 (at 0 -1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 smd circle (at -0.25 0.45) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
-      (net 31 "Net-(TP10-Pad1)"))
-  )
-
   (module raise_fp:testpoint (layer B.Cu) (tedit 5B485F17) (tstamp 5B031F5E)
     (at 140 93.2)
     (path /5AD7092D)
@@ -1848,7 +1861,7 @@
   )
 
   (module raise_fp:testpoint (layer B.Cu) (tedit 5B58517A) (tstamp 5B6420B1)
-    (at 133.3 115.1)
+    (at 133.5 115.575)
     (path /5B585703)
     (fp_text reference TP12 (at 0 -1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1858,19 +1871,6 @@
     )
     (pad 1 smd circle (at 0 0) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
       (net 24 /scl))
-  )
-
-  (module raise_fp:testpoint (layer B.Cu) (tedit 5B8E9B3B) (tstamp 5B8D1E9D)
-    (at 147.425 106.6)
-    (path /5B8D26E4)
-    (fp_text reference TP11 (at 0 -1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value TEST (at 0 1.27) (layer B.Fab)
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 smd circle (at -0.25 0.3) (size 0.8 0.8) (layers B.Cu B.Paste B.Mask)
-      (net 19 /swclk))
   )
 
   (module raise_fp:testpoint (layer B.Cu) (tedit 5B8E9A2F) (tstamp 5B8D1EA2)
@@ -2531,7 +2531,9 @@
   (segment (start 145.904448 112.391512) (end 145.904448 112.629448) (width 0.16) (layer F.Cu) (net 23))
   (segment (start 133.85 113.65) (end 135.348657 113.65) (width 0.16) (layer B.Cu) (net 23))
   (segment (start 135.348657 113.65) (end 135.529612 113.469045) (width 0.16) (layer B.Cu) (net 23))
-  (segment (start 133.3 115.1) (end 134.573657 115.1) (width 0.16) (layer B.Cu) (net 24))
+  (segment (start 133.5 115.575) (end 134.065685 115.575) (width 0.16) (layer B.Cu) (net 24))
+  (segment (start 134.065685 115.575) (end 134.540685 115.1) (width 0.16) (layer B.Cu) (net 24))
+  (segment (start 134.540685 115.1) (end 134.573657 115.1) (width 0.16) (layer B.Cu) (net 24))
   (segment (start 134.573657 115.1) (end 135.104612 114.569045) (width 0.16) (layer B.Cu) (net 24))
   (segment (start 136.35 113.899264) (end 135.680219 114.569045) (width 0.16) (layer B.Cu) (net 24))
   (segment (start 135.680219 114.569045) (end 135.104612 114.569045) (width 0.16) (layer B.Cu) (net 24))
