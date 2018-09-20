@@ -18,9 +18,9 @@
   )
 
   (layers
-    (0 F.Cu signal)
-    (1 In1.Cu power)
-    (2 In2.Cu power)
+    (0 F.Cu signal hide)
+    (1 In1.Cu power hide)
+    (2 In2.Cu power hide)
     (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
@@ -514,7 +514,7 @@
     (at 141.98 97.24)
     (path /5B164989)
     (attr smd)
-    (fp_text reference SW1 (at 3.181 -0.593) (layer B.SilkS)
+    (fp_text reference SW1 (at 3.07 -0.65) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
     (fp_text value SW_Push (at -0.04 0.03) (layer B.Fab)
@@ -836,7 +836,7 @@
     (fp_text reference L2 (at 1.625 -0.075 90) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value "470R at 100M, 1A" (at 0 1.5 180) (layer F.Fab) hide
+    (fp_text value "inductor 470R at 100M, 1A" (at 0 1.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab)
@@ -872,7 +872,7 @@
     (fp_text reference L1 (at -0.710852 -1.176994 22) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "470R at 100M, 1A" (at 0 -1.5 202) (layer B.Fab) hide
+    (fp_text value "inductor 470R at 100M, 1A" (at 0 -1.5 202) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 202) (layer B.Fab)
@@ -1710,7 +1710,7 @@
     (fp_text reference R3 (at 0.051058 -1.341834 338) (layer B.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "4.7k, 125mW, 5%" (at 0 -1.5 338) (layer B.Fab) hide
+    (fp_text value "2.7k, 125mW, 5%" (at 0 -1.5 338) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 338) (layer B.Fab)
@@ -1746,7 +1746,7 @@
     (fp_text reference R4 (at -0.280803 1.437892 158) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value "4.7k, 125mW, 5%" (at 0 -1.5 338) (layer B.Fab) hide
+    (fp_text value "2.7k, 125mW, 5%" (at 0 -1.5 338) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 1.25 -0.7) (end -1.25 -0.7) (layer B.CrtYd) (width 0.05))
@@ -1774,7 +1774,7 @@
   )
 
   (module raise_fp:Fiducial_0.5mm_Dia_1mm_Outer (layer B.Cu) (tedit 5B485F12) (tstamp 5B525C83)
-    (at 138.575 92.575)
+    (at 146.15 95.64)
     (descr "Circular Fiducial, 0.5mm bare copper top; 1mm keepout (Level C)")
     (tags marker)
     (path /5B310711)
@@ -2012,11 +2012,11 @@
   (gr_text led (at 142.3 106.7) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.25)))
   )
-  (gr_text HUB_PCB1 (at 141.986 92.71) (layer B.SilkS)
+  (gr_text HUB_PCB1 (at 141.77 94.09) (layer B.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
   )
-  (gr_text $ver$ (at 141.57 100.92) (layer B.SilkS)
-    (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
+  (gr_text $ver$ (at 142.01 92.62) (layer B.SilkS)
+    (effects (font (size 0.6 0.5) (thickness 0.1)) (justify mirror))
   )
   (gr_text "d+ d- cc" (at 142.06 99.78) (layer B.SilkS) (tstamp 5B2D07F5)
     (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))

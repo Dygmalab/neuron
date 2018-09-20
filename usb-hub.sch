@@ -655,9 +655,9 @@ Text Label 2850 1350 1    60   ~ 0
 swclk
 Text Label 2750 1350 1    60   ~ 0
 swdio
-Text Label 9900 6900 0    60   ~ 0
-swclk
 Text Label 9900 6800 0    60   ~ 0
+swclk
+Text Label 9900 6900 0    60   ~ 0
 swdio
 Text Label 9900 7000 0    60   ~ 0
 reset
