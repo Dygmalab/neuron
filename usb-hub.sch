@@ -2,7 +2,6 @@ EESchema Schematic File Version 3
 LIBS:rgbled
 LIBS:sled1735
 LIBS:usb_c_16pin
-LIBS:regulator
 LIBS:usb-hub-cache
 EELAYER 26 0
 EELAYER END
@@ -1142,7 +1141,7 @@ P 5400 2850
 F 0 "U1" H 5400 3197 60  0000 C CNN
 F 1 "usblc6-4" H 5400 3091 60  0000 C CNN
 F 2 "raise_fp:SOT-23-6" H 5400 2850 60  0001 C CNN
-F 3 "" H 5400 2850 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1996763.pdf?_ga=2.241651460.726690636.1538980653-1456224680.1538980653" H 5400 2850 60  0001 C CNN
 F 4 "1295311" H 1200 850 60  0001 C CNN "farnell #"
 F 5 "dnp" H 5400 2850 60  0001 C CNN "supplier"
 F 6 "USBLC6-4SC6 " H 5400 2850 60  0001 C CNN "supplier PN"
