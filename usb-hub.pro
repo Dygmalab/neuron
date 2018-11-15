@@ -1,4 +1,4 @@
-update=Fri 29 Jun 2018 10:55:18 CEST
+update=Thu 08 Nov 2018 11:34:22 CET
 version=1
 last_client=kicad
 [general]
@@ -45,3 +45,4 @@ LibName1=raise_libs/rgbled
 LibName2=raise_libs/sled1735
 LibName3=raise_libs/usb_c_16pin
 LibName4=raise_libs/regulator
+LibName5=raise_libs/pca9306
