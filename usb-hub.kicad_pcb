@@ -245,9 +245,10 @@
     (add_net /side-power)
   )
 
-  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5C179688) (tstamp 5B031D10)
+  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5C1CB3A2) (tstamp 5B031D10)
     (at 137.144765 112.653688 338)
     (path /5B07FD1D)
+    (attr smd)
     (fp_text reference J2 (at 14.697943 -7.480659 248) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
@@ -310,9 +311,10 @@
     )
   )
 
-  (module raise_fp:usb-c-16smt locked (layer F.Cu) (tedit 5C179688) (tstamp 5B1540F5)
+  (module raise_fp:usb-c-16smt locked (layer F.Cu) (tedit 5C1CB3A2) (tstamp 5B1540F5)
     (at 141.99 98.12 180)
     (path /5AA283CC)
+    (attr smd)
     (fp_text reference J1 (at -6.75 1.48 90) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
@@ -375,9 +377,10 @@
     )
   )
 
-  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5C179688) (tstamp 5B031D2F)
+  (module raise_fp:usb-c-16smt (layer F.Cu) (tedit 5C1CB3A2) (tstamp 5B031D2F)
     (at 146.815235 112.643688 22)
     (path /5B07FD26)
+    (attr smd)
     (fp_text reference J3 (at 6.302037 2.28734 112) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
