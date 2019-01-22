@@ -41,16 +41,12 @@ F 3 "~" H 1400 10500 50  0001 C CNN
 	1    1400 10500
 	1    0    0    -1  
 $EndComp
-Text Label 2200 7300 0    60   ~ 0
-vbus-up
 Text Label 2100 8600 0    60   ~ 0
 usb-up_P
 Text Label 2100 8400 0    60   ~ 0
 usb-up_N
 NoConn ~ 2100 10100
 NoConn ~ 2100 10200
-Text Label 13050 3100 2    60   ~ 0
-vbus-up
 $Comp
 L Earth #PWR017
 U 1 1 5A5F7A3F
@@ -343,8 +339,6 @@ F 5 "dnp" H 6850 2400 60  0001 C CNN "supplier"
 	1    12400 6900
 	0    -1   -1   0   
 $EndComp
-Text Label 12400 6900 0    60   ~ 0
-vbus-up
 $Comp
 L Earth #PWR066
 U 1 1 5AD70C55
@@ -480,9 +474,9 @@ Text Label 4500 8100 0    60   ~ 0
 dfp-r-cc
 Text Label 6950 8150 0    60   ~ 0
 dfp-l-cc
-Text Label 2350 3450 2    60   ~ 0
+Text Label 1900 3450 2    60   ~ 0
 dfp-r-cc
-Text Label 2350 3350 2    60   ~ 0
+Text Label 1900 3350 2    60   ~ 0
 dfp-l-cc
 Text Label 2850 4150 3    60   ~ 0
 pwm1_r
@@ -1152,17 +1146,6 @@ F 8 "Value" H 10750 3200 60  0001 C CNN "leadtime"
 	1    10750 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L +5V #PWR045
-U 1 1 5B07FE49
-P 11700 3150
-F 0 "#PWR045" H 11700 3000 50  0001 C CNN
-F 1 "+5V" H 11700 3290 50  0000 C CNN
-F 2 "" H 11700 3150 60  0000 C CNN
-F 3 "" H 11700 3150 60  0000 C CNN
-	1    11700 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11100 3200 11700 3200
 $Comp
@@ -1178,14 +1161,6 @@ F 3 "~" H 10100 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10100 3200 10400 3200
-Text Label 10400 3100 2    60   ~ 0
-sda
-Text Label 10400 3300 2    60   ~ 0
-scl
-Text Label 11100 3100 0    60   ~ 0
-dfp-r-cc
-Text Label 11100 3300 0    60   ~ 0
-dfp-l-cc
 Wire Wire Line
 	11700 3200 11700 3150
 Wire Notes Line
@@ -1308,7 +1283,7 @@ F 3 "" H 7000 2050 50  0001 C CNN
 $EndComp
 Text Label 7300 2050 0    60   ~ 0
 reset
-Text Label 2350 3250 2    60   ~ 0
+Text Label 1900 3250 2    60   ~ 0
 ufp-cc
 Text Label 2200 8100 0    60   ~ 0
 ufp-cc
@@ -1540,7 +1515,7 @@ sda33
 Text Label 8750 1750 3    60   ~ 0
 scl33
 Text Notes 7150 9200 0    60   ~ 0
-dfp pull down/filter
+dfp pull down\n
 $Comp
 L Conn_01x01_Female J5
 U 1 1 5B310461
@@ -2030,64 +2005,6 @@ scl
 Wire Notes Line
 	12250 2250 11750 2250
 $Comp
-L C C15
-U 1 1 5BE49955
-P 7350 10000
-F 0 "C15" H 7465 10046 50  0000 L CNN
-F 1 "100pF ceramic, 100v, 10%" H 6500 9400 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 7388 9850 50  0001 C CNN
-F 3 "" H 7350 10000 50  0001 C CNN
-F 4 "2821263" H 5900 7350 60  0001 C CNN "farnell #"
-F 5 "any/open" H 5900 7350 60  0001 C CNN "supplier"
-F 6 "Value" H 7350 10000 60  0001 C CNN "supplier PN"
-F 7 "Value" H 7350 10000 60  0001 C CNN "MOQ"
-F 8 "Value" H 7350 10000 60  0001 C CNN "leadtime"
-	1    7350 10000
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C16
-U 1 1 5BE49D03
-P 7950 10000
-F 0 "C16" H 8065 10046 50  0000 L CNN
-F 1 "100pF ceramic, 100v, 10%" H 7700 9500 50  0000 L CNN
-F 2 "raise_fp:C_0603" H 7988 9850 50  0001 C CNN
-F 3 "" H 7950 10000 50  0001 C CNN
-F 4 "2821263" H 6500 7350 60  0001 C CNN "farnell #"
-F 5 "any/open" H 6500 7350 60  0001 C CNN "supplier"
-F 6 "Value" H 7950 10000 60  0001 C CNN "supplier PN"
-F 7 "Value" H 7950 10000 60  0001 C CNN "MOQ"
-F 8 "Value" H 7950 10000 60  0001 C CNN "leadtime"
-	1    7950 10000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Earth #PWR061
-U 1 1 5BE49DA8
-P 7350 10150
-F 0 "#PWR061" H 7350 9900 50  0001 C CNN
-F 1 "Earth" H 7350 10000 50  0001 C CNN
-F 2 "" H 7350 10150 60  0000 C CNN
-F 3 "" H 7350 10150 60  0000 C CNN
-	1    7350 10150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR062
-U 1 1 5BE49E2F
-P 7950 10150
-F 0 "#PWR062" H 7950 9900 50  0001 C CNN
-F 1 "Earth" H 7950 10000 50  0001 C CNN
-F 2 "" H 7950 10150 60  0000 C CNN
-F 3 "" H 7950 10150 60  0000 C CNN
-	1    7950 10150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 9850 7600 9850
-Wire Wire Line
-	7950 9850 8150 9850
-$Comp
 L C C14
 U 1 1 5BE4B0B6
 P 7050 7250
@@ -2149,4 +2066,51 @@ side-power-pre-ferrite
 Wire Wire Line
 	6700 6900 6700 7400
 Connection ~ 6750 7400
+NoConn ~ 2350 3250
+NoConn ~ 2350 3350
+NoConn ~ 2350 3450
+NoConn ~ 1900 3450
+NoConn ~ 1900 3350
+NoConn ~ 1900 3250
+$Comp
+L +5V #PWR045
+U 1 1 5B07FE49
+P 11700 3150
+F 0 "#PWR045" H 11700 3000 50  0001 C CNN
+F 1 "+5V" H 11700 3290 50  0000 C CNN
+F 2 "" H 11700 3150 60  0000 C CNN
+F 3 "" H 11700 3150 60  0000 C CNN
+	1    11700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR061
+U 1 1 5C478619
+P 13050 3100
+F 0 "#PWR061" H 13050 2950 50  0001 C CNN
+F 1 "+5V" H 13065 3273 50  0000 C CNN
+F 2 "" H 13050 3100 50  0001 C CNN
+F 3 "" H 13050 3100 50  0001 C CNN
+	1    13050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR062
+U 1 1 5C479224
+P 12400 6900
+F 0 "#PWR062" H 12400 6750 50  0001 C CNN
+F 1 "+5V" H 12415 7073 50  0000 C CNN
+F 2 "" H 12400 6900 50  0001 C CNN
+F 3 "" H 12400 6900 50  0001 C CNN
+	1    12400 6900
+	0    1    1    0   
+$EndComp
+Text Label 10400 3100 2    60   ~ 0
+usb-up_N
+Text Label 10400 3300 2    60   ~ 0
+usb-up_P
+Text Label 11100 3100 0    60   ~ 0
+scl33
+Text Label 11100 3300 0    60   ~ 0
+sda33
 $EndSCHEMATC
