@@ -409,11 +409,10 @@ F 0 "U4" H 10282 7739 60  0000 R CNN
 F 1 "4 pin RGB led, com anode" H 10282 7633 60  0001 R CNN
 F 2 "raise_fp:3528-4p" V 10450 7650 60  0001 C CNN
 F 3 "" V 10450 7650 60  0001 C CNN
-F 4 "any/open" H 1750 1700 60  0001 C CNN "supplier"
-F 5 "Value" H 10450 7600 60  0001 C CNN "supplier PN"
+F 4 "Honghua Wei" H 1750 1700 60  0001 C CNN "supplier"
+F 5 "3528-4RGB-1026" H 10450 7600 60  0001 C CNN "supplier PN"
 F 6 "Value" H 10450 7600 60  0001 C CNN "MOQ"
 F 7 "Value" H 10450 7600 60  0001 C CNN "leadtime"
-F 8 "" H 6350 750 60  0001 C CNN "farnell #"
 	1    10450 7600
 	1    0    0    -1  
 $EndComp
@@ -1140,7 +1139,7 @@ F 2 "raise_fp:SOT-23-6" H 10750 3200 60  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1996763.pdf?_ga=2.241651460.726690636.1538980653-1456224680.1538980653" H 10750 3200 60  0001 C CNN
 F 4 "1295311" H 6550 1200 60  0001 C CNN "farnell #"
 F 5 "ST" H 10750 3200 60  0001 C CNN "supplier"
-F 6 "USBLC6-4SC6 " H 10750 3200 60  0001 C CNN "supplier PN"
+F 6 "USBLC6-4SC6" H 10750 3200 60  0001 C CNN "supplier PN"
 F 7 "Value" H 10750 3200 60  0001 C CNN "MOQ"
 F 8 "Value" H 10750 3200 60  0001 C CNN "leadtime"
 	1    10750 3200
