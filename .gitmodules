@@ -1,6 +1,6 @@
 [submodule "raise_libs"]
 	path = raise_libs
-	url = git@git.dygma.com:dygma/raise/raise_libs
+	url = git@github.com:dygmalab/raise_libs
 [submodule "raise_fp.pretty"]
 	path = raise_fp.pretty
-	url = git@git.dygma.com:dygma/raise/raise_fp.pretty
+	url = git@github.com:dygmalab/raise_fp.pretty
