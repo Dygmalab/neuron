@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/matt/work/shortcut/raise-v3.1/usb-hub/usb-hub.sch)
-    (date "Fri 01 Feb 2019 13:09:25 CET")
+    (date "Wed 24 Apr 2019 12:53:42 CEST")
     (tool "Eeschema (2017-11-06 revision 3045509)-HEAD")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -25,7 +25,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5A61E80C))
     (comp (ref C8)
-      (value "10uF, ceramic, 6v, 10%, x5r")
+      (value "10uF, ceramic, 10v, 10%, x5r")
       (footprint raise_fp:C_0603)
       (fields
         (field (name "farnell #") 1288201)
@@ -37,7 +37,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5A9E6EA2))
     (comp (ref C7)
-      (value "10uF, ceramic, 6v, 10%, x5r")
+      (value "10uF, ceramic, 10v, 10%, x5r")
       (footprint raise_fp:C_0603)
       (fields
         (field (name "farnell #") 1288201)
@@ -75,7 +75,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -84,7 +83,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -93,7 +91,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -102,7 +99,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -111,7 +107,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -120,8 +115,8 @@
       (value "4 pin RGB led, com anode")
       (footprint raise_fp:3528-4p)
       (fields
-        (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
+        (field (name supplier) "Honghua Wei")
+        (field (name "supplier PN") 3528-4RGB-1026)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib rgbled) (part rgbled))
@@ -155,7 +150,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5B07FB6C))
     (comp (ref C3)
-      (value "20pf, ceramic, 6v, 5%")
+      (value "20pF, ceramic, 100v, 5%")
       (footprint raise_fp:C_0603)
       (fields
         (field (name "farnell #") 1865475)
@@ -164,7 +159,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5B07FC16))
     (comp (ref C2)
-      (value "20pf, ceramic, 6v, 5%")
+      (value "20pF, ceramic, 100v, 5%")
       (footprint raise_fp:C_0603)
       (fields
         (field (name "farnell #") 1865475)
@@ -178,7 +173,6 @@
       (fields
         (field (name "farnell #") 2449501)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part Crystal))
@@ -188,7 +182,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -216,7 +209,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5B07FD26))
     (comp (ref C1)
-      (value "1uF, ceramic, 6v, 10%, x5r")
+      (value "1uF, ceramic, 10v, 10%, x5r")
       (footprint raise_fp:C_0603)
       (fields
         (field (name supplier) any/open)
@@ -258,7 +251,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5B07FD6F))
     (comp (ref C6)
-      (value "1uF, ceramic, 6v, 10%, x5r")
+      (value "1uF, ceramic, 10v, 10%, x5r")
       (footprint raise_fp:C_0603)
       (fields
         (field (name supplier) any/open)
@@ -267,7 +260,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5B07FDA9))
     (comp (ref C5)
-      (value "1uF, ceramic, 6v, 10%, x5r")
+      (value "1uF, ceramic, 10v, 10%, x5r")
       (footprint raise_fp:C_0603)
       (fields
         (field (name supplier) any/open)
@@ -276,11 +269,14 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5B07FDB2))
     (comp (ref C4)
-      (value "1uF, ceramic, 6v, 10%, x5r")
+      (value "1uF, ceramic, 10v, 10%, x5r")
       (footprint raise_fp:C_0603)
       (fields
+        (field (name "farnell #") 1865556)
         (field (name supplier) any/open)
-        (field (name "farnell #") 1865556))
+        (field (name "supplier PN") Value)
+        (field (name MOQ) Value)
+        (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part C))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B07FDBB))
@@ -304,7 +300,7 @@
       (fields
         (field (name "farnell #") 1295311)
         (field (name supplier) ST)
-        (field (name "supplier PN") "USBLC6-4SC6 ")
+        (field (name "supplier PN") USBLC6-4SC6)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part usblc6-4))
@@ -334,11 +330,14 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5B164989))
     (comp (ref R7)
-      (value "10k, 125mW, 5%")
+      (value "5.1k, 125mW, 5%")
       (footprint raise_fp:R_0603)
       (fields
         (field (name "farnell #") 2447230)
-        (field (name supplier) any/open))
+        (field (name supplier) any/open)
+        (field (name "supplier PN") Value)
+        (field (name MOQ) Value)
+        (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B164B86))
@@ -348,7 +347,6 @@
       (fields
         (field (name "farnell #") 2447291)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part R))
@@ -360,7 +358,6 @@
       (fields
         (field (name "farnell #") 2447291)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part R))
@@ -383,7 +380,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -392,7 +388,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -401,7 +396,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -410,7 +404,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -428,9 +421,8 @@
       (value "2.7k, 125mW, 5%")
       (footprint raise_fp:R_0603)
       (fields
-        (field (name "farnell #") 2447230)
+        (field (name "farnell #") 2447324)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part R))
@@ -440,9 +432,8 @@
       (value "2.7k, 125mW, 5%")
       (footprint raise_fp:R_0603)
       (fields
-        (field (name "farnell #") 2447230)
+        (field (name "farnell #") 2447324)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part R))
@@ -453,7 +444,6 @@
       (footprint raise_fp:Fiducial_0.5mm_Dia_1mm_Outer)
       (fields
         (field (name supplier) dnp)
-        (field (name "supplier PN") dnp)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part Conn_01x01_Female))
@@ -464,10 +454,8 @@
       (footprint raise_fp:Fiducial_0.5mm_Dia_1mm_Outer)
       (fields
         (field (name supplier) dnp)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
-        (field (name leadtime) Value)
-        (field (name dnp) dnp))
+        (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part Conn_01x01_Female))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B310711))
@@ -476,7 +464,6 @@
       (footprint raise_fp:Fiducial_0.5mm_Dia_1mm_Outer)
       (fields
         (field (name supplier) dnp)
-        (field (name "supplier PN") dnp)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part Conn_01x01_Female))
@@ -487,7 +474,6 @@
       (footprint raise_fp:Fiducial_0.5mm_Dia_1mm_Outer)
       (fields
         (field (name supplier) dnp)
-        (field (name "supplier PN") dnp)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part Conn_01x01_Female))
@@ -497,7 +483,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -506,7 +491,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -515,7 +499,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -524,7 +507,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -533,7 +515,6 @@
       (value TEST)
       (footprint raise_fp:testpoint)
       (fields
-        (field (name "farnell #") dnp)
         (field (name supplier) dnp))
       (libsource (lib usb-hub-cache) (part TEST))
       (sheetpath (names /) (tstamps /))
@@ -542,9 +523,8 @@
       (value "2.7k, 125mW, 5%")
       (footprint raise_fp:R_0603)
       (fields
-        (field (name "farnell #") 2447230)
+        (field (name "farnell #") 2447324)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part R))
@@ -554,9 +534,8 @@
       (value "2.7k, 125mW, 5%")
       (footprint raise_fp:R_0603)
       (fields
-        (field (name "farnell #") 2447230)
+        (field (name "farnell #") 2447324)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part R))
@@ -568,7 +547,6 @@
       (fields
         (field (name "farnell #") 2821263)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part C))
@@ -580,19 +558,17 @@
       (fields
         (field (name "farnell #") 2821263)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part C))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BE47534))
     (comp (ref C9)
-      (value "100pF ceramic, 100v, 10%")
+      (value "1uF, ceramic, 10v, 10%, x5r")
       (footprint raise_fp:C_0603)
       (fields
         (field (name "farnell #") 2821263)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part C))
@@ -604,7 +580,6 @@
       (fields
         (field (name "farnell #") 2821263)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part C))
@@ -616,7 +591,6 @@
       (fields
         (field (name "farnell #") 2821263)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part C))
@@ -628,7 +602,6 @@
       (fields
         (field (name "farnell #") 2821263)
         (field (name supplier) any/open)
-        (field (name "supplier PN") Value)
         (field (name MOQ) Value)
         (field (name leadtime) Value))
       (libsource (lib usb-hub-cache) (part C))
@@ -843,14 +816,14 @@
         (pin (num 5) (name vbus) (type input))
         (pin (num 6) (name i/o4) (type input)))))
   (libraries
-    (library (logical usb-hub-cache)
-      (uri /home/matt/work/shortcut/raise-v3.1/usb-hub/usb-hub-cache.lib))
     (library (logical regulator)
       (uri /home/matt/work/shortcut/raise-v3.1/usb-hub/raise_libs/regulator.lib))
-    (library (logical rgbled)
-      (uri /home/matt/work/shortcut/raise-v3.1/usb-hub/raise_libs/rgbled.lib))
     (library (logical usb_c_16pin)
-      (uri /home/matt/work/shortcut/raise-v3.1/usb-hub/raise_libs/usb_c_16pin.lib)))
+      (uri /home/matt/work/shortcut/raise-v3.1/usb-hub/raise_libs/usb_c_16pin.lib))
+    (library (logical usb-hub-cache)
+      (uri /home/matt/work/shortcut/raise-v3.1/usb-hub/usb-hub-cache.lib))
+    (library (logical rgbled)
+      (uri /home/matt/work/shortcut/raise-v3.1/usb-hub/raise_libs/rgbled.lib)))
   (nets
     (net (code 1) (name Earth)
       (node (ref C14) (pin 2))
