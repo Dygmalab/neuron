@@ -4,6 +4,7 @@ LIBS:sled1735
 LIBS:usb_c_16pin
 LIBS:regulator
 LIBS:pca9306
+LIBS:esd-diode
 LIBS:usb-hub-cache
 EELAYER 26 0
 EELAYER END
@@ -154,14 +155,14 @@ Wire Wire Line
 	2100 8100 2100 8200
 Wire Wire Line
 	2100 8100 2200 8100
-Text Notes 13400 3750 0    60   ~ 0
+Text Notes 13450 2600 0    60   ~ 0
 \nsamd21 with 1 RGBs: 5mA
 $Comp
 L C C8
 U 1 1 5A9E6EA2
 P 14500 3250
 F 0 "C8" H 14525 3350 50  0000 L CNN
-F 1 "10uF, ceramic, 10v, 10%, x5r" H 14525 3150 50  0000 L CNN
+F 1 "10uF, ceramic, 10v, 10%, x5r" H 14150 2900 50  0000 L CNN
 F 2 "raise_fp:C_0603" H 14538 3100 30  0001 C CNN
 F 3 "" H 14500 3250 60  0000 C CNN
 F 4 "1288201" H 14500 3250 60  0001 C CNN "farnell #"
@@ -177,7 +178,7 @@ L C C7
 U 1 1 5A9E6F17
 P 13550 3250
 F 0 "C7" H 13575 3350 50  0000 L CNN
-F 1 "10uF, ceramic, 10v, 10%, x5r" H 13500 3900 50  0000 L CNN
+F 1 "10uF, ceramic, 10v, 10%, x5r" H 12650 2800 50  0000 L CNN
 F 2 "raise_fp:C_0603" H 13588 3100 30  0001 C CNN
 F 3 "" H 13550 3250 60  0000 C CNN
 F 4 "1288201" H 13550 3250 60  0001 C CNN "farnell #"
@@ -775,7 +776,7 @@ F 3 "" H 5600 10550 60  0000 C CNN
 	1    5600 10550
 	1    0    0    -1  
 $EndComp
-Text Notes 10450 2700 0    60   ~ 0
+Text Notes 9750 2800 0    60   ~ 0
 esd protection
 $Comp
 L Crystal Y1
@@ -1166,13 +1167,11 @@ Wire Wire Line
 Wire Wire Line
 	11700 3200 11700 3150
 Wire Notes Line
-	10000 2700 11800 2700
+	8500 2700 11800 2700
 Wire Notes Line
 	11800 2700 11800 3650
 Wire Notes Line
-	11800 3650 10000 3650
-Wire Notes Line
-	10000 3650 10000 2700
+	11800 3650 8500 3650
 $Comp
 L Q_NMOS_GSD Q2
 U 1 1 5B07FE65
@@ -1824,7 +1823,7 @@ $Comp
 L C C13
 U 1 1 5BE47534
 P 13300 3250
-F 0 "C13" H 13415 3296 50  0000 L CNN
+F 0 "C13" H 13100 3350 50  0000 L CNN
 F 1 "100pF ceramic, 100v, 10%" H 12650 2900 50  0000 L CNN
 F 2 "raise_fp:C_0603" H 13338 3100 50  0001 C CNN
 F 3 "" H 13300 3250 50  0001 C CNN
@@ -2075,4 +2074,118 @@ Text Notes 10050 1800 2    60   ~ 0
 S
 Text Notes 1000 3150 0    60   ~ 0
 disconnect for ESD\n
+$Comp
+L ESD-diode D4
+U 1 1 5CEBBFE6
+P 9550 3200
+F 0 "D4" H 9628 3253 60  0000 L CNN
+F 1 "ESD-diode" H 8550 2500 60  0001 L CNN
+F 2 "raise_fp:sod882" H 9550 3200 60  0001 C CNN
+F 3 "" H 9550 3200 60  0001 C CNN
+F 4 "Value" H 9550 3200 60  0001 C CNN "supplier"
+F 5 "Value" H 9550 3200 60  0001 C CNN "supplier PN"
+F 6 "Value" H 9550 3200 60  0001 C CNN "MOQ"
+F 7 "Value" H 9550 3200 60  0001 C CNN "leadtime"
+	1    9550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESD-diode D3
+U 1 1 5CEBC07C
+P 9300 3200
+F 0 "D3" H 9378 3253 60  0000 L CNN
+F 1 "ESD-diode" H 8550 2600 60  0001 L CNN
+F 2 "raise_fp:sod882" H 9300 3200 60  0001 C CNN
+F 3 "" H 9300 3200 60  0001 C CNN
+F 4 "Value" H 9300 3200 60  0001 C CNN "supplier"
+F 5 "Value" H 9300 3200 60  0001 C CNN "supplier PN"
+F 6 "Value" H 9300 3200 60  0001 C CNN "MOQ"
+F 7 "Value" H 9300 3200 60  0001 C CNN "leadtime"
+	1    9300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESD-diode D2
+U 1 1 5CEBC118
+P 9050 3200
+F 0 "D2" H 9128 3253 60  0000 L CNN
+F 1 "ESD-diode" H 8550 2700 60  0001 L CNN
+F 2 "raise_fp:sod882" H 9050 3200 60  0001 C CNN
+F 3 "" H 9050 3200 60  0001 C CNN
+F 4 "Value" H 9050 3200 60  0001 C CNN "supplier"
+F 5 "Value" H 9050 3200 60  0001 C CNN "supplier PN"
+F 6 "Value" H 9050 3200 60  0001 C CNN "MOQ"
+F 7 "Value" H 9050 3200 60  0001 C CNN "leadtime"
+	1    9050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESD-diode D1
+U 1 1 5CEBC1BC
+P 8800 3200
+F 0 "D1" H 8878 3253 60  0000 L CNN
+F 1 "ESD-diode" H 8550 2800 60  0001 L CNN
+F 2 "raise_fp:sod882" H 8800 3200 60  0001 C CNN
+F 3 "" H 8800 3200 60  0001 C CNN
+F 4 "Value" H 8800 3200 60  0001 C CNN "supplier"
+F 5 "Value" H 8800 3200 60  0001 C CNN "supplier PN"
+F 6 "Value" H 8800 3200 60  0001 C CNN "MOQ"
+F 7 "Value" H 8800 3200 60  0001 C CNN "leadtime"
+	1    8800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR054
+U 1 1 5CEBC486
+P 9550 3400
+F 0 "#PWR054" H 9550 3150 50  0001 C CNN
+F 1 "Earth" H 9550 3250 50  0001 C CNN
+F 2 "" H 9550 3400 50  0001 C CNN
+F 3 "~" H 9550 3400 50  0001 C CNN
+	1    9550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR064
+U 1 1 5CEBC517
+P 9300 3400
+F 0 "#PWR064" H 9300 3150 50  0001 C CNN
+F 1 "Earth" H 9300 3250 50  0001 C CNN
+F 2 "" H 9300 3400 50  0001 C CNN
+F 3 "~" H 9300 3400 50  0001 C CNN
+	1    9300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR065
+U 1 1 5CEBC5A8
+P 9050 3400
+F 0 "#PWR065" H 9050 3150 50  0001 C CNN
+F 1 "Earth" H 9050 3250 50  0001 C CNN
+F 2 "" H 9050 3400 50  0001 C CNN
+F 3 "~" H 9050 3400 50  0001 C CNN
+	1    9050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR068
+U 1 1 5CEBC639
+P 8800 3400
+F 0 "#PWR068" H 8800 3150 50  0001 C CNN
+F 1 "Earth" H 8800 3250 50  0001 C CNN
+F 2 "" H 8800 3400 50  0001 C CNN
+F 3 "~" H 8800 3400 50  0001 C CNN
+	1    8800 3400
+	1    0    0    -1  
+$EndComp
+Text Label 8800 3000 1    60   ~ 0
+sda
+Text Label 9050 3000 1    60   ~ 0
+sda
+Text Label 9300 3000 1    60   ~ 0
+scl
+Text Label 9550 3000 1    60   ~ 0
+scl
+Wire Notes Line
+	8500 3650 8500 2700
 $EndSCHEMATC
