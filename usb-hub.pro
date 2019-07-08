@@ -1,4 +1,4 @@
-update=Mon 27 May 2019 11:53:11 CEST
+update=Fri 28 Jun 2019 16:07:29 CEST
 version=1
 last_client=kicad
 [general]
@@ -27,16 +27,6 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=
@@ -47,3 +37,13 @@ LibName3=raise_libs/usb_c_16pin
 LibName4=raise_libs/regulator
 LibName5=raise_libs/pca9306
 LibName6=raise_libs/esd-diode
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1

@@ -117,14 +117,14 @@ $EndComp
 $Comp
 L R R6
 U 1 1 5A61E80C
-P 2250 8200
-F 0 "R6" H 2180 8154 50  0000 R CNN
-F 1 "5.1k, 125mW, 5%" H 2180 8245 50  0000 R CNN
-F 2 "raise_fp:R_0603" V 2180 8200 50  0001 C CNN
-F 3 "" H 2250 8200 50  0001 C CNN
-F 4 "any/open" H -8450 5900 60  0001 C CNN "supplier"
-F 5 "2447404" H -8450 5900 60  0001 C CNN "farnell #"
-	1    2250 8200
+P 2250 8100
+F 0 "R6" H 2180 8054 50  0000 R CNN
+F 1 "5.1k, 125mW, 5%" H 2180 8145 50  0000 R CNN
+F 2 "raise_fp:R_0603" V 2180 8100 50  0001 C CNN
+F 3 "" H 2250 8100 50  0001 C CNN
+F 4 "any/open" H -8450 5800 60  0001 C CNN "supplier"
+F 5 "2447404" H -8450 5800 60  0001 C CNN "farnell #"
+	1    2250 8100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -151,10 +151,6 @@ Wire Wire Line
 	2100 8400 2100 8500
 Wire Wire Line
 	2100 8600 2100 8700
-Wire Wire Line
-	2100 8100 2100 8200
-Wire Wire Line
-	2100 8100 2200 8100
 Text Notes 13450 2600 0    60   ~ 0
 \nsamd21 with 1 RGBs: 5mA
 $Comp
@@ -1289,8 +1285,6 @@ Text Label 7300 2050 0    60   ~ 0
 reset
 Text Label 1900 3250 2    60   ~ 0
 ufp-cc
-Text Label 2200 8100 0    60   ~ 0
-ufp-cc
 $Comp
 L R R11
 U 1 1 5B164F68
@@ -1369,8 +1363,6 @@ Text Label 12400 7200 0    60   ~ 0
 dfp-r-cc
 Text Label 12400 7350 0    60   ~ 0
 dfp-l-cc
-Text Label 12400 7050 0    60   ~ 0
-ufp-cc
 $Comp
 L TEST TP1
 U 1 1 5B20E2BA
@@ -2188,4 +2180,31 @@ Text Label 9550 3000 1    60   ~ 0
 scl
 Wire Notes Line
 	8500 3650 8500 2700
+$Comp
+L R R5
+U 1 1 5D1361F5
+P 2250 8200
+F 0 "R5" H 2180 8154 50  0000 R CNN
+F 1 "5.1k, 125mW, 5%" H 2180 8245 50  0000 R CNN
+F 2 "raise_fp:R_0603" V 2180 8200 50  0001 C CNN
+F 3 "" H 2250 8200 50  0001 C CNN
+F 4 "any/open" H -8450 5900 60  0001 C CNN "supplier"
+F 5 "2447404" H -8450 5900 60  0001 C CNN "farnell #"
+	1    2250 8200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR069
+U 1 1 5D13628F
+P 2400 8100
+F 0 "#PWR069" H 2400 7850 50  0001 C CNN
+F 1 "Earth" H 2400 7950 50  0001 C CNN
+F 2 "" H 2400 8100 50  0001 C CNN
+F 3 "~" H 2400 8100 50  0001 C CNN
+	1    2400 8100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 12400 7050
+Text Notes 1150 6750 0    60   ~ 0
+CC1 and 2 need separate 5.1k resistors for active cables to work
 $EndSCHEMATC
