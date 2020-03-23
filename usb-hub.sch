@@ -215,8 +215,8 @@ F 0 "J1" H 1605 10467 50  0000 C CNN
 F 1 "USB_C_Receptacle_16pin" H 1550 10550 50  0000 C CNN
 F 2 "raise_fp:usb-c-16smt" H 1650 8900 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 1650 8900 50  0001 C CNN
-F 4 "contact technology corp" H -8450 5900 60  0001 C CNN "supplier"
-F 5 "sbc-160s-202-s338" H -8450 5900 60  0001 C CNN "supplier PN"
+F 4 "DONGGUAN WEIKAI ELECTRONIC CO.,LTD" H -8450 5900 60  0001 C CNN "supplier"
+F 5 "SB CF 16pin (L=7.35)WITH POST" H -8450 5900 60  0001 C CNN "supplier PN"
 	1    1500 8900
 	1    0    0    -1  
 $EndComp
@@ -811,8 +811,8 @@ F 0 "J2" H 5905 10517 50  0000 C CNN
 F 1 "USB_C_Receptacle_16pin" H 5905 10426 50  0000 C CNN
 F 2 "raise_fp:usb-c-16smt" H 5950 8950 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5950 8950 50  0001 C CNN
-F 4 "contact technology corp" H 5800 8950 60  0001 C CNN "supplier"
-F 5 "sbc-160s-202-s338" H 5800 8950 60  0001 C CNN "supplier PN"
+F 4 "DONGGUAN WEIKAI ELECTRONIC CO.,LTD" H 5800 8950 60  0001 C CNN "supplier"
+F 5 "SB CF 16pin (L=7.35)WITH POST" H 5800 8950 60  0001 C CNN "supplier PN"
 F 6 "Value" H 5800 8950 60  0001 C CNN "MOQ"
 F 7 "Value" H 5800 8950 60  0001 C CNN "leadtime"
 	1    5800 8950
@@ -826,8 +826,8 @@ F 0 "J3" H 3805 10467 50  0000 C CNN
 F 1 "USB_C_Receptacle_16pin" H 3805 10376 50  0000 C CNN
 F 2 "raise_fp:usb-c-16smt" H 3850 8900 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 3850 8900 50  0001 C CNN
-F 4 "contact technology corp" H 2450 3150 60  0001 C CNN "supplier"
-F 5 "sbc-160s-202-s338" H 2450 3150 60  0001 C CNN "supplier PN"
+F 4 "DONGGUAN WEIKAI ELECTRONIC CO.,LTD" H 2450 3150 60  0001 C CNN "supplier"
+F 5 "SB CF 16pin (L=7.35)WITH POST" H 2450 3150 60  0001 C CNN "supplier PN"
 	1    3700 8900
 	1    0    0    -1  
 $EndComp
